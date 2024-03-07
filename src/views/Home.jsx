@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import '../App.css'
 import MeWhite from "../assets/images/Me/MeWhite.png";
 
 const Home = () => {

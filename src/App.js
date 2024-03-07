@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
-import Home from './views/Home'
+import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./views/Home";
 
 //<BrowserRouter basename="/react-portfolio" >
 import "./App.css";
@@ -9,13 +9,10 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-     <BrowserRouter>
-
+      <BrowserRouter>
         <Routes>
-          
-          <Route path="/" element={<Home/>} />
-   </Routes>
-
+          <Route path="/" element={<Home />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
