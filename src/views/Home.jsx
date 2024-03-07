@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../App.css'
 import MeWhite from "../assets/images/Me/MeWhite.png";
+import Resume from "../assets/Resume.pdf";
 
 const Home = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -58,8 +59,9 @@ const Home = () => {
         </a>
         <div className="w3-bar-block w3-center">
           <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" onClick={closeNav}>Home</a>
-          <a href="#portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black" onClick={closeNav}>Portfolio</a>
           <a href="#about" className="w3-bar-item w3-button w3-text-grey w3-hover-black" onClick={closeNav}>About</a>
+          <a href="#portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black" onClick={closeNav}>Portfolio</a>
+          <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black" onClick={closeNav}>Resume</a>
           <a href="#contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black" onClick={closeNav}>Contact</a>
         </div>
       </nav>
@@ -77,12 +79,19 @@ const Home = () => {
 
         {/* Header */}
         <header className="w3-container w3-center" style={{ padding: "128px 16px" }} id="home">
-          <h1 className="w3-jumbo"><b>Jane Doe</b></h1>
-          <p>Photographer and Web Designer.</p>
+          <h1 className="w3-jumbo"><b>Carol Wargo</b></h1>
+          <p>Full Stack Developer | UX Designer.</p>
           <img src={MeWhite} className="w3-image w3-hide-large w3-hide-small w3-round" style={{ display: "block", width: "60%", margin: "auto" }} alt="Profile" />
           <img src={MeWhite} className="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333" alt="Profile" />
           <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
+          <a
+              className="btn text-black"
+              id="resume-download"
+              download
+              href={Resume}
+            >
             <i className="fa fa-download"></i> Download Resume
+            </a>
           </button>
         </header>
       </div>
