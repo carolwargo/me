@@ -30,15 +30,15 @@ export default function ResumePage() {
   return (
     <div className="resume" id="resume">
       
-       {/** start BREADCRUMBS*/}
-       <div className="container-fluid mt-3 px-5">
-        <ul className="breadcrumb">
-          <li className="breadcrumb-item">
-            <a href="/">Home</a>
-          </li>
-          <li className="breadcrumb-item active">Resume</li>
-        </ul>
-      </div>
+       <div className="w3-bar w3-white w3-wide w3-padding w3-card w3-margin-top shadow">
+          <a href="#resume" className="w3-bar-item w3-button"><b>CW</b>HOME</a>
+          <div className="w3-right w3-hide-small">
+          <a href="/about" className="w3-bar-item w3-button"> <b>CW</b>ABOUT</a> {" "}
+          <a href="/resume" className="w3-bar-item w3-button"> <b>CW</b>RESUME</a> {" "}
+          <a href="/portfolio" className="w3-bar-item w3-button"> <b>CW</b>WORK</a> {" "}
+          <a href="/contact" className="w3-bar-item w3-button"><b>CW</b>CONTACT</a> {" "}
+          </div>
+        </div>
       {/** end BREADCRUMBS*/}
       <div className=" bg-light text-black p-5">
         <h1
@@ -47,19 +47,36 @@ export default function ResumePage() {
             textShadow: "0px 0px 14px #00ffff",
           }}
         >
-        RESUME{" "}
+          RESUME{" "}
         </h1>
-        <p>Use the  <span>| <b>CW</b>RESUME MENU  |</span> below to navigate the sections of this page.</p>
-        <div className="w3-bar w3-white w3-wide w3-padding w3-card w3-margin-top">
-          <a href="#resume" className="w3-bar-item w3-button"><b>CW</b>RESUME MENU</a>
-          <div className="w3-right w3-hide-small">
-          <a href="#professional-achievements" className="w3-bar-item w3-button"> ACHIEVEMENTS</a> {" "}
-          <a href="#technical-skills" className="w3-bar-item w3-button">SKILLS</a> {" "}
-          <a href="#experience" className="w3-bar-item w3-button">EDUCATION</a> {" "}
-          <a href="#resume-download" className="w3-bar-item w3-button">RESUME DOWNLOAD</a> {" "}
-          </div>
-        </div>
+
+        <p className="header" id="header" style={{ fontFamily: "Raleway" }}>
+          Digital Resume contains{" "}
+          <strong>
+            {" "}
+            <a href="#professional-achievements"> PROFESSIONAL ACHIEVEMENTS</a>
+          </strong>
+          ,<br></br>{" "}
+          <strong>
+            {" "}
+            <a href="#technical-skills">TECHNICAL SKILLS</a>
+          </strong>
+          ,
+          <strong>
+            {" "}
+            <a href="#experience">EXPERIENCE & EDUCATION</a>{" "}
+          </strong>{" "}
+          , and{" "}
+          <strong>
+            {" "}
+            <a href="#resume-download">RESUME DOWNLOAD</a>
+          </strong>{" "}
+          -{" "}
+        </p>
+        <br />
+        <hr />
       </div>
+
 
       <div className="container w3-margin-bottom">
         <div className="row d-flex justify-content-center align-items-center  w3-padding-large w3-margin-bottom">
