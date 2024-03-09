@@ -10,6 +10,68 @@ export default function AboutPage() {
   return (
     <div>
       <main>
+      <div
+        className=" bg-light text-black p-5 "
+        style={{
+          paddingBottom: "4rem",
+          paddingTop: "4rem",
+        }}
+      >
+        <h1
+          style={{
+            fontFamily: "bellota text",
+            fontSize: "4rem",
+            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
+            paddingLeft: "1rem",
+            paddingRight: "1rem",
+          }}
+        >
+          ABOUT ME{" "}
+        </h1>
+
+        <h5
+          style={{
+            fontFamily: "bellota text",
+            paddingLeft: "1rem",
+            paddingRight: "1rem",
+          }}
+        >
+          Get to know a little, or a lot. You choose... <br></br>{" "}
+          <strong>
+            {" "}
+            <a href="#philisophy-values">My FAMILY, PHILISOPHY & VALUES</a>
+          </strong>
+          ,{" "}
+          <strong>
+            {" "}
+            <a href="#blessing-curse">MY BLESSING & MY CURSE</a>
+          </strong>
+          , and{" "}
+          <strong>
+            <a href="#community">GIVING BACK & GAINING MORE</a>{" "}
+          </strong>{" "}
+          -{" "}
+        </h5>
+        <p
+          className="text-secondary  "
+          style={{
+            fontFamily: "bellota text",
+            paddingLeft: "1rem",
+            paddingRight: "1rem",
+          }}
+        >
+          {" "}
+          "<strong>Click the links above</strong> to jump to the section you
+          want to view...
+          <br></br>{" "}
+          <strong>
+            {" "}
+            Follow the <span style={{ color: "red" }}>"Back"</span> &{" "}
+            <span style={{ color: "blue" }}> "Next"</span> links
+          </strong>{" "}
+          at the bottom of each page to ensure nothing is missed! "
+        </p>
+      </div>
      
       <AboutFinal />
       <div className='row p-2 d-flex align-items-center'>

@@ -7,6 +7,7 @@ import Resume from '../../assets/Resume.pdf';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../App.css';
 
+
 function NavScrollExample() {
   const [isNavbarFixed, 
          setIsNavbarFixed] = 
@@ -60,20 +61,41 @@ function NavScrollExample() {
           className={`${isNavOpen ? 
           'show' : ''}`}
           >
-          <Nav className="me-auto">
+          <Nav className="me-auto ">
           <Nav.Link href="/about">
-              About</Nav.Link>
-          <Nav.Link href="/resume">
-              Resume</Nav.Link>
-          <Nav.Link href="/portfolio">
-              Portfolio</Nav.Link>
-          <Nav.Link href="/contact">
-              Contact</Nav.Link>
+                 <button 
+               className="w3-bar-item w3-button" 
+              style={{fontSize:'14px'}}>
+                  About
+              </button>
+            </Nav.Link>
+            <Nav.Link href="/resume">
+                 <button 
+               className="w3-bar-item w3-button" 
+              style={{fontSize:'14px'}}>
+                 Resume
+              </button>
+            </Nav.Link>
+            <Nav.Link href="/portfolio">
+                 <button 
+               className="w3-bar-item w3-button" 
+              style={{fontSize:'14px'}}>
+                Portfolio
+              </button>
+            </Nav.Link>
+            <Nav.Link href="/contact">
+                 <button 
+               className="w3-bar-item w3-button" 
+              style={{fontSize:'14px'}}>
+               Contact
+              </button>
+            </Nav.Link>
+       
           <Nav.Link 
               href={Resume}>
               <button 
-              className='w3-button w3-light-grey' 
-              style={{fontSize:'12px'}}>
+              className='w3-bar-item w3-button w3-light-grey' 
+              style={{fontSize:'14px'}}>
                 RESUME DOWNLOAD
               </button>
           </Nav.Link>        

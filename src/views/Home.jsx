@@ -4,6 +4,7 @@ import '../App.css'
 import MeWhite from "../assets/images/Me/MeWhite.png";
 import Resume from "../assets/Resume.pdf";
 import HomeAbout from "../components/Home/HomeAbout";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 const Home = () => {
 
@@ -25,6 +26,7 @@ const Home = () => {
             background-image: url('${MeWhite}');
             min-height: 100%;
            marginTop: "0";
+           position: "fixed";
           }
         `}
       </style>
@@ -39,11 +41,20 @@ const Home = () => {
 
     
       {/* Page Content */}
-      <div className="w3-main w3-padding-large" style={{ marginLeft: "40%" }}>
+      <div className="w3-main w3-padding-large pt-0" style={{ marginLeft: "40%" }}>
         {/* Menu icon to open sidebar */}
     
         {/* Header */}
-        <header className="w3-container w3-center" style={{ padding: "100px 16px" }} id="home">
+        <header className="w3-container w3-center " style={{ padding: "80px 16px" }} id="home">
+          <div> <a href="https://carolwargo.github.io/react-portfolio/" className="w3-button ">
+            <i className="fab fa-github"></i></a>
+          <span><a href="https://www.linkedin.com/in/carol-wargo-35021baa/" className="w3-button">
+            <i className="fab fa-linkedin"></i></a></span> 
+          <span><a href="mailto:carolwargo.dev@gmail.com" className="w3-button">
+            <i className="fa fa-envelope fa-fw"></i> </a></span> 
+          <span><a href="tel:443-771-1726"className="w3-button"> 
+          <i className="fa fa-phone fa-fw"></i></a></span>
+          </div>
           <h1 className="w3-jumbo"><b>Carol Wargo</b></h1>
           <p>Full Stack Developer | UX Designer.</p>
           <img src={MeWhite} className="w3-image w3-hide-large w3-hide-small w3-round" style={{ display: "block", width: "60%", margin: "auto" }} alt="Profile" />

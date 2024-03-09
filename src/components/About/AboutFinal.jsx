@@ -12,6 +12,7 @@ import '@fortawesome/fontawesome-free/css/all.css'; // Import Font Awesome CSS
 const AboutFinal = () => {
 
     return (
+      
         <div className="container-fluid py-4 bg-black text-white" id="about">
         <div className="w3-content w3-container w3-padding-32 " id="about">
         <div className="row">
