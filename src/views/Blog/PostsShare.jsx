@@ -34,7 +34,7 @@ const Posts = () => {
     {" "}
     {/*col start for all posts */}
     {blogPosts.map((post) => (
-      <div key={post.id} className="w3-card-4 w3-margin w3-black m-4">
+      <div key={post.id} className="w3-card-4 w3-black mx-4 w3-margin-top">
         <img
           src={post.imageUrl}
           alt="blog-post"
@@ -79,7 +79,7 @@ const Posts = () => {
             <div className="mt-3">
     <span className="">
         <TwitterShareButton url={window.location.href} title={post.title}>
-            <div className="w3-button btn btn-xs text-white bg-white rounded">
+            <div className="w3-button text-white bg-white rounded">
                 <FaTwitter style={{ color: "black" }} />
             </div>
         </TwitterShareButton>{" "}
@@ -88,7 +88,7 @@ const Posts = () => {
     <span className="mx-1">
         {/* start Facebook Share Button */}
         <FacebookShareButton url={window.location.href} quote={post.title}>
-            <div className="w3-button btn btn-xs text-white bg-primary rounded">
+            <div className="w3-button text-white bg-primary rounded">
                 <FaFacebook />
             </div>
         </FacebookShareButton>{" "}
@@ -97,7 +97,7 @@ const Posts = () => {
     <span className="mx-1">
         {/* start Pinterest Share Button */}
         <PinterestShareButton url={window.location.href} media={post.imageUrl} description={post.title}>
-            <div className="w3-button btn btn-xs text-white rounded" style={{ backgroundColor: "red" }}>
+            <div className="w3-button text-white rounded" style={{ backgroundColor: "red" }}>
                 <FaPinterest style={{ color: "white" }} />
             </div>
         </PinterestShareButton>{" "}
@@ -105,7 +105,7 @@ const Posts = () => {
     </span>
     <span className="mx-1">
         {/* start Github Button */}
-        <button className="w3-button btn btn-xs text-white rounded" style={{ backgroundColor: "#800080" }}>
+        <button className="w3-button text-white rounded" style={{ backgroundColor: "#800080" }}>
             <FaGithub style={{ color: "white" }} />
         </button>
     </span>

@@ -3,11 +3,20 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
+<div>
+<nav className="w3-center w3-bar w3-margin-top mx-3">
+    <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black " >Home</a>
+    <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Portfolio</a>
+    <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  </nav>
+
     <header>
+
       <div className="bg-black">
        <hr />
 
-        <div className="row d-flex h-100 px-5 text-center position-relative pt-3">
+        <div className="row d-flex h-100 px-5 text-center position-relative ">
        
           <div className="col-sm-12 col-md-12 col-lg-12 text-white p-3 position-relative z-index-1">
           <header className="w3-container w3-center w3-padding-32 p-2 text-white" style={{fontFamily:'Raleway'}}>
@@ -37,6 +46,7 @@ const Header = () => {
         </div>
       </div>
     </header>
+    </div>
   );
 };
 

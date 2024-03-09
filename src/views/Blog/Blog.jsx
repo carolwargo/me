@@ -17,7 +17,7 @@ const Blog = () => {
   return (
     <div>
       <BlogHeader />
-      <main className="w3-light-grey">
+      <main className="">
         <div className="w3-content" style={{ maxWidth: "1400px" }}>
           {/* start Header */}
           {/*row start for the whole page with exception of header & footer */}
@@ -27,7 +27,7 @@ const Blog = () => {
             <div className="w3-col p-4 l4">
               {" "}
               {/*card start for bio*/}
-              <div className="w3-card w3-margin m-4">
+              <div className="w3-card w3-margin mx-4">
                 {" "}
                 {/*card-image-start for bio*/}
                 <img
@@ -137,46 +137,46 @@ const Blog = () => {
                   {/*container start for tags*/}
                   <p>
                     <span className="w3-tag w3-black w3-margin-bottom">
-                      Travel
+                     DESKTOP
                     </span>
                     <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      New York
+                      COMPUTER
                     </span>
                     <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      London
+                    BESTBUY
                     </span>
                     <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      IKEA
+                      LAPTOP
                     </span>
                     <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      NORWAY
+                      TAGS
                     </span>
                     <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      DIY
+                      DESIGN
                     </span>
                     <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      Ideas
+                      IDEAS
                     </span>
                     <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      Baby
+                      MONITOR
                     </span>
                     <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      Family
+                      PORTFOLIO
                     </span>
                     <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      News
+                      NEWS
                     </span>
                     <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      Clothing
+                      CODING
                     </span>
                     <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      Shopping
+                      OFFICE
                     </span>
                     <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      Sports
+                      APPLICATION
                     </span>
                     <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      Games
+                      SERVER
                     </span>
                   </p>
                 </div>{" "}
@@ -185,8 +185,9 @@ const Blog = () => {
               {/*card end for all tags elements*/}
               {/*card end for all popular posts elements*/}
               {/*card end for all tags elements*/}
+              <hr />
             </div>{" "}
-          
+         
             {/*col end for bio, popular posts & tags*/}
             {/*col start for all posts iteration */}
             <div className="w3-col p-4 l8 s12">
@@ -199,8 +200,8 @@ const Blog = () => {
 
 
             
-                <div className="w3-container w3-padding-32">
-            <div className="w3-content">
+                <div className="w3-container w3-content w3-padding-32  d-flex justify-content-center">
+            <div className="w3-container px-5">
           <p className="text" style={{fontSize:'1.5rem'}}>
   <b> <AiTwotoneBulb style={{fontSize:'2.5rem'}}/> DID YOU KNOW ?</b>
                 </p>
@@ -240,7 +241,8 @@ const Blog = () => {
     </span>
    </div>
    
-                    <span className="w3-tag w3-white w3-margin-bottom"></span>{" "}
+                    <span className="w3-tag w3-white w3-margin-bottom mx-3 px-5
+                    "></span>{" "}
                     <br />
                     <span>
                       <ul>
@@ -264,8 +266,8 @@ const Blog = () => {
                         </li>
                       </ul>
                     </span>
-                    <span className="w3-tag w3-light-grey w3-margin-bottom p-2 mx-3">
-                      Share Buttons should be prominently displayed near the
+                    <span className="w3-light-grey w3-margin-bottom ">
+                     <b>NOTE:</b> Share Buttons should be prominently displayed near the
                       content and, mobile friendly,
                     </span>
                     </div>
@@ -275,29 +277,7 @@ const Blog = () => {
             </div>
           </div>{" "}
           {/*row end for the whole page with exception of header & footer */}
-     
-
-  
-        <footer className="w3-container w3-dark-grey w3-padding-32 text-center">
-         <a href="/" alt='home'> <button className="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">
-          Back Home
-          </button>
-          </a>
-          <a href="/restaurant" alt='restaurant'><button className="w3-button w3-black w3-padding-large w3-margin-bottom">
-           Restaurant Page »
-          </button>
-          </a>  
-          <p
-            style={{
-              textShadow: "1px 1px 2px rgba(0, 0, 0, 2.8)",
-            
-            }}
-          >
-            LOGO<span > HERE</span>
-          </p>
-        </footer>
-   
-      </main>
+        </main>
     </div>
   );
 };
