@@ -1,7 +1,7 @@
 import React from "react";
 import MeWhite from "../../assets/images/Me/MeWhite.png";
 import Resume from "../../assets/Resume.pdf";
-import { NavLink } from "react-router-dom";
+
 //import LocationView from "../../assets/images/About/LocationView.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -410,20 +410,6 @@ respective buttons for more details.</p>
 </div>
 {/*start Contact section */}
 
- {/*start Footer */}
- <footer className="w3-container w3-padding-48 text-center">
-  <NavLink to={"/about"}>
-    <button className="w3-button w3-black w3-disabled w3-padding-small">
-      « About
-    </button>
-  </NavLink>
-
-  <NavLink to={"/portfolio"}>
-    <button className="w3-button w3-black w3-padding-small">
-      Portfolio »
-    </button>
-  </NavLink>
-</footer>
 
 <footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
 <a href="/" className="w3-hover-opacity mx-1">Home </a>
