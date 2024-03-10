@@ -12,7 +12,7 @@ import '@fortawesome/fontawesome-free/css/all.css'; // Import Font Awesome CSS
 const AboutFinal = () => {
 
     return (
-      
+      <div>
         <div className="container-fluid py-4 bg-black text-white" id="about">
         <div className="w3-content w3-container w3-padding-32">
         <div className="row">
@@ -63,11 +63,13 @@ const AboutFinal = () => {
     </div>
   </div>
   </div> 
+  </  div>
+
 
 {/**start technical proficiencies */}
-<div className="container-fluid py-4 bg-white text-black">
-<div className="w3-content w3-container">
-<div className="row">
+<div className="container-fluid py-4 bg-white text-black ">
+<div className="w3-content w3-container w3-margin-top w3-margin-bottom">
+<div className="row w3-margin-bottom">
 <h3><strong>SKILLS & PROFICIENCIES</strong></h3>
     <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
     <h5><strong>Technical Proficiencies</strong></h5>
@@ -118,7 +120,7 @@ const AboutFinal = () => {
 
 
 {/**start experience count */}
-<div className="w3-row w3-center w3-black w3-padding-16">
+<div className="w3-row w3-center w3-black w3-padding-16 w3-margin-bottom">
   <div className="w3-quarter w3-section">
     <span className="w3-xlarge">20<span style={{fontSize:'10px'}}>yrs</span> +</span><br />
     BUSINESS EXPERIENCE

@@ -2,7 +2,7 @@ import React from "react";
 //import Volunteer from "../components/About/Volunteer.jsx";
 import AboutFinal from "../../components/About/AboutFinal.jsx";
 import LocationView from '../../assets/images/About/LocationView.png';
-import { NavLink } from "react-router-dom";
+import { FaLongArrowAltRight } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../../App.css'
 
@@ -36,23 +36,15 @@ export default function About() {
         <img src={LocationView} alt="htown" className="w3-image w3-round" style={{width:"100%"}} ></img>
         </div>
         </div>
+        <div className="w3-content w3-justify w3-text-black w3-padding-16 w3-center w3-margin-bottom">
+  <a href="/about">
+<p className="w3-margin-bottom">See my Resume. <FaLongArrowAltRight className="w3-margin-left "/></p></a>
+</  div>
+<br />
         </main>
 
 <div className="w3-margin-top">
         <footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
-<div>
-<NavLink to={"/about"}>
-    <button className="w3-button w3-black w3-disabled w3-padding-small">
-      «  Home
-    </button>
-  </NavLink>
-
-  <NavLink to={"/resume"}>
-    <button className="w3-button w3-black w3-padding-small">
-      Resume »
-    </button>
-  </NavLink>
-  </div>
   <br />
   <a href="/" className="w3-hover-opacity mx-1">Home </a>
   <a href="/about" className="w3-hover-opacity mx-1">About </a>
