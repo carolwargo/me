@@ -261,9 +261,9 @@ id="my-navbar">
 
 {/*end Aboutsection */}
 </div>
-
+<br />
 {/*start Contact section */}
-
+<br />
   <h2>Contact Me. </h2>
   <hr />
     <div className="w3-section">
