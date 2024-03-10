@@ -1,6 +1,8 @@
 import React from "react";
 import MeWhite from "../../assets/images/Me/MeWhite.png";
 import Resume from "../../assets/Resume.pdf";
+import LocationView from "../../assets/images/About/LocationView.png";
+//import Contact from "../../components/Contact/Contact";
 //import LocationView from "../../assets/images/About/LocationView.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -197,7 +199,7 @@ id="my-navbar">
         <p style={{ fontFamily: "sans-serif" }}>
           {" "}
         
-            " Carol has been an invaluable asset to transforming my brand's
+            "Carol has been an invaluable asset to transforming my brand's
             online presence. In just 13 months, she took my brand-new social
             media account and propelled it to new heights, amassing an
             impressive reach and an unimaginable conversion rate... "
@@ -232,6 +234,7 @@ id="my-navbar">
  {/*end testimonials*/}
          {/*start experience*/}
          <h2>Experience. </h2>
+         <hr />
         <div className="w3-row w3-center w3-black w3-padding-16 w3-section">
           <div className="w3-quarter w3-section">
             <span className="w3-xlarge">
@@ -256,24 +259,30 @@ id="my-navbar">
             MEETINGS
           </div>
 
-
-        </div>
-       {/*end experience*/}
-
- <div className="w3-content w3-justify w3-text-black w3-padding-32 w3-center">
-  <a href="/about">
-<p>To Learn more about me. <FaLongArrowAltRight className="w3-margin-left"/></p></a>
-</  div>
-
-
-
 {/*end Aboutsection */}
 </div>
-{/*start Contact section */}
-  <h2>Contact Me. </h2>
-    <hr />
 
-    
+{/*start Contact section */}
+
+  <h2>Contact Me. </h2>
+  <hr />
+    <div className="w3-section">
+
+      <p><i className="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i> Phone:<a href="tel:+4437711726">+443-771-1726</a></p>
+      <p><i className="fa fa-envelope fa-fw w3-xlarge w3-margin-right"> </i> Email: <a href="mailto:carolwargo.dev@gmail.com" alt='me'> email</a></p>
+    </div>
+    <br />
+      {/**Image of Location Map */}
+      <h2>Where I am Located. </h2>
+      <p><i className="fa fa-map-marker fa-fw w3-xlarge w3-margin-right "></i>Huntingtown, MD.</p>
+      <img src={LocationView} alt="map" style={{width:"100%", margin:"16px 0"}} className="w3-image w3-greyscale" />
+    </div>
+       {/*end experience*/}
+       <div className="w3-content w3-justify w3-text-black w3-padding-16 w3-center w3-margin-bottom">
+  <a href="/about">
+<p className="w3-margin-bottom">To Learn more about me. <FaLongArrowAltRight className="w3-margin-left "/></p></a>
+</  div>
+<br />
 {/*end Contact section */}
 
 
