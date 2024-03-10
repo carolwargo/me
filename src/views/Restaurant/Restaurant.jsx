@@ -24,50 +24,20 @@ import Raspberry from '../../assets/images/Cocktails/Raspberry.png';
 const Restaurant = () => {
   // Function to open sidebar
 
- const w3_open = () => {
-    document.getElementById("mySidebar").style.display = "block";
-  };
-
-
-  // Function to close sidebar
-const w3_close = () => {
-    document.getElementById("mySidebar").style.display = "none";
-  };
 
   return (
     <div>
-    
-      <nav
-        className="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
-        style={{ display: "none", zIndex: 2, width: "40%", minWidth: "300px" }}
-        id="mySidebar"
-      >
-        <a href="#close" onClick={w3_close} className="w3-bar-item w3-button">
-          Close Menu
-        </a>
-        <a href="#food" onClick={w3_close} className="w3-bar-item w3-button">
-          Food
-        </a>
-        <a href="#about" onClick={w3_close} className="w3-bar-item w3-button">
-          About
-        </a>
-      </nav>
-
-  
-      <div className="w3-top shadow">
-        <div className="w3-white w3-xlarge" style={{ maxWidth: "1200px", margin: "auto" }}>
-          <div className="w3-button w3-left" onClick={w3_open}>
-            ☰
+      <nav  className="w3-center shadow">
+        <div className="w3-center w3-padding-16">
+          <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
+          <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
+            <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
+            <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
+            <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
           </div>
-          <div className="w3-right"><i className="far fa-calendar-alt"></i>
-
-</div> 
-<div className="w3-center">
-<h2 className="fw-lighter w3-margin-right  w3-padding-bottom">POP-UP.  </h2>
-        </div>
-        </div>
-     
-      </div>
+        </nav>
+           
+      
 
       {/**start CONTENT */}
       <div className="w3-center w3-padding-32">

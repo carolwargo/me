@@ -2,29 +2,43 @@ import React from "react";
 //import Header from "../components/Header/Header";
 import MeWhite from "../../assets/images/Me/MeWhite.png";
 //import LocationView from "../../assets/images/About/LocationView.png";
-import { NavLink } from "react-router-dom";
+
 import "../../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Contact() {
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Thank you for your message!");
+    setName("");
+    setEmail("");
+    setMessage("");
+  }
+
+
   return (
     <div className="contact" id="contact">
-
-
-      {/*start Contact section */}
-<div className="w3-padding-32 w3-content w3-text-grey" style={{marginBottom:"64px"}}>
-    <h2>Contact Me</h2>
-    <hr className="w3-opacity"/>
-
-  
-
-  
-</div>
+    <nav  className="w3-center shadow">
+        <div className="w3-center w3-padding-16">
+          <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
+          <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
+            <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
+            <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
+            <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
+          </div>
+        </nav>
+           
+    <div    className="w3-container w3-content w3-padding-32 w3-text-grey" id="contact">
 {/*end Contact section */}
-
       <header>
-        <div className="container py-4">
-          <div className="row p-xl-5 justify-content-center align-items-center">
+        <div className="container">
+          <div className="row justify-content-center align-items-center">
+          <h2 className="w3-jumbo">Contact</h2>
             <div className="w3-large w3-margin-bottom">
               <p>Thank you for visiting! </p>
               <p className="">
@@ -46,7 +60,7 @@ export default function Contact() {
             </div>
 
             <div className="col-md-7 px-3">
-              <div className="row">
+              <div className="row w3-padding-24">
                 <div className="col-5">
                   <div className="w3-large w3-margin-bottom ">
                     <span>
@@ -86,67 +100,68 @@ export default function Contact() {
                 </p>
               </div>
 
-              <form action="/action_page.php" target="_blank">
-                <div
-                  className="w3-row-padding"
-                  style={{ margin: "0 -16px 8px -16px" }}
-                >
-                  <div className="w3-half">
-                    <span>
-                      <input
-                        className="w3-input w3-border my-1"
-                        type="text"
-                        placeholder="Name"
-                        required
-                        name="Name"
-                      ></input>
-                    </span>
-                    <span>
-                      <input
-                        className="w3-input w3-border my-2"
-                        type="text"
-                        placeholder="Email"
-                        required
-                        name="Email"
-                      ></input>
-                    </span>
-                  </div>
-                  <div className="p-2 my-1">
-                    <textarea
-                      className="w3-input w3-border"
-                      placeholder="Message"
-                      required
-                      name="Message"
-                      rows="3"
-                    ></textarea>
+              <form action="/send-email" method="POST" target="_blank">
+  <div className="w3-row-padding" style={{ margin: "0 -16px 8px -16px" }}>
+    <div className="w3-half">
+      <span>
+        <input
+          id="name"
+          value={name}
+          className="w3-input w3-border my-1"
+          type="text"
+          placeholder="Name"
+          required
+          name="name"
+          onChange={(e) => setName(e.target.value)}
+        />
+        <label htmlFor="name"></label>
+      </span>
+      <span>
+        <input
+          id="email"
+          value={email}
+          className="w3-input w3-border my-2"
+          type="email"
+          placeholder="Email"
+          required
+          name="email"
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <label htmlFor="email"></label>
+      </span>
+    </div>
+    <div className="p-2 my-1 w3-half">
+      <textarea
+        id="message"
+        value={message}
+        className="w3-input w3-border"
+        placeholder="Message"
+        required
+        name="message"
+        rows="3"
+        onChange={(e) => setMessage(e.target.value)}
+      ></textarea>
+      <label htmlFor="message"></label>
+      <button
+        id="submit"
+        className="w3-button w3-black w3-right w3-section"
+        type="submit"
+        onClick={handleSubmit}
+      >
+        <i className="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </div>
+  </div>
+</form>
 
-                    <button
-                      className="w3-button w3-black w3-right w3-section"
-                      type="submit"
-                    >
-                      <i className="fa fa-paper-plane"></i> SEND MESSAGE
-                    </button>
-                  </div>
-                </div>
-              </form>
             </div>
           </div>
         </div>
       </header>
-  
+</div>
+
 <footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
-<div> 
-<NavLink to={"/portfolio"}>
-    <button className="w3-button w3-black w3-disabled w3-padding-small">
-      « Portfolio
-    </button>
-  </NavLink>
-  <NavLink to={"/"}>
-    <button className="w3-button w3-black w3-padding-small">
-    Home »
-    </button>
-  </NavLink></div>
-  <br />
+
   <a href="/" className="w3-hover-opacity mx-1">Home </a>
   <a href="/about" className="w3-hover-opacity mx-1">About </a>
   <a href="/resume" className="w3-hover-opacity mx-1">Resume</a>
@@ -159,8 +174,6 @@ export default function Contact() {
     </a>
   </p>
 </footer>
-{/*end Footer */}
-
 {/*end Footer */}
     </div>
   );
