@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import MeWhite from "../../assets/images/Me/MeWhite.png";
 import Resume from "../../assets/Resume.pdf";
 import LocationView from "../../assets/images/About/LocationView.png";
@@ -261,7 +260,7 @@ id="my-navbar">
         </div>
        {/*end experience*/}
 
- <div className="w3-content w3-justify w3-text-black w3-padding-32 w3-center" id="about">
+ <div className="w3-content w3-justify w3-text-black w3-padding-32 w3-center">
   <a href="/about">
 <p>To Learn more about me. <FaLongArrowAltRight className="w3-margin-left"/></p></a>
 </  div>
@@ -271,8 +270,7 @@ id="my-navbar">
 {/*end Aboutsection */}
 </div>
 {/*start Contact section */}
-<div className="w3-padding-32 w3-content w3-text-black" style={{marginBottom:"64px"}}>
-    <h2>Contact Me. </h2>
+  <h2>Contact Me. </h2>
     <hr />
 
     <div className="w3-section">
@@ -295,19 +293,12 @@ id="my-navbar">
         </button>
       </p>
     </form>
-</div>
+
 {/*end Contact section */}
 
 
 {/*start Footer */}
 <footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
-<div>
-  <NavLink to={"/about"}>
-    <button className="w3-button w3-black w3-padding-small">
-      About Me »
-    </button>
-  </NavLink></div>
-  <br />
   <a href="/" className="w3-hover-opacity mx-1">Home </a>
   <a href="/about" className="w3-hover-opacity mx-1">About </a>
   <a href="/resume" className="w3-hover-opacity mx-1">Resume</a>
