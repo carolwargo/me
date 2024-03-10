@@ -4,6 +4,7 @@ import { HiOutlinePuzzlePiece } from "react-icons/hi2";
 import { AiFillDatabase } from "react-icons/ai";
 import { BsDatabaseLock } from "react-icons/bs";
 import { GiGears } from "react-icons/gi";
+//import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.css"; // Import Font Awesome CSS
 
@@ -158,6 +159,8 @@ const HomeAbout = () => {
           </div>
         </div>
       </div>
+
+{/*end Footer */}
     </div>
   );
 };

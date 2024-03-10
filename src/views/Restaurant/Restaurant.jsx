@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Donut from "../../assets/images/Breakfast/Donut.png";
@@ -340,6 +341,36 @@ const w3_close = () => {
 
 
       </div>
+      {/*start Footer */}
+      <footer className="w3-container w3-padding-48 text-center">
+  <NavLink to={"/portfolio"}>
+    <button className="w3-button w3-black w3-disabled w3-padding-small">
+      « Portfolio
+    </button>
+  </NavLink>
+
+  <NavLink to={"/blog"}>
+    <button className="w3-button w3-black w3-padding-small">
+      Next »
+    </button>
+  </NavLink>
+</footer>
+
+<footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
+  <a href="/">Home <i className="w3-hover-opacity mx-1">Icon</i></a>
+  <a href="/about">About <i className="w3-hover-opacity mx-1">Icon</i></a>
+  <a href="/resume">Resume <i className="w3-hover-opacity mx-1">Icon</i></a>
+  <a href="/portfolio">Portfolio <i className="w3-hover-opacity mx-1">Icon</i></a>
+  <a href="/contact">Contact <i className="w3-hover-opacity mx-1">Icon</i></a>
+  <p className="w3-medium">
+    Copyright: 
+    <a href="/" target="_blank" className="w3-hover-text-green">
+      &copy; 2024 Carol Wargo
+    </a>
+  </p>
+</footer>
+
+{/*end Footer */}
     </div>
   );
 };

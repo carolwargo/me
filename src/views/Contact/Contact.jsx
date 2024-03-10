@@ -150,20 +150,36 @@ export default function Contact() {
           </div>
         </div>
       </header>
-      
-      <footer className="w3-container w3-padding-48 text-center ">
-        <NavLink to={"/portfolio"}>
-          <button className="w3-button w3-black w3-disabled w3-padding-medium">
-          « Portfolio
-          </button>
-        </NavLink>
+     
+<footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
+<div>
+   
+<NavLink to={"/portfolio"}>
+    <button className="w3-button w3-black w3-disabled w3-padding-small">
+      « Portfolio
+    </button>
+  </NavLink>
+  <NavLink to={"/"}>
+    <button className="w3-button w3-black w3-padding-small">
+    Home »
+    </button>
+  </NavLink></div>
+  <br />
+  <a href="/" className="w3-hover-opacity mx-1">Home </a>
+  <a href="/about" className="w3-hover-opacity mx-1">About </a>
+  <a href="/resume" className="w3-hover-opacity mx-1">Resume</a>
+  <a href="/portfolio" className="w3-hover-opacity mx-1">Portfolio</a>
+  <a href="/contact" className="w3-hover-opacity mx-1">Contact </a>
+  <p className="w3-medium">
+    Copyright: 
+    <a href="/" target="_blank" className="w3-hover-text-green">
+      &copy; 2024 Carol Wargo
+    </a>
+  </p>
+</footer>
+{/*end Footer */}
 
-        <NavLink to={"/"}>
-          <button className="w3-button w3-black w3-padding-medium">
-            Home »
-          </button>
-        </NavLink>
-      </footer>
+{/*end Footer */}
     </div>
   );
 }
