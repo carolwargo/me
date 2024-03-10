@@ -4,6 +4,7 @@ import Business from "../../assets/images/About/Business.png";
 import BlogHeader from "./BlogHeader";
 import Posts from "./Posts";
 import PostsShare from "./PostsShare";
+import { NavLink } from "react-router-dom";
 import { FaTwitter, FaFacebook, FaPinterest, FaGithub } from "react-icons/fa";
 import {
   TwitterShareButton,
@@ -282,6 +283,13 @@ const Blog = () => {
         <footer 
 className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" 
 style={{ margin: "-24px" }}>
+<div>
+<NavLink to={"/portfolio"}>
+    <button className="w3-button w3-black w3-disabled w3-padding-small">
+      « Back to Portfolio
+    </button>
+  </NavLink>
+  </div>
   <a href="/">Home<i className="w3-hover-opacity mx-1"></i></a>
   <a href="/about">About<i className="w3-hover-opacity mx-1"></i></a>
   <a href="/resume">Resume<i className="w3-hover-opacity mx-1"></i></a>

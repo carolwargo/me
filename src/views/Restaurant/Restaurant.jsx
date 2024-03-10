@@ -336,7 +336,7 @@ const w3_close = () => {
         {/**end pagination*/}
 
 
-        <hr id="about"/>
+        <hr/>
 
 
 
@@ -345,15 +345,10 @@ const w3_close = () => {
       <footer className="w3-container w3-padding-48 text-center">
   <NavLink to={"/portfolio"}>
     <button className="w3-button w3-black w3-disabled w3-padding-small">
-      « Portfolio
+      « Back to Portfolio
     </button>
   </NavLink>
-
-  <NavLink to={"/blog"}>
-    <button className="w3-button w3-black w3-padding-small">
-      Next »
-    </button>
-  </NavLink>
+  <br />
 </footer>
 
 <footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>

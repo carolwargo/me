@@ -15,8 +15,8 @@ import { GiGears } from "react-icons/gi";
 const Home = () => {
 
   return (
-  <div>
-    <div className="">
+  <div >
+    <div className="home" id="home">
       <style>
         {`
           body, h1, h2, h3, h4, h5, h6 {
@@ -76,7 +76,7 @@ id="my-navbar">
 
 
      {/*start Header section*/}
-     <header className="w3-container w3-center " style={{ padding: "80px 16px" }} id="home">
+     <header className="w3-container w3-center " style={{ padding: "80px 16px" }} >
           <div className="w3-container w3-center w3-large ">
             <nav> <a href="https://carolwargo.github.io/react-portfolio/" className="w3-button ">
             <i className="fab fa-github" ></i></a>

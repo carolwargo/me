@@ -6,10 +6,10 @@ import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../../App.css'
 
-export default function AboutPage() {
+export default function About() {
   return (
     <div>
-      <main>
+      <main className="about" id="about">
       <nav>
 <div className="w3-center">
     <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
@@ -132,5 +132,7 @@ export default function AboutPage() {
     </div>
   );
 }
+
+// export default About;
 
 

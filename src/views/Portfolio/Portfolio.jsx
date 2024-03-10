@@ -14,7 +14,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
-function BrandExample() {
+function Portfolio() {
 
   const handleEmailChange = (event) => {
   };
@@ -42,7 +42,7 @@ function BrandExample() {
 
  
   return (
-<div>
+<div className="portfolio" id="portfolio">
       <nav>
         
 <div className="w3-center w3-bar w3-padding-16">
@@ -69,7 +69,7 @@ function BrandExample() {
           <i className="fa fa-phone fa-fw w3-hover-opacity"></i></a></span>
           </nav>
           </div>
-          <h1 className="w3-jumbo" id="portfolio"><b>Portfolio</b></h1>
+          <h1 className="w3-jumbo"><b>Portfolio</b></h1>
           <p>
             My Portfolio contains the following sections:{" "}
             <strong>
@@ -669,12 +669,13 @@ function BrandExample() {
       </div>
       <div className="w3-half">
       <ul className="w3-ul w3-center w3-card w3-hover-shadow">
-          <li className="w3-black w3-xlarge w3-padding-32">Blog Site <br/> 
-          <span style={{fontSize:'14px', fontWeight:'lighter'}}>Blog site features: </span></li>
-          <li className="w3-padding-16">Moment Js Integration</li>
-          <li className="w3-padding-16">Featured Entries</li>
-          <li className="w3-padding-16">Post Data Arrays</li>
-          <li className="w3-padding-16">Share Buttons</li>
+          <li className="w3-black w3-xlarge w3-padding-32">Restaurant {'NOTE: in progress'} <br/> 
+          <span style={{fontSize:'14px', fontWeight:'lighter'}}>Restaurant features: </span></li>
+          <li className="w3-padding-16">Pagination</li>
+          <li className="w3-padding-16">Menu</li>
+          <li className="w3-padding-16">Cards</li>
+          <li className="w3-padding-16">Notifications</li>
+          <li className="w3-padding-16">Calendar</li>
           <li className="w3-light-grey w3-padding-24">
             <button className="w3-button w3-white w3-padding-large w3-hover-black">See Site</button>
           </li>
@@ -722,4 +723,4 @@ function BrandExample() {
   );
 };
 
-export default BrandExample;
+export default Portfolio;
