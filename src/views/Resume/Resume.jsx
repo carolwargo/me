@@ -150,13 +150,14 @@ id="my-navbar">
         </header>
  {/**end Header section */}
  
-    
+
  {/*start Achievements */}
  <div className="w3-content w3-justify w3-text-black w3-padding-32" id="about">
 <h2>Professional Profile. </h2>
 <hr />
 <p>I've had the privilege of contributing to several innovative projects and achieving significant milestones throughout my career. With a strong foundation in project management, user-centrics, coding languages and a passion for problem-solving, I've played a pivotal role in developing robust software solutions that meet the diverse needs of clients and users.</p>
-               
+
+       <br />          
 <br />
 <h2>Professional Achievements. </h2>
 <hr />
@@ -183,7 +184,7 @@ respective buttons for more details.</p>
             </div>
 <br />
 
-
+<br />
 <br />
     {/*start proficiencies*/}
     <h2 id="technical-skills">Technical Skills. </h2>
@@ -380,7 +381,7 @@ respective buttons for more details.</p>
         </div>
         <br></br>
       </div>
-  
+      <br />
   <br />
   <br />
          {/*start experience*/}
