@@ -301,9 +301,10 @@ id="my-navbar">
 
 {/*start Footer */}
 <footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
-<div><NavLink to={"/about"}>
+<div>
+  <NavLink to={"/about"}>
     <button className="w3-button w3-black w3-padding-small">
-      About »
+      About Me »
     </button>
   </NavLink></div>
   <br />
