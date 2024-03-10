@@ -13,13 +13,16 @@ const AboutFinal = () => {
 
     return (
       <div>
-        <div className="container-fluid py-4 bg-black text-white" id="about">
+        <div className="container-fluid py-4 bg-black text-white">
         <div className="w3-content w3-container w3-padding-32">
         <div className="row">
-  <h3 className="w3-center fw-light">ABOUT ME</h3>
+  <h1 className="w3-center fw-light">ABOUT ME</h1>
+  <hr />
   <h5 className="w3-center fw-light">"I'm Carol Wargo, and welcome to my corner of 
   the internet! Join me as I share insights into who I am professionally 
   and the years of experience that shape what I do."</h5>
+  <br />
+  <br />
   <br />
   <br />
   <p className="w3-center fw-light"><em>"My passion lies in utilizing creative design to drive 
@@ -59,7 +62,7 @@ const AboutFinal = () => {
     are achieved efficiently and effectively.</p>
     <p className="py-2"><b>CULTURE:</b> I understand the importance 
     of clear communication and strive to foster a culture of inclusion, transparency 
-    and accountability.</p>
+    & accountability.</p>
     </div>
   </div>
   </div> 
@@ -70,7 +73,8 @@ const AboutFinal = () => {
 <div className="container-fluid py-4 bg-white text-black ">
 <div className="w3-content w3-container w3-margin-top w3-margin-bottom">
 <div className="row w3-margin-bottom">
-<h3><strong>SKILLS & PROFICIENCIES</strong></h3>
+<h2><strong>SKILLS & PROFICIENCIES</strong></h2>
+<hr />
     <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
     <h5><strong>Technical Proficiencies</strong></h5>
 
@@ -139,7 +143,74 @@ const AboutFinal = () => {
   </div>
 </div>
 {/**end experience count */}
+<br />
+      {/*start testimonials*/}
+      <h2 className="w3-padding-24 text-center">
+          My Reputation.<br />
+          <span className="text-center" style={{ fontSize: "16px" }}>
+            {" "}
+            What clients and collegues have to say.
+          </span>
+        </h2>
+       
+        <div className="container-fluid py-4">
+  <div className="row justify-content-center">
+    <div className="col-lg-4 col-sm-12 p-4">
+      <div class="card text-center shadow">
+        <div class="card-header shadow">TESTIMONIAL</div>
+        <div class="card-body">
+          <h5 class="card-title">Kind words from a colleague.</h5>
+          <p className="card-text fw-lighter py-2" style={{fontSize:'12px'}}>
+            <i>"Carol has a remarkable eye for all things creative. Her
+            design sensibility is both distinctive and deeply personal. She pays
+            attention to details that often go unnoticed by others, and she
+            demonstrates the foresight to anticipate future needs and
+            opportunities for growth..."</i> 
+          </p>
+        </div>
+        <div class="fw-lighter py-3">2/4/2023</div>
+      </div>
+    </div>
 
+    <div className="col-lg-4 col-sm-12 p-4">
+      <div class="card text-center shadow">
+        <div class="card-header shadow">TESTIMONIAL</div>
+        <div class="card-body">
+          <h5 class="card-title">Kind words from a colleague.</h5>
+          <p className="card-text fw-lighter py-2" style={{fontSize:'12px'}}>
+            <br />
+            <i>"Carol inspires you to consider the possibilities and embrace change
+            with ease. She consistently goes above and beyond, delivering work
+            that exceeds expectations and promises..."</i> 
+          </p>
+        </div>
+        <div class="fw-lighter py-3">2/4/2023</div>
+      </div>
+    </div>
+
+    <div className="col-lg-4 col-sm-12 p-4">
+      <div class="card text-center shadow">
+        <div class="card-header shadow">TESTIMONIAL</div>
+        <div class="card-body">
+          <h5 class="card-title">Kind words from a colleague.</h5>
+          <p className="card-text fw-lighter py-2" style={{fontSize:'12px'}}>
+            <i>"Carol has been an invaluable asset to transforming my brand's
+            online presence. In just 13 months, she took my brand-new social
+            media account and propelled it to new heights, amassing an
+            impressive reach and an unimaginable conversion rate..."</i> 
+          </p>
+        </div>
+        <div class="fw-lighter py-3">2/4/2023</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+       
+     
+        <p className="text-center"><em>"Letters of reference in their entirety available apon request."</em></p>
+  <br />
+ {/*end testimonials*/}
 </div>     
     );
 };

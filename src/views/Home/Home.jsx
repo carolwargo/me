@@ -7,11 +7,8 @@ import LocationView from "../../assets/images/About/LocationView.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { FaLaptopCode } from "react-icons/fa";
-import { HiOutlinePuzzlePiece } from "react-icons/hi2";
-import { AiFillDatabase } from "react-icons/ai";
-import { BsDatabaseLock } from "react-icons/bs";
-import { GiGears } from "react-icons/gi";
+//import { FaLaptopCode } from "react-icons/fa";
+
 
 const Home = () => {
 
@@ -150,88 +147,9 @@ id="my-navbar">
     experience in business management & strategic development, I bring a wealth of knowledge and expertise to every 
     project I undertake."</p>
 <br />
-    {/*start proficiencies*/}
-    <h2>Technical Proficiencies. </h2>
-    <p className="w3-wide text-black" style={{ fontSize: "1rem" }}>
-          <GiGears className="justify-content-center" /> Core Technologies
-        </p>
-    <div className="w3-light-grey">
-      <div className="w3-container w3-center w3-padding-small w3-black" style={{width:"85%"}}>85%</div>
- </div>
- <p className="w3-wide text-black" style={{ fontSize: "1rem" }}>
-          <FaLaptopCode className="justify-content-center" /> Front-End Design
-        </p>
-    <div className="w3-light-grey">
-      <div className="w3-container w3-center w3-padding-small w3-black" style={{width:"95%"}}>95%</div>
- </div>
- <p className="w3-wide text-black" style={{ fontSize: "1rem" }}>
-          <BsDatabaseLock className="justify-content-center" /> Server-Side
-          Development
-        </p>
-    <div className="w3-light-grey">
-      <div className="w3-container w3-center w3-padding-small w3-black" style={{width:"80%"}}>80%</div>
- </div>
- <p className="w3-wide text-black" style={{ fontSize: "1rem" }}>
-          <HiOutlinePuzzlePiece className="justify-content-center" /> Full-Stack
-          Integration
-        </p>
-    <div className="w3-light-grey">
-      <div className="w3-container w3-center w3-padding-small w3-black" style={{width:"75%"}}>75%</div>
- </div>
- <p className="w3-wide text-black" style={{ fontSize: "1rem" }}>
-          <AiFillDatabase className="justify-content-center" /> Database
-          Implementation
-        </p>
-    <div className="w3-light-grey">
-      <div className="w3-container w3-center w3-padding-small w3-black" style={{width:"75%"}}>75%</div>
- </div>
+  
 {/*end proficiencies*/}
-   <br />
-      {/*start testimonials*/}
-      <h2 className="w3-padding-24">
-          My Reputation.<br />
-          <span className="" style={{ fontSize: "16px" }}>
-            {" "}
-            What clients and collegues have to say.
-          </span>
-        </h2>
-
-        <p style={{ fontFamily: "sans-serif" }}>
-          {" "}
-        
-            "Carol has been an invaluable asset to transforming my brand's
-            online presence. In just 13 months, she took my brand-new social
-            media account and propelled it to new heights, amassing an
-            impressive reach and an unimaginable conversion rate... "
-      
-        </p>
-       
-        <hr />
-        <p style={{ fontFamily: "sans-serif" }}>
-          {" "}
-        
-            "Carol possesses a remarkable eye for all things creative. Her
-            design sensibility is both distinctive and deeply personal. She pays
-            attention to details that often go unnoticed by others, and she
-            demonstrates the foresight to anticipate future needs and
-            opportunities for growth..."
-       
-        </p>
-       
-        <hr />
-        <p style={{ fontFamily: "sans-serif" }}>
-          {" "}
-       
-            "Carol inspires you to consider the possibilities and embrace change
-            with ease. She consistently goes above and beyond, delivering work
-            that exceeds expectations and promises..."
-         
-        </p>
-        <hr />
-  <br />
-        <p className="text-center"><em>"Letters of reference in their entirety available apon request."</em></p>
-  <br />
- {/*end testimonials*/}
+  
          {/*start experience*/}
          <h2>Experience. </h2>
          <hr />
