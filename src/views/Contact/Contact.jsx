@@ -1,7 +1,7 @@
 import React from "react";
 //import Header from "../components/Header/Header";
 import MeWhite from "../../assets/images/Me/MeWhite.png";
-import LocationView from "../../assets/images/About/LocationView.png";
+//import LocationView from "../../assets/images/About/LocationView.png";
 import { NavLink } from "react-router-dom";
 import "../../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,35 +12,18 @@ export default function Contact() {
 
 
       {/*start Contact section */}
-<div className="w3-padding-32 w3-content w3-text-grey" id="contact" style={{marginBottom:"64px"}}>
+<div className="w3-padding-32 w3-content w3-text-grey" style={{marginBottom:"64px"}}>
     <h2>Contact Me</h2>
     <hr className="w3-opacity"/>
 
-    <div className="w3-section">
-      <p><i className="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i className="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i className="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    </div>
+  
 
-    {/**Image of Location Map */}
-    <img src={LocationView} alt="map" style={{width:"100%", margin:"32px 0"}} className="w3-image w3-greyscale" />
-    <p>Lets get in touch. Send me a message:</p>
-    <form action="" target="_blank">
-    <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"/></p>
-      <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"/></p>
-      <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"/></p>
-      <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"/></p>
-      <p>
-        <button className="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i className="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
+  
 </div>
 {/*end Contact section */}
 
       <header>
-        <div className="container py-4" id="contact">
+        <div className="container py-4">
           <div className="row p-xl-5 justify-content-center align-items-center">
             <div className="w3-large w3-margin-bottom">
               <p>Thank you for visiting! </p>
@@ -150,10 +133,9 @@ export default function Contact() {
           </div>
         </div>
       </header>
-     
+  
 <footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
-<div>
-   
+<div> 
 <NavLink to={"/portfolio"}>
     <button className="w3-button w3-black w3-disabled w3-padding-small">
       « Portfolio

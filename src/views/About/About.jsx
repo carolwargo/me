@@ -8,8 +8,8 @@ import '../../App.css'
 
 export default function About() {
   return (
-    <div>
-      <main className="about pb-2" id="about">
+    <div  className="about pb-2" id="about">
+      <main className="pb-2" >
       <nav>
 <div className="w3-center py-2">
     <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>

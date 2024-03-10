@@ -11,7 +11,7 @@ import "@fortawesome/fontawesome-free/css/all.css"; // Import Font Awesome CSS
 const HomeAbout = () => {
   return (
     <div>
-      <div className="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+      <div className="w3-content w3-justify w3-text-grey w3-padding-32">
     <h2>About</h2>
         <h2>"I'm Carol Wargo, and welcome to my digital domain!"</h2>
         <p className=" fw-light pb-2">

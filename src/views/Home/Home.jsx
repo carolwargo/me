@@ -110,7 +110,7 @@ id="my-navbar">
 
 
       {/**start Portfolio section */}
- {/*<div className="w3-padding-32 w3-content" id="portfolio">
+ {/*<div className="w3-padding-32 w3-content">
  <h2 className="w3-text-grey">My Portfolio</h2>
     <hr />*/}
 {/**start Portfolio photo grid */}
@@ -135,7 +135,7 @@ id="my-navbar">
   
 
  {/*start Aboutsection */}
- <div className="w3-content w3-justify w3-text-black w3-padding-32" id="about">
+ <div className="w3-content w3-justify w3-text-black w3-padding-32">
 <h2>About. </h2>
 <hr />
     <p>  "I'm Carol Wargo, and welcome to my digital domain! Join me as I share insights into who I am professionally and the
@@ -271,7 +271,7 @@ id="my-navbar">
 {/*end Aboutsection */}
 </div>
 {/*start Contact section */}
-<div className="w3-padding-32 w3-content w3-text-black" id="contact" style={{marginBottom:"64px"}}>
+<div className="w3-padding-32 w3-content w3-text-black" style={{marginBottom:"64px"}}>
     <h2>Contact Me. </h2>
     <hr />
 

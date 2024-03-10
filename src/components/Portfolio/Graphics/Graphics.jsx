@@ -11,7 +11,7 @@ const Graphics = () => {
   <div>
     <div className="">
 
-      <div className="w3-display-container w3-content w3-wide" id="home"> 
+      <div className="w3-display-container w3-content w3-wide"> 
       
      {/*start Header section*/}
      <header className="w3-container w3-center " style={{ padding: "80px 16px" }} id="home">
@@ -48,7 +48,7 @@ const Graphics = () => {
 
 
       {/**start Portfolio section */}
- <div className="w3-padding-32 w3-content" id="portfolio">
+ <div className="w3-padding-32 w3-content">
  <h2 className="w3-text-grey">My Portfolio</h2>
     <hr className="w3-opacity"/>
 {/**start Portfolio photo grid */}
@@ -73,7 +73,7 @@ const Graphics = () => {
   
 
  {/*start Aboutsection */}
- <div className="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+ <div className="w3-content w3-justify w3-text-grey w3-padding-32">
 <h2>About</h2>
 <hr className="w3-opacity"/>
     <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
