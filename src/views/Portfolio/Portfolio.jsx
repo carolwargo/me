@@ -2,6 +2,12 @@ import React from "react";
 //import Graphics from "../../components/Portfolio/Graphics/Graphics.jsx";
 import MeWhite from "../../assets/images/Me/MeWhite.png";
 import TextEditor from "../../assets/images/Portfolio/TextEditor.png";
+import Horizen from "../../assets/images/Portfolio/Horizen.png";
+import Desk from "../../assets/images/Portfolio/Desk.png";
+import SVG from "../../assets/images/Portfolio/SVG.png";
+import Notes from "../../assets/images/Portfolio/Notes.png";
+import README from "../../assets/images/Portfolio/README.png";
+
 import Resume from "../../assets/Resume.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -41,9 +47,10 @@ function BrandExample() {
 <div className="w3-center w3-bar w3-padding-16 shadow">
   <div className="w3-margin-left">
     <a href="/" className="w3-bar-item w3-buttblack w3-hover-black" >Home</a>
-    <a href="/portfolio" className="w3-bar-item w3-buttblack w3-hover-black">Portfolio</a>
     <a href="/about" className="w3-bar-item w3-buttblack w3-hover-black">About</a>
-    <a href="/contact" className="w3-bar-item w3-buttblack w3-hover-black">Contact</a>
+    <a href="/resume" className="w3-bar-item w3-buttblack w3-hover-black">Resume</a>
+    <a href="/portfolio" className="w3-bar-item w3-buttblack w3-hover-black">Portfolio</a>
+   <a href="/contact" className="w3-bar-item w3-buttblack w3-hover-black">Contact</a>
   </div>
   </div>
 </nav>
@@ -483,21 +490,21 @@ function BrandExample() {
 {/**start Backend grid */}
 <h2 className="w3-text-black">Server-side</h2>
     <hr className="w3-opacity"/>
-<div className="container">
-<div className="row">
+<div className="container ">
+<div className="row w3-padding-16">
 <div className="col-sm-12 col-lg-4">
-  <div className="w3-container w3-content shadow w3-padding-16 ">  
+  <div className="w3-container w3-content shadow w3-padding-16 text-center">  
     <img src={TextEditor} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
  <hr />
-  <div className="w3-light-gray p-2 w3-margin-bottom">
-    <h4 className="fw-light">Text Editor In Chief</h4>
+  <div className="w3-light-gray p-2 w3-margin-bottom text-center">
+    <h4 className="fw-light text-center">Text_Editor</h4>
     </div>
-    <p><i>Text_Editor-In-Chief is a browser-based text editor that allows Users to create and edit text documents seamlessly.</i></p>
+    <p style={{fontSize:'14px'}}><i>Text_Editor is a browser-based text editor that allows Users to create and edit text documents seamlessly.</i></p>
     <hr />
     <div className="container">
-    <p className="w3-opacity">click to view repository</p>
+    <p className="w3-opacity text-center" style={{fontSize:'14px'}}>click to view repository</p>
     <p><button href="https://github.com/carolwargo/Text_Editor-in-Chief"
-    className="w3-button w3-light-grey w3-block"> Github</button></p>
+    className="w3-button w3-white shadow-lg w3-block"> Github</button></p>
     </div>
     </div>
   </div>
@@ -505,18 +512,18 @@ function BrandExample() {
 
 
   <div className="col-sm-12 col-lg-4">
-  <div className="w3-container w3-content shadow w3-padding-16 ">  
-    <img src={TextEditor} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
+  <div className="w3-container w3-content shadow w3-padding-16 text-center">  
+    <img src={Notes} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
  <hr />
-  <div className="w3-light-gray p-2 w3-margin-bottom">
-    <h4 className="fw-light">Text Editor In Chief</h4>
+  <div className="w3-light-gray p-2 w3-margin-bottom text-center">
+    <h4 className="fw-light">NOTE-TAKER</h4>
     </div>
-    <p><i>Text_Editor-In-Chief is a browser-based text editor that allows Users to create and edit text documents seamlessly.</i></p>
+    <p style={{fontSize:'14px'}}><i>A note taking application used to WRITE, SAVE and DELETE tasks we can't afford to forget.</i></p>
     <hr />
-    <div className="container">
-    <p className="w3-opacity">click to view repository</p>
-    <p><button href="https://github.com/carolwargo/Text_Editor-in-Chief"
-    className="w3-button w3-light-grey w3-block"> Github</button></p>
+    <div className="container text-center">
+    <p className="w3-opacity text-center" style={{fontSize:'14px'}}>click to view repository</p>
+    <p><button href="https://github.com/carolwargo/forget-me-NOTES"  
+    className="w3-button w3-white w3-block shadow-lg"> Github</button></p>
     </div>
     </div>
   </div>
@@ -524,37 +531,39 @@ function BrandExample() {
 
 
   <div className="col-sm-12 col-lg-4">
-  <div className="w3-container w3-content shadow w3-padding-16 ">  
-    <img src={TextEditor} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
+  <div className="w3-container w3-content shadow w3-padding-16 text-center">  
+    <img src={README} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
  <hr />
-  <div className="w3-light-gray p-2 w3-margin-bottom">
-    <h4 className="fw-light">Text Editor In Chief</h4>
+  <div className="w3-light-gray p-2 w3-margin-bottom text-center">
+    <h4 className="fw-light">README-GENERATOR</h4>
     </div>
-    <p><i>Text_Editor-In-Chief is a browser-based text editor that allows Users to create and edit text documents seamlessly.</i></p>
+    <p style={{fontSize:'14px'}}><i>README Generator takes in User input to generate a well-structured README.md file saving time for developers.
+    </i></p>
     <hr />
-    <div className="container">
-    <p className="w3-opacity">click to view repository</p>
-    <p><button href="https://github.com/carolwargo/Text_Editor-in-Chief"
-    className="w3-button w3-light-grey w3-block"> Github</button></p>
+    <div className="container text-center">
+    <p className="w3-opacity text-center" style={{fontSize:'14px'}}>click to view repository</p>
+    <p><button href="https://github.com/carolwargo/09-README-generator"
+    className="w3-button w3-white shadow-lg w3-block"> Github</button></p>
     </div>
     </div>
   </div>
 </div>
 
-  <div className="row">
+  <div className="row w3-padding-16">
   <div className="col-sm-12 col-lg-4">
     <div className="w3-container w3-content shadow w3-padding-16 ">  
-      <img src={TextEditor} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
+      <img src={SVG} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
    <hr />
-    <div className="w3-light-gray p-2 w3-margin-bottom">
-      <h4 className="fw-light">Text Editor In Chief</h4>
+    <div className="w3-light-gray p-2 w3-margin-bottom text-center">
+      <h4 className="fw-light">SV.GENIE</h4>
       </div>
-      <p><i>Text_Editor-In-Chief is a browser-based text editor that allows Users to create and edit text documents seamlessly.</i></p>
+      <p className="text-center" style={{fontSize:'14px'}}><i>A Node.js CLI that takes in user input, such as color, shape & text to generate a logo & save it as an SVG file.
+   </i></p>
       <hr />
       <div className="container">
-      <p className="w3-opacity">click to view repository</p>
-      <p><button href="https://github.com/carolwargo/Text_Editor-in-Chief"
-      className="w3-button w3-light-grey w3-block"> Github</button></p>
+      <p className="w3-opacity text-center" style={{fontSize:'14px'}}>click to view repository</p>
+      <p><button href="https://github.com/carolwargo/SV-Genie"
+      className="w3-button w3-white shadow-lg w3-block"> Github</button></p>
       </div>
       </div>
     </div>
@@ -563,17 +572,18 @@ function BrandExample() {
 
     <div className="col-sm-12 col-lg-4">
     <div className="w3-container w3-content shadow w3-padding-16 ">  
-      <img src={TextEditor} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
+      <img src={Horizen} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
    <hr />
-    <div className="w3-light-gray p-2 w3-margin-bottom">
-      <h4 className="fw-light">Text Editor In Chief</h4>
+    <div className="w3-light-gray p-2 w3-margin-bottom text-center">
+      <h4 className="fw-light text-center">CODE-REFACTOR</h4>
       </div>
-      <p><i>Text_Editor-In-Chief is a browser-based text editor that allows Users to create and edit text documents seamlessly.</i></p>
+      <p className="text-center" style={{fontSize:'14px'}}><i>Refactor was implemented to follow WCAG accessibility standards, optimize search engines & limit liability.
+   .</i></p>
       <hr />
       <div className="container">
-      <p className="w3-opacity">click to view repository</p>
-      <p><button href="https://github.com/carolwargo/Text_Editor-in-Chief"
-      className="w3-button w3-light-grey w3-block"> Github</button></p>
+      <p className="w3-opacity text-center" style={{fontSize:'14px'}}>click to view repository</p>
+      <p><button href="https://github.com/carolwargo/Code-Refactor-Horisen"
+      className="w3-button w3-white shadow-lg w3-block"> Github</button></p>
       </div>
       </div>
     </div>
@@ -581,18 +591,19 @@ function BrandExample() {
 
 
     <div className="col-sm-12 col-lg-4">
-    <div className="w3-container w3-content shadow w3-padding-16 ">  
-      <img src={TextEditor} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
+    <div className="w3-container w3-content shadow w3-padding-16 text-center">  
+      <img src={Desk} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
    <hr />
-    <div className="w3-light-gray p-2 w3-margin-bottom">
-      <h4 className="fw-light">Text Editor In Chief</h4>
+    <div className="w3-light-gray p-2 w3-margin-bottom text-center">
+      <h4 className="fw-light">DAY-PLANNER</h4>
       </div>
-      <p><i>Text_Editor-In-Chief is a browser-based text editor that allows Users to create and edit text documents seamlessly.</i></p>
+      <p style={{fontSize:'14px'}}><i>A calendar application that allows a User to save events, for each hour of the work day.
+   </i></p>
       <hr />
       <div className="container">
-      <p className="w3-opacity">click to view repository</p>
-      <p><button href="https://github.com/carolwargo/Text_Editor-in-Chief"
-      className="w3-button w3-light-grey w3-block"> Github</button></p>
+      <p className="w3-opacity text-center" style={{fontSize:'14px'}}>click to view repository</p>
+      <p><button href="https://carolwargo.github.io/Desk_Jockey-dayplanner/"
+      className="w3-button w3-white shadow-lg w3-block"> Github</button></p>
       </div>
       </div>
     </div>
