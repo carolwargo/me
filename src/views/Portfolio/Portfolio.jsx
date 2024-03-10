@@ -1,7 +1,7 @@
 import React from "react";
 //import Graphics from "../../components/Portfolio/Graphics/Graphics.jsx";
 import MeWhite from "../../assets/images/Me/MeWhite.png";
-import TextEditor from "../../assets/images/Portfolio/TextEditor.png";
+import JATE from "../../assets/images/Portfolio/JATE.png";
 import Horizen from "../../assets/images/Portfolio/Horizen.png";
 import Desk from "../../assets/images/Portfolio/Desk.png";
 import SVG from "../../assets/images/Portfolio/SVG.png";
@@ -487,6 +487,25 @@ function BrandExample() {
 {/*end sign up form */}
 
 
+
+{/**start Tables grid */}
+<h2 className="w3-text-black">Tables </h2>
+    <hr className="w3-opacity"/>
+<div className="container w3-padding-16">
+  <div className="w3-container w3-content bg-white shadow ">  
+    <div className="w3-container w3-content w3-padding-16 p-4 border-dark">
+    <h4 className="fw-light w3-margin-top w3-margin-bottom"><b>Sign-Up Form</b></h4>
+    <br />
+
+
+</div>
+</div>
+</div>
+{/**end Tables grid */}
+
+
+
+
 {/**start Backend grid */}
 <h2 className="w3-text-black">Server-side</h2>
     <hr className="w3-opacity"/>
@@ -494,7 +513,7 @@ function BrandExample() {
 <div className="row w3-padding-16">
 <div className="col-sm-12 col-lg-4">
   <div className="w3-container w3-content shadow w3-padding-16 text-center">  
-    <img src={TextEditor} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
+    <img src={JATE} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
  <hr />
   <div className="w3-light-gray p-2 w3-margin-bottom text-center">
     <h4 className="fw-light text-center">Text_Editor</h4>
@@ -612,9 +631,9 @@ function BrandExample() {
 {/**end Backend grid */}
 
 
-{/**end Portfolio photo grid */}
+
  </div>
-  {/**end Portfolio section */}
+ 
   
 
 
