@@ -1,7 +1,7 @@
 import React from "react";
 import MeWhite from "../../assets/images/Me/MeWhite.png";
 import Resume from "../../assets/Resume.pdf";
-import LocationView from "../../assets/images/About/LocationView.png";
+//import LocationView from "../../assets/images/About/LocationView.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -273,27 +273,7 @@ id="my-navbar">
   <h2>Contact Me. </h2>
     <hr />
 
-    <div className="w3-section">
-      <p><i className="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right "></i> Chicago, US</p>
-      <p><i className="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i className="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    </div>
-
-    {/**Image of Location Map */}
-    <img src={LocationView} alt="map" style={{width:"100%", margin:"32px 0"}} className="w3-image w3-greyscale" />
-    <p>Lets get in touch. Send me a message:</p>
-    <form action="" target="_blank">
-    <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"/></p>
-      <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"/></p>
-      <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"/></p>
-      <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"/></p>
-      <p>
-        <button className="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i className="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-
+    
 {/*end Contact section */}
 
 
