@@ -87,7 +87,7 @@ const HomeAbout = () => {
             75%
           </div>
         </div>
-
+{/* 
         <hr />
         <h3 className="w3-padding-24">
           <b>My Reputation.</b> <br />
@@ -100,7 +100,7 @@ const HomeAbout = () => {
         <p style={{ fontFamily: "sans-serif" }}>
           {" "}
           <i>
-            " Carol has been an invaluable asset to transforming my brand's
+            "Carol has been an invaluable asset to transforming my brand's
             online presence. In just 13 months, she took my brand-new social
             media account and propelled it to new heights, amassing an
             impressive reach and an unimaginable conversion rate... "
@@ -131,6 +131,7 @@ const HomeAbout = () => {
         <br />
         <p>Letters of reference in their entirety available apon request.</p>
         <br />
+        */}
         <hr />
 
         

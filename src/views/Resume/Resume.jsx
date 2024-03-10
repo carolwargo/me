@@ -66,11 +66,11 @@ id="my-navbar">
  {/*onClick={closeNav}*/}
 
   <div className="w3-center">
-    <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black " >Home</a>
-    <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Resume</a>
-    <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Portfolio</a>
-    <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
-    <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
+  <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
+    <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
+    <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
+    <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
   </div>
 </nav>
 
@@ -83,11 +83,11 @@ id="my-navbar">
     style={{width:"auto;right:0"}}>
       <nav>
 <div className="w3-center">
-    <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" >Home</a>
-    <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Resume</a>
-    <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Portfolio</a>
-    <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
-    <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+<a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
+<a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
+    <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
+    <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
+    <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
   </div>
 </nav>
     </span>
@@ -109,14 +109,13 @@ id="my-navbar">
           </nav>
           </div>
           <h1 className="w3-jumbo" id="resume" ><b>RESUME.</b></h1>
-
           <p style={{ fontFamily: "Raleway" }}>
           Digital Resume contains{" "}
           <strong>
             {" "}
             <a href="#professional-achievements"> PROFESSIONAL ACHIEVEMENTS</a>
           </strong>
-          ,<br></br>{" "}
+          ,{" "}
           <strong>
             {" "}
             <a href="#technical-skills">TECHNICAL SKILLS</a>
@@ -129,8 +128,8 @@ id="my-navbar">
           , and{" "}
           <strong>
             {" "}
-         <a href="#resume-download">RESUME DOWNLOAD</a> for work history.
-          </strong>{" "}
+         <a href="#resume-download">RESUME DOWNLOAD</a>
+          </strong> for work history.{" "}
           -{" "}
         </p>
           <img src={ResumeWorkspace} className="w3-image w3-hide-large w3-hide-small w3-round" style={{ display: "block", width: "60%", margin: "auto" }} alt="Profile" />

@@ -63,11 +63,11 @@ id="my-navbar">
     style={{width:"auto;right:0"}}>
       <nav>
 <div className="w3-center">
-    <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" >Home</a>
-    <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Resume</a>
-    <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Portfolio</a>
-    <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
-    <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+    <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
+    <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
+    <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
+    <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
+    <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
   </div>
 </nav>
     </span>

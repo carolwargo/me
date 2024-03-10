@@ -16,7 +16,6 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function BrandExample() {
 
-
   const handleEmailChange = (event) => {
   };
   
@@ -45,14 +44,15 @@ function BrandExample() {
   return (
 <div>
       <nav>
-<div className="w3-center w3-bar w3-padding-16 shadow">
+        
+<div className="w3-center w3-bar w3-padding-16">
   <div className="w3-margin-left">
-    <a href="/" className="w3-bar-item w3-buttblack w3-hover-black" >Home</a>
-    <a href="/about" className="w3-bar-item w3-buttblack w3-hover-black">About</a>
-    <a href="/resume" className="w3-bar-item w3-buttblack w3-hover-black">Resume</a>
-    <a href="/portfolio" className="w3-bar-item w3-buttblack w3-hover-black">Portfolio</a>
-   <a href="/contact" className="w3-bar-item w3-buttblack w3-hover-black">Contact</a>
-  </div>
+  <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
+  <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
+    <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
+    <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
+    <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
+   </div>
   </div>
 </nav>
    
