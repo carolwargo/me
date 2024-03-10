@@ -62,7 +62,7 @@ const Home = () => {
           <div>
           <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
           <a
-              className="btn text-black"
+              className="button text-black"
               id="resume-download"
               download
               href={Resume}

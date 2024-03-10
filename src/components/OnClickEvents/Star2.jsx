@@ -8,29 +8,35 @@ export default function Star2() {
   }
 
   return (
-    <div className="w3-content w3-light-gray w3-container w3-padding-large" style={{fontFamily:'Raleway'}}>
-    <h5 className="text-center"><i>'Develop & Launch Marketing Campaigns.'</i> </h5>
-      <p className="text-center text-secondary">click <b>Show Content</b> to reveal achievement statement.
-      </p>
-      <button 
-       className="btn custom-button w3-margin-bottom shadow bg-info-subtle"
-       style={{
-         width: "100%",
-         border: "none",
-         color: "black",
-         borderRadius: "0px",
-         boxShadow: "2px 2px 4px rgba(255, 255, 255, 0.3)",
-         transition: "background-color 0.6s ease, box-shadow 0.6s ease",
-       }}
+   
+    <div className="w3-container w3-padding-large" style={{fontFamily:'Raleway'}}>
+    <div className="w3-padding">
+      <h4>Develop & Launch Marketing Campaigns.</h4>
+    <p className="text-secondary fw-light">click <b>SHOW ACHIEVEMENT</b> to reveal achievement statement.
+   </p>
+    </div>
+   <button 
+ className="w3-button w3-margin-bottom shadow bg-black w3-hover-opacity "
+ style={{
+   width: "100%",
+   border: "none",
+   color: "white",
+      borderRadius: "0px",
+      padding: "20px",  
+    }}
       onClick={handleClick}>
-        {showList ? 'Hide Content' : 'Show Content'}
+        {showList ? 'CLOSE ACHIEVEMENT' : 'SHOW ACHIEVEMENT'}
       </button>
       {showList && (
+        
       
-        <div className="container py-2 shadow">
-      
-          <ul className="w3-margin-top">
-            <br />
+        <div className="w3-light-gray w3-container w3-padding-large" style={{fontFamily:'Raleway'}}>
+        <div className="w3-padding"> 
+        <h4>Develop & Launch Marketing Campaigns.</h4>
+        <p className="text-secondary fw-light">click <b>SHOW ACHIEVEMENT</b> to reveal achievement statement.
+      </p>
+      </div>
+<ul className="">
             <li className="mx-2"><strong>Situation:</strong> Faced with a competitive market, I was tasked with creating marketing campaigns to attract potential buyers.</li>
             <li className="mx-2"><strong>Task:</strong> To develop and execute a comprehensive digital marketing strategy that would effectively showcase the property's unique selling points.</li>
             <li className="mx-2"><strong>Action:</strong> Conduct market research to identify demographics and buyer personas, design multi-channel digital campaigns that included social media advertising, email marketing, and search engine optimization to produce content highlighting features & benefits.</li>

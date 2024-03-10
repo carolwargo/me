@@ -8,28 +8,30 @@ export default function Star1() {
   }
 
   return (
-    <div className="w3-content w3-light-gray w3-container w3-padding-large" style={{fontFamily:'Raleway'}}>
-        <h5 className="text-center"><i>'Technological Transformation in Business.'</i> </h5>
-        <p className="text-center text-secondary">click <b>Show Content</b> to reveal achievement statement.
+    <div className="w3-container w3-padding-large" style={{fontFamily:'Raleway'}}>
+       <div className="w3-padding">
+        <h4>Technological Transformation in Business.</h4>
+       <p className="text-secondary fw-light">click <b>SHOW ACHIEVEMENT</b> to reveal achievement statement.
       </p>
+       </div>
       <button 
-    className="btn custom-button w3-margin-bottom shadow bg-info-subtle"
+    className="w3-button w3-margin-bottom shadow bg-black w3-hover-opacity "
     style={{
       width: "100%",
       border: "none",
-      color: "black",
+      color: "white",
       borderRadius: "0px",
-      boxShadow: "2px 2px 4px rgba(255, 255, 255, 0.3)",
-      transition: "background-color 0.6s ease, box-shadow 0.6s ease",
+      padding: "20px",  
     }}
       onClick={handleClick}>
-        {showList ? 'Hide Content' : 'Show Content'}
+        {showList ? 'CLOSE ACHIEVEMENT' : 'SHOW ACHIEVEMENT'}
       </button>
       {showList && (
         
-        <div className="container py-2 shadow">
-<ul className="w3-margin-top">
-            <br />
+        <div className="container w3-padding-large shadow w3-white p-4">
+                 <div className="w3-margin-top"> <h4>Technological Transformation in Business.</h4>
+       </div>
+<ul className="">
             <li className="mx-2"><strong>Situation:</strong>  In an evolving real estate landscape, I recognized the urgency to modernize our practices through technology.</li>
             <li className="mx-2"><strong>Task:</strong> Utilized advanced real estate software, implemented paperless systems, and optimized digital communications to revolutionize operations.</li>
             <li className="mx-2"><strong>Action:</strong> Conducted targeted research to, integrate seamless tech solutions, streamline transactions through paperless systems, enhanced collaboration and client engagement and prioritized website maintenance for an optimal user experience.</li>

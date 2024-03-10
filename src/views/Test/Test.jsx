@@ -1,5 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import MeWhite from "../../assets/images/Me/MeWhite.png";
+import Resume from "../../assets/Resume.pdf";
+//import LocationView from "../../assets/images/About/LocationView.png";
+import "bootstrap/dist/css/bootstrap.min.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+//import { FaLongArrowAltRight } from "react-icons/fa";
+
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -18,7 +24,6 @@ import Package from "../../assets/images/Resume/Package.png";
 import BuildTest from "../../assets/images/Resume/BuildTest.png";
 import APIQ from "../../assets/images/Resume/APIQ.png";
 import ResumeWorkspace from "../../assets/images/Resume/ResumeWorkspace.png";
-import Resume from "../../assets/Resume.pdf";
 import Star1 from "../../components/OnClickEvents/Star1";
 import Star2 from "../../components/OnClickEvents/Star2";
 import Star3 from "../../components/OnClickEvents/Star3";
@@ -26,33 +31,85 @@ import Star3 from "../../components/OnClickEvents/Star3";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../App.css";
 
-export default function ResumePage() {
+const Home = () => {
+
   return (
-    <div className="resume" id="resume">
-      
-      <nav>
-<div className="w3-center w3-bar w3-padding-16 shadow">
-  <div className="w3-margin-left">
-    <a href="/" className="w3-bar-item w3-buttblack w3-hover-black" >Home</a>
-    <a href="/about" className="w3-bar-item w3-buttblack w3-hover-black">About</a>
-    <a href="/resume" className="w3-bar-item w3-buttblack w3-hover-black">Resume</a>
-    <a href="/portfolio" className="w3-bar-item w3-buttblack w3-hover-black">Portfolio</a>
-   <a href="/contact" className="w3-bar-item w3-buttblack w3-hover-black">Contact</a>
-  </div>
+  <div>
+    <div className="">
+      <style>
+        {`
+          body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Montserrat", sans-serif;
+          }
+          .w3-row-padding img {
+            margin-bottom: 10px;
+          }
+          .bgimg {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('${ResumeWorkspace}');
+            min-height: 100%;
+          }
+        `}
+      </style>
+
+      {/* Sidebar with image */}
+      <nav className="w3-sidebar w3-hide-medium w3-hide-small " style={{width:"40%"}}>
+  <div className="bgimg"></div>
+</nav>
+{/**side bar start */}
+<nav className="w3-black w3-animate-right w3-xxlarge" 
+style={{ display: "none", paddingTop: "150px", right: "0", zIndex: "2" }} 
+id="my-navbar">
+ {/*onClick={closeNav}*/}
+
+  <div className="w3-center">
+    <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black " >Home</a>
+    <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Resume</a>
+    <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Portfolio</a>
+    <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
   </div>
 </nav>
-      {/** end nav*/}
-      <div className=" bg-light text-black p-5">
-        <h1
-          style={{
-            fontSize: "4rem",
-            textShadow: "0px 0px 14px #00ffff",
-          }}
-        >
-          RESUME{" "}
-        </h1>
 
-        <p className="header" id="header" style={{ fontFamily: "Raleway" }}>
+
+
+
+    <div className="w3-main w3-padding-large" style={{marginLeft:"40%"}}>
+
+    <span className="w3-margin-top w3-white w3-large w3-text-grey w3-hover-text-black" 
+    style={{width:"auto;right:0"}}>
+      <nav>
+<div className="w3-center">
+    <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" >Home</a>
+    <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Resume</a>
+    <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Portfolio</a>
+    <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  </div>
+</nav>
+    </span>
+
+
+
+
+     {/*start Header section*/}
+     <header className="w3-container w3-center " style={{ padding: "80px 16px" }} id="home">
+          <div className="w3-container w3-center w3-large ">
+            <nav> <a href="https://carolwargo.github.io/react-portfolio/" className="w3-button ">
+            <i className="fab fa-github" ></i></a>
+          <span><a href="https://www.linkedin.com/in/carol-wargo-35021baa/" className="w3-button">
+            <i className="fab fa-linkedin" ></i></a></span> 
+          <span><a href="mailto:carolwargo.dev@gmail.com" className="w3-button">
+            <i className="fa fa-envelope fa-fw" ></i> </a></span> 
+          <span><a href="tel:443-771-1726"className="w3-button"> 
+          <i className="fa fa-phone fa-fw" ></i></a></span>
+          </nav>
+          </div>
+          <h1 className="w3-jumbo"><b>RESUME.</b></h1>
+
+          <p className="header" id="header" style={{ fontFamily: "Raleway" }}>
           Digital Resume contains{" "}
           <strong>
             {" "}
@@ -66,76 +123,74 @@ export default function ResumePage() {
           ,
           <strong>
             {" "}
-            <a href="#experience">EXPERIENCE & EDUCATION</a>{" "}
+            <a href="#experience">EDUCATION</a>{" "}
           </strong>{" "}
           , and{" "}
           <strong>
             {" "}
-            <a href="#resume-download">RESUME DOWNLOAD</a>
+         <a href="#resume-download">RESUME DOWNLOAD</a> for work history.
           </strong>{" "}
           -{" "}
         </p>
-        <br />
-        <hr />
-      </div>
-
-
-      <div className="container w3-margin-bottom">
-        <div className="row d-flex justify-content-center align-items-center  w3-padding-large w3-margin-bottom">
-          <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
-            <img
-              src={ResumeWorkspace}
-              alt="ResumeWorkspace"
-              className="img-fluid shadow"
-              style={{ width: "100%", borderRadius: "10px" }}
-            />
+          <img src={ResumeWorkspace} className="w3-image w3-hide-large w3-hide-small w3-round" style={{ display: "block", width: "60%", margin: "auto" }} alt="Profile" />
+          <img src={MeWhite} className="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333" alt="Profile" />
+          <div>
+          <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
+          <a
+              className="button text-black"
+              id="resume-download"
+              download
+              href={Resume}
+            >
+            <i className="fa fa-download"></i> Download Resume
+            </a>
+          </button>
           </div>
-
-          <div
-            className="col-sm-12 col-md-6 col-lg-6"
+       <br />
+        </header>
+ {/**end Header section */}
+ 
+    
+ {/*start Achievements */}
+ <div className="w3-content w3-justify w3-text-black w3-padding-32" id="about">
+<h2>Professional Profile. </h2>
+<hr />
+<p>I've had the privilege of contributing to several innovative projects and achieving significant milestones throughout my career. With a strong foundation in project management, user-centrics, coding languages and a passion for problem-solving, I've played a pivotal role in developing robust software solutions that meet the diverse needs of clients and users.</p>
+               
+<br />
+<h2>Professional Achievements. </h2>
+<hr />
+<p>My professional journey has been marked by numerous achievements. Discover some of my key accomplishments. Click on the
+respective buttons for more details.</p>
+ {/*start stars*/}
+          <div id="professional-achievements"
             style={{ color: "black" }}
           >
-            <div className=" w3-padding-large" id="professional-achievements">
-              <div className="text-center">
-                <h3>
-                  <u
-                  style={{   textShadow: "0px 0px 14px #00ffff",}}
-                  >PROFESSIONAL ACHIEVEMENTS</u>
-                </h3>
-                <h5>
-                  Discover some of my key accomplishments. Click on the
-                  respective buttons for more details.
-                </h5>
-              </div>
-            </div>
-            <div className="w3-content w3-container">
+            <div className="w3-container w3-light-gray ">
               <div style={{ paddingTop: "1rem" }}>
                 <Star1 />
               </div>
+            
               <div style={{ paddingTop: "1rem" }}>
                 <Star2 />
               </div>
+              
               <div style={{ paddingTop: "1rem" }}>
                 {" "}
                 <Star3 />
               </div>
             </div>
-          </div>
-        </div>
-        <br />
-      </div>
+            </div>
+<br />
 
 
-
-
-      <div className="technical-skills-div d-flex flex-column bg-dark text-white pt-2">
-        <h1
-          className="technical-skills text-light mt-2 p-4 text-center"
-          id="technical-skills"
-          style={{   textShadow: "0px 0px 14px black", fontFamily: "Raleway" }}
-        >
-          TECHNICAL SKILLS
-        </h1>
+<br />
+    {/*start proficiencies*/}
+    <h2 id="technical-skills">Technical Skills. </h2>
+    <hr />
+    <p>"Equipped with a diverse array of technical skills, I possess a versatile toolkit honed through hands-on experience and continuous learning. From proficiency in programming languages and frameworks to expertise in software development methodologies and tools, my technical acumen empowers me to tackle complex challenges and deliver innovative solutions effectively."</p>
+    <div className="technical-skills-div d-flex flex-column bg-black text-white py-2">
+   <h3 className="text-center w3-margin pt-4">Technical Proficiencies. </h3>
         <Timeline position="alternate">
           <TimelineItem>
             <TimelineOppositeContent color="text.light"></TimelineOppositeContent>
@@ -287,7 +342,7 @@ export default function ResumePage() {
             <br />
             <br />
             <TimelineItem>
-              <TimelineOppositeContent color="text.light">
+              <TimelineOppositeContent color="text.light" id="education">
                 <h5 className="text-white">
                   Certificate of Full Stack Web Development
                 </h5>
@@ -309,33 +364,54 @@ export default function ResumePage() {
         <div className="d-flex flex-row justify-content-center">
           <div className="d-flex flex-column">
             <p className="text-white">DOWNLOAD A COPY OF MY RESUME</p>
-
-            <a
-              className="button bg-light text-black"
+           
+            <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
+          <a
+              className="button text-black"
               id="resume-download"
               download
               href={Resume}
             >
-              Download
+            <i className="fa fa-download"></i> Download Resume
             </a>
+          </button>
+       
           </div>
         </div>
         <br></br>
       </div>
+  
+  <br />
+  <br />
+         {/*start experience*/}
+         <h2>Interpersonal Proficiencies. </h2>
+         <hr />
+<p>       Key pillars that define both my personal and professional identity. From leadership prowess and adept problem-solving to unwavering efficiency and the cultivation of a thriving organizational culture, each facet speaks volumes about my commitment and approach to life and work."</p>
+         <div className="w3-row w3-light-gray w3-padding-16 w3-section">
+  <div className="w3-section px-4">
+    <h4><b>LEADERSHIP:</b></h4>
+    <p >I lead with excellence in collaborative environments, leveraging my strong interpersonal skills to drive teams towards success. I prioritize active listening and value input from all team members, regardless of pay grade or status.</p>
+  </div>
+  <div className="w3-section px-4">
+    <h4><b>APPROACH:</b></h4>
+    <p >My problem-solving approach is grounded in thorough research and analysis, coupled with a keen eye for detail. I tackle challenges head-on and pride myself on finding innovative solutions that push the boundaries of possibilities.</p>
+  </div>
+  <div className="w3-section px-4">
+    <h4><b>EFFICIENCY:</b></h4>
+    <p >I ensure deadlines are met and objectives are achieved efficiently and effectively through my strong background in project management. I thrive in dynamic environments and am adept at adapting to changing priorities.</p>
+  </div>
+  <div className="w3-section px-4">
+    <h4><b>CULTURE:</b></h4>
+    <p >I foster a culture of inclusion, transparency, and accountability by prioritizing clear communication and mutual respect. I believe in building strong relationships and empowering others to reach their full potential.</p>
+  </div>
+</div>
 
-      <footer className="w3-container w3-padding-48 text-center ">
-        <NavLink to={"/about"}>
-          <button className="w3-button w3-black w3-disabled w3-padding-medium">
-          « About Me
-          </button>
-        </NavLink>
+{/*end resume */}
+</div>
+{/*start Contact section */}
 
-        <NavLink to={"/portfolio"}>
-          <button className="w3-button w3-black w3-padding-medium">
-            Portfolio »
-          </button>
-        </NavLink>
-        {/*start Footer */}
+
+{/*start Footer */}
 <footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style={{ margin: "-24px" }}>
   <i className="fab fa-facebook-f w3-hover-opacity mx-1"></i>
   <i className="fab fa-instagram w3-hover-opacity mx-1"></i>
@@ -346,7 +422,10 @@ export default function ResumePage() {
   <p className="w3-medium">Established by: <a href="/" target="_blank" className="w3-hover-text-green">Carol Wargo</a></p>
 </footer>
 {/*end Footer */}
-      </footer>
-    </div>
+</div>
+</div>
+</div>
   );
 }
+
+export default Home;

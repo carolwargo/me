@@ -73,13 +73,23 @@ function BrandExample() {
             My Portfolio contains the following sections:{" "}
             <strong>
               {" "}
-              <a href="#completed-projects">COMPLETED PROJECTS</a>
+              <a href="#forms">FORMS</a>
             </strong>
             ,<br></br>
             <strong>
               {" "}
-              <a href="#projects-in-progress">WORK IN-PROGRESS </a>{" "}
+              <a href="#tables">TABLES</a>{" "}
             </strong>{" "}
+            , 
+            <strong>
+              {" "}
+              <a href="#cards">CARDS</a>
+            </strong>
+            ,
+            <strong>
+              {" "}
+              <a href="#samples">SAMPLES</a>
+            </strong>
             , and{" "}
             <strong>
               {" "}
@@ -92,7 +102,7 @@ function BrandExample() {
           <div>
           <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
           <a
-              className="btn text-black"
+              className="button text-black"
               id="resume-download"
               download
               href={Resume}
@@ -112,12 +122,12 @@ function BrandExample() {
    
 
 {/**start Forms grid */}
-<h2 className="w3-text-black">Forms</h2>
+<h2 className="w3-text-black" id="#forms">Forms</h2>
     <hr className="w3-opacity"/>
 
 
 {/*start login form */}
-<div className="container w3-padding-16">
+<div className="container w3-padding-16" >
   <div className="w3-container w3-content bg-white shadow ">  
     <div className="w3-container w3-content w3-padding-16 px-4 border-dark">
     <h4 className="fw-light w3-margin-top"><b>Login Form</b></h4>
@@ -174,7 +184,7 @@ function BrandExample() {
 {/*end login form */}
 
 
-{/*end sign up form */}
+{/*start sign up form */}
 <div className="container w3-padding-16 ">
   <div className="w3-container w3-content bg-white shadow">  
  <div className="w3-container w3-content w3-padding-16 px-4 py-4 border-dark">
@@ -489,7 +499,7 @@ function BrandExample() {
 
 
 {/**start Tables grid */}
-<h2 className="w3-text-black">Tables </h2>
+<h2 className="w3-text-black" id='tables'>Tables </h2>
     <hr className="w3-opacity"/>
 <div className="container w3-padding-16">
   <div className="w3-container w3-content bg-white shadow ">  
@@ -507,7 +517,7 @@ function BrandExample() {
 
 
 {/**start Backend grid */}
-<h2 className="w3-text-black">Server-side</h2>
+<h2 className="w3-text-black" id="#server">Server-side</h2>
     <hr className="w3-opacity"/>
 <div className="container ">
 <div className="row w3-padding-16">

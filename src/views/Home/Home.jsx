@@ -46,6 +46,7 @@ id="my-navbar">
 
   <div className="w3-center">
     <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black " >Home</a>
+    <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Resume</a>
     <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Portfolio</a>
     <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
     <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
@@ -62,6 +63,7 @@ id="my-navbar">
       <nav>
 <div className="w3-center">
     <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" >Home</a>
+    <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Resume</a>
     <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Portfolio</a>
     <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
     <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
@@ -92,7 +94,7 @@ id="my-navbar">
           <div>
           <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
           <a
-              className="btn text-black"
+              className="button text-black"
               id="resume-download"
               download
               href={Resume}
@@ -294,6 +296,8 @@ id="my-navbar">
     </form>
 </div>
 {/*end Contact section */}
+
+
 {/*start Footer */}
 <footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style={{ margin: "-24px" }}>
   <i className="fab fa-facebook-f w3-hover-opacity mx-1"></i>
@@ -304,7 +308,6 @@ id="my-navbar">
   <i className="fab fa-linkedin-in w3-hover-opacity mx-1"></i>
   <p className="w3-medium">Established by: <a href="/" target="_blank" className="w3-hover-text-green">Carol Wargo</a></p>
 </footer>
-
 {/*end Footer */}
 </div>
 </div>
