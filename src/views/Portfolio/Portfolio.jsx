@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 //import Graphics from "../../components/Portfolio/Graphics/Graphics.jsx";
 import MeWhite from "../../assets/images/Me/MeWhite.png";
 import JATE from "../../assets/images/Portfolio/JATE.png";
@@ -688,20 +687,7 @@ function Portfolio() {
     {/*endgrid for pricing tables*/}
     </div>
     </div>
-    {/*start Footer */}
-    <footer className="w3-container w3-padding-48 text-center">
-  <NavLink to={"/resume"}>
-    <button className="w3-button w3-black w3-disabled w3-padding-small">
-      « Resume
-    </button>
-  </NavLink>
 
-  <NavLink to={"/contact"}>
-    <button className="w3-button w3-black w3-padding-small">
-      Contact »
-    </button>
-  </NavLink>
-</footer>
 
 <footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
 <a href="/" className="w3-hover-opacity mx-1">Home </a>
