@@ -399,10 +399,11 @@ function Portfolio() {
 {/*end graphics*/}
 
     </div> 
-</div>
-   {/*start Footer */}
+     {/*start Footer */}
    <Footer/>
 {/*end Footer */}
+</div>
+  
     </div>
   
 
