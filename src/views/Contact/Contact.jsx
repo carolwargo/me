@@ -1,46 +1,159 @@
 import React from "react";
-//import Header from "../components/Header/Header";
 import MeWhite from "../../assets/images/Me/MeWhite.png";
+import Resume from "../../assets/Resume.pdf";
+import LocationView from "../../assets/images/About/LocationView.png";
+//import Contact from "../../components/Contact/Contact";
 //import LocationView from "../../assets/images/About/LocationView.png";
-
-import "../../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+//import { FaLongArrowAltRight } from "react-icons/fa";
+import Footer from "../../components/Footer/Footer";
+//import { FaLaptopCode } from "react-icons/fa";
 
-export default function Contact() {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
-
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Thank you for your message!");
-    setName("");
-    setEmail("");
-    setMessage("");
+const Home = () => {
+  const openNav = () => {
+    document.getElementById("mySidebar").style.display = "block";
   }
 
+  const closeNav = () => {
+    document.getElementById("mySidebar").style.display = "none";
+  }
 
   return (
-    <div className="contact" id="contact">
-    <nav  className="w3-center">
-    <div className="w3-center shadow">
-    <a href="/" className="w3-bar-item  p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
-    <a href="/about" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
-    <a href="/resume" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
-    <a href="/portfolio" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
-    <a href="/contact" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
-  </div>
-        </nav>
-           
-    <div    className="w3-container w3-content w3-padding-32 w3-text-grey" id="contact">
-{/*end Contact section */}
-      <header>
-        <div className="container">
-          <div className="row justify-content-center align-items-center">
-          <h2 className="w3-jumbo">Contact</h2>
-            <div className="w3-large w3-margin-bottom">
-              <p>Thank you for visiting! </p>
+    <div className="home" id="home">
+      <style>
+        {`
+          body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Montserrat", sans-serif;
+          }
+          .w3-row-padding img {
+            margin-bottom: 10px;
+          }
+          .bgimg {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('${MeWhite}');
+            min-height: 100%;
+          }
+        `}
+      </style>
+
+      {/* Sidebar with image */}
+      <nav
+        className="w3-sidebar w3-hide-medium w3-hide-small "
+        style={{ width: "40%" }}
+      >
+        <div className="bgimg w3-padding-32"></div>
+      </nav>
+      <nav
+        className="w3-sidebar w3-black w3-animate-right w3-xxlarge"
+        style={{
+          display: "none",
+          paddingTop: "150px",
+          right: "0",
+          zIndex: "2",
+        }}
+        id="mySidebar"
+      >
+        <a
+          href="/"
+          onClick={closeNav}
+          className="w3-button w3-black w3-xxxlarge w3-display-topright"
+          style={{ padding: "0 12px" }}
+        >
+          <i className="fa fa-remove"></i>
+        </a>
+        <div className="w3-bar-block w3-center">
+          <a
+            href="/"
+            className="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            onClick={closeNav}
+          >
+            Home
+          </a>
+          <a
+            href="/about"
+            className="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            onClick={closeNav}
+          >
+            About
+          </a>
+          <a
+            href="/resume"
+            className="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            onClick={closeNav}
+          >
+            Resume
+          </a>
+          <a
+            href="/portfolio"
+            className="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            onClick={closeNav}
+          >
+            Portfolio
+          </a>
+          <a
+            href="/contact"
+            className="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            onClick={closeNav}
+          >
+            Contact
+          </a>
+        </div>
+      </nav>
+
+      {/* Page Content */}
+      <div className="w3-main w3-padding-large" style={{ marginLeft: "40%" }}>
+        {/* Menu icon to open sidebar */}
+        <span
+          className="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black"
+          style={{ width: "auto;right:0" }}
+          onClick={openNav}
+        >
+          <i className="fa fa-bars"></i>
+        </span>
+
+        {/* Start Header section */}
+        <header
+          className="w3-container w3-center justify-content-center align-items-center"
+          style={{ padding: "128px 16px" }}
+        >
+          <h1 className="w3-jumbo">
+            <b>Carol Wargo</b>
+          </h1>
+          <p>Full Stack Developer | UX Designer.</p>
+          <img
+            src={MeWhite}
+            className="w3-image w3-hide-large w3-hide-small w3-round"
+            style={{ display: "block", width: "60%", margin: "auto" }}
+            alt="Profile"
+          />
+          <img
+            src={MeWhite}
+            className="w3-image w3-hide-large w3-hide-medium w3-round"
+            width="1000"
+            height="1333"
+            alt="Profile"
+          />
+
+          <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
+            <a
+              className="button text-black"
+              id="resume-download"
+              download
+              href={Resume}
+            >
+              <i className="fa fa-download"></i> Download Resume
+            </a>
+          </button>
+        </header>
+
+          {/*start Aboutsection */}
+          <div className="w3-content w3-justify w3-text-black w3-padding-32">
+            <h2>Contact Me. </h2>
+            <hr />
+            <p>Thank you for visiting! </p>
               <p className="">
                 {" "}
                 <em>
@@ -49,132 +162,60 @@ export default function Contact() {
                   hello, I'd love to hear from you!{" "}
                 </em>
               </p>
-            </div>
-            <div className="col-md-5">
-              <img
-                src={MeWhite}
-                alt="htown"
-                className="w3-image w3-round"
-                style={{ width: "100%" }}
-              ></img>
-            </div>
-
-            <div className="col-md-7 px-3">
-              <div className="row w3-padding-24">
-                <div className="col-5">
-                  <div className="w3-large w3-margin-bottom ">
-                    <span>
-                      <i className="fa fa-user-circle fa-fw w3-hover-text-black w3-large w3-margin-right"></i>{" "}
-                      Carol Wargo
-                      <br />
-                    </span>
-                    <span>
-                      <i className="fa fa-map-marker fa-fw w3-hover-text-black w3-large w3-margin-right"></i>{" "}
-                      Huntingown, MD
-                      <br />
-                    </span>
-                  </div>
-                </div>
-
-                <div className="col-7">
-                  <div className="w3-large w3-margin-bottom ">
-                    <i className="fa fa-phone fa-fw w3-hover-text-black w3-large w3-margin-right"></i>{" "}
-                    <a href="tel:443-771-1726"> Phone: 443-771-1726</a> <br />
-                    <i className="fa fa-envelope fa-fw w3-hover-text-black w3-large w3-margin-right"></i>{" "}
-                    <a href="mailto:carolwargo.dev@gmail.com">
-                      {" "}
-                      carolwargo.dev@gmail.com
-                    </a>
-                    <br />
-                  </div>
-                </div>
-              </div>
-              <div className="w3-large w3-margin-bottom">
-                <p>
-                  Feel free to send me a message below , or connect with me
-                  through{" "}
-                  <a href="https://wa.me/+14437711726" alt="whatsapp">
-                    whatsapp
-                  </a>
-                  .
-                </p>
-              </div>
-
-              <form action="/send-email" method="POST" target="_blank">
-  <div className="w3-row-padding" style={{ margin: "0 -16px 8px -16px" }}>
-    <div className="w3-half">
-      <span>
-        <input
-          id="name"
-          value={name}
-          className="w3-input w3-border my-1"
-          type="text"
-          placeholder="Name"
-          required
-          name="name"
-          onChange={(e) => setName(e.target.value)}
-        />
-        <label htmlFor="name"></label>
-      </span>
-      <span>
-        <input
-          id="email"
-          value={email}
-          className="w3-input w3-border my-2"
-          type="email"
-          placeholder="Email"
-          required
-          name="email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <label htmlFor="email"></label>
-      </span>
+         
+              <div className="container">
+  <h4>Contact Information.</h4>
+  <div className="row">
+    <div className="col-md-6"> 
+      <p>
+        <i className="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i> Email:{" "}
+        <a href="mailto:carolwargo.dev@gmail.com" alt="me">
+          email
+        </a>
+      </p>
+      <p>
+        <i className="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i> Phone:{" "}
+        <a href="tel:+4437711726">+443-771-1726</a>
+      </p>
     </div>
-    <div className="p-2 my-1 w3-half">
-      <textarea
-        id="message"
-        value={message}
-        className="w3-input w3-border"
-        placeholder="Message"
-        required
-        name="message"
-        rows="3"
-        onChange={(e) => setMessage(e.target.value)}
-      ></textarea>
-      <label htmlFor="message"></label>
-      <button
-        id="submit"
-        className="w3-button w3-black w3-right w3-section"
-        type="submit"
-        onClick={handleSubmit}
-      >
-        <i className="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
+    <div className="col-md-6"> 
+      <p>
+        <i className="fab fa-github fa-fw w3-xlarge w3-margin-right"></i> Phone:{" "}
+        <a href="https://github.com/carolwargo">Github Page</a>
+      </p>
+      <p>
+        <i className="fab fa-linkedin fa-fw w3-xlarge w3-margin-right"></i> Phone:{" "}
+        <a href="https://www.linkedin.com/in/carol-wargo-35021baa/">LinkedIn Profile</a>
+      </p>
     </div>
   </div>
-</form>
-
-            </div>
-          </div>
-        </div>
-      </header>
 </div>
 
-<footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
+            <br />
+            {/**Image of Location Map */}
+            <h4>Where I am Located. </h4>
+            <p>
+              <i className="fa fa-map-marker fa-fw w3-xlarge w3-margin-right "></i>
+              Huntingtown, MD.
+            </p>
+            <img
+              src={LocationView}
+              alt="map"
+              style={{ width: "100%", margin: "16px 0" }}
+              className="w3-image w3-greyscale"
+            />
+          </div>
+        
+         
+          {/*end Contact section */}
 
-  <a href="/" className="w3-hover-opacity mx-1 text-black">Home </a>
-  <a href="/about" className="w3-hover-opacity mx-1 text-black">About </a>
-  <a href="/resume" className="w3-hover-opacity mx-1 text-black">Resume</a>
-  <a href="/portfolio" className="w3-hover-opacity mx-1 text-black">Portfolio</a>
-  <a href="/contact" className="w3-hover-opacity mx-1 text-black">Contact </a>
-  <p className="w3-medium">
-    Copyright: 
-    <a href="/" target="_blank" className="w3-hover-text-green">
-      &copy; 2024 Carol Wargo
-    </a>
-  </p>
-</footer>
-{/*end Footer */}
-    </div>
+          {/*start Footer */}
+     <Footer  />
+          {/*end Footer */}
+        </div>
+      </div>
+
   );
-}
+};
+
+export default Home;
