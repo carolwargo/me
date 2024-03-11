@@ -1,42 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 //import { MDBInput, MDBBtn, MDBRow, MDBCol, MDBCheckbox } from 'mdb-react-ui-kit';
 
 function Signup() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [rememberMe, setRememberMe] = useState(false);
-
-    const handleRegisterFirstName = (event) => {
-        setEmail(event.target.value);
-    };
-
-    const handleRegisterLastName = (event) => {
-        setPassword(event.target.value);
-    };
-
-    const handleRegisterEmail = (event) => {
-        setEmail(event.target.value);
-    };
-
-    const handleRegisterPassword = (event) => {
-        setPassword(event.target.value);
-    };
-
-    const handleCheckboxChange = (event) => {
-        setRememberMe(event.target.checked);
-    };
-
-
-
-    const handleFormSubmit = (event) => {
-        event.preventDefault();
-        // Perform login logic here using email, password, and rememberMe state
-        console.log("Email:", email);
-        console.log("Password:", password);
-        console.log("Remember Me:", rememberMe);
-    };
 
     return (
         <div className="container w3-padding-16">
@@ -53,7 +20,6 @@ function Signup() {
         type="text" 
         id="firstName" 
         className="form-control shadow-sm border border-1" 
-        onChange={handleRegisterFirstName}
         />
         <label className="form-label" htmlFor="firstName">First name</label>
       </div>
@@ -64,7 +30,6 @@ function Signup() {
         type="text" 
         id="lastName" 
         className="form-control shadow-sm border border-1" 
-        onChange={handleRegisterLastName}
         />
         <label 
         className="form-label" 
@@ -80,7 +45,6 @@ function Signup() {
     type="email" 
     id="email" 
     className="form-control shadow-sm border border-1" 
-    onChange={handleRegisterEmail}
     />
     <label className="form-label" htmlFor="email">Email address</label>
   </div>
@@ -90,7 +54,6 @@ function Signup() {
     <input type="password" 
     id="password" 
     className="form-control shadow-sm border border-1" 
-    onChange={handleRegisterPassword}
     />
     <label className="form-label" htmlFor="password">Password</label>
   </div>
@@ -101,7 +64,6 @@ function Signup() {
     className="form-check-input me-2" 
     type="checkbox" 
     id="newsletterCheck"  defaultChecked 
-    onChange={handleCheckboxChange}
     />
     <label 
     className="form-check-label" 
@@ -112,7 +74,6 @@ function Signup() {
 
   <button data-mdb-ripple-init type="button" 
   className="btn btn-primary btn-block mb-4 px-5 shadow"
-    onClick={handleFormSubmit}
   >Sign up</button>
 
   <div className="text-center w3-margin-bottom">

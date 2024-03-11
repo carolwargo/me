@@ -8,13 +8,13 @@ import Resume from "./views/Resume/Resume";
 import About from "./views/About/About";
 import Contact from './views/Contact/Contact';
 import Portfolio from './views/Portfolio/Portfolio';
-
+// <BrowserRouter basename="/me" >
 
 import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter basename="/me" >
+    <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />

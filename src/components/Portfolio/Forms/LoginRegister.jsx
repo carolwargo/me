@@ -1,68 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { MDBInput } from 'mdb-react-ui-kit';
+
 
 function LoginRegister() {
-    const [loginEmail, setLoginEmail] = useState('');
-    const [loginPassword, setLoginPassword] = useState('');
-    const [registerName, setRegisterName] = useState('');
-    const [registerUsername, setRegisterUsername] = useState('');
-    const [registerEmail, setRegisterEmail] = useState('');
-    const [registerPassword, setRegisterPassword] = useState('');
-    const [registerRepeatPassword, setRegisterRepeatPassword] = useState('');
-    const [registerCheck, setRegisterCheck] = useState(false);
+  
 
-    const handleLoginEmailChange = (event) => {
-        setLoginEmail(event.target.value);
-    };
     
-    const handleLoginPasswordChange = (event) => {
-        setLoginPassword(event.target.value);
-    };
-
-    const handleRegisterNameChange = (event) => {
-        setRegisterName(event.target.value);
-    };
-
-    const handleRegisterUsernameChange = (event) => {
-        setRegisterUsername(event.target.value);
-    };
-
-    const handleRegisterEmailChange = (event) => {
-        setRegisterEmail(event.target.value);
-    };
-
-    const handleRegisterPasswordChange = (event) => {
-        setRegisterPassword(event.target.value);
-    };
-
-    const handleRegisterRepeatPasswordChange = (event) => {
-        setRegisterRepeatPassword(event.target.value);
-    };
-
-    const handleRegisterCheckChange = (event) => {
-        setRegisterCheck(event.target.checked);
-    };
-
-    const handleLoginSubmit = (event) => {
-        event.preventDefault();
-        // Perform login logic here using loginEmail and loginPassword state
-        console.log("Login Email:", loginEmail);
-        console.log("Login Password:", loginPassword);
-    };
-
-    const handleRegisterSubmit = (event) => {
-        event.preventDefault();
-        // Perform registration logic here using register* state variables
-        console.log("Register Name:", registerName);
-        console.log("Register Username:", registerUsername);
-        console.log("Register Email:", registerEmail);
-        console.log("Register Password:", registerPassword);
-        console.log("Repeat Password:", registerRepeatPassword);
-        console.log("Register Check:", registerCheck);
-    };
-
     return (
         <div className="container w3-padding-16">
             <div className="w3-container w3-content bg-white shadow">
@@ -103,7 +47,7 @@ function LoginRegister() {
                             role="tabpanel"
                             aria-labelledby="tab-login"
                         >
-                            <form onSubmit={handleLoginSubmit}>
+                            <form >
                                 <div className="text-center mb-3">
                                     <p>Sign in with:</p>
                                     <button data-mdb-ripple-init type="button" className="btn btn-secondary btn-floating mx-1">
@@ -126,21 +70,19 @@ function LoginRegister() {
                                 <p className="text-center">or:</p>
 
                                 <div data-mdb-input-init className="form-outline mb-4">
-                                    <MDBInput 
+                                    <input 
                                         type="email" 
                                         id="loginName" 
-                                        className="form-control" 
-                                        onChange={handleLoginEmailChange}
+                                        className="form-control"  
                                     />
                                     <label className="form-label" htmlFor="loginName">Email or username</label>
                                 </div>
 
                                 <div data-mdb-input-init className="form-outline mb-4">
-                                    <MDBInput 
+                                    <input 
                                         type="password" 
                                         id="loginPassword" 
                                         className="form-control" 
-                                        onChange={handleLoginPasswordChange}
                                     />
                                     <label className="form-label" htmlFor="loginPassword">Password</label>
                                 </div>
@@ -179,7 +121,7 @@ function LoginRegister() {
                             role="tabpanel"
                             aria-labelledby="tab-register"
                         >
-                            <form onSubmit={handleRegisterSubmit}>
+                            <form >
                                 <div className="text-center mb-3">
                                     <p>Sign up with:</p>
                                     <button data-mdb-ripple-init type="button" className="btn btn-secondary btn-floating mx-1 shadow">
@@ -202,51 +144,50 @@ function LoginRegister() {
                                 <p className="text-center">or:</p>
 
                                 <div data-mdb-input-init className="form-outline mb-4 ">
-                                    <MDBInput 
+                                    <input 
                                         type="text" 
                                         id="registerName" 
                                         className="form-control "
-                                        onChange={handleRegisterNameChange}
+                                    
                                     />
                                     <label className="form-label" htmlFor="registerName">Name</label>
                                 </div>
 
                                 <div data-mdb-input-init className="form-outline mb-4">
-                                    <MDBInput 
+                                    <input 
                                         type="text" 
                                         id="registerUsername" 
                                         className="form-control" 
-                                        onChange={handleRegisterUsernameChange} 
+                                      
                                     />
                                     <label className="form-label" htmlFor="registerUsername">Username</label>
                                 </div>
 
                                 <div data-mdb-input-init className="form-outline mb-4">
-                                    <MDBInput 
+                                    <input 
                                         type="email" 
                                         id="registerEmail" 
                                         className="form-control" 
-                                        onChange={handleRegisterEmailChange}
+                                  
                                     />
                                     <label className="form-label" htmlFor="registerEmail">Email</label>
                                 </div>
 
                                 <div data-mdb-input-init className="form-outline mb-4">
-                                    <MDBInput 
+                                    <input 
                                         type="password" 
                                         id="registerPassword" 
                                         className="form-control" 
-                                        onChange={handleRegisterPasswordChange}
+                                       
                                     />
                                     <label className="form-label" htmlFor="registerPassword">Password</label>
                                 </div>
 
                                 <div data-mdb-input-init className="form-outline mb-4">
-                                    <MDBInput 
+                                    <input 
                                         type="password" 
                                         id="registerRepeatPassword" 
                                         className="form-control" 
-                                        onChange={handleRegisterRepeatPasswordChange}
                                     />
                                     <label className="form-label" htmlFor="registerRepeatPassword">Repeat password</label>
                                 </div>
@@ -259,7 +200,6 @@ function LoginRegister() {
                                         id="registerCheck"
                                         defaultChecked 
                                         aria-describedby="registerCheckHelpText"
-                                        onChange={handleRegisterCheckChange}
                                     />
                                     <label className="form-check-label" htmlFor="registerCheck">
                                         I have read and agree to the terms
