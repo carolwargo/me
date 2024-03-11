@@ -1,5 +1,5 @@
 import React from "react";
-import MeWhite from "../../assets/images/Me/MeWhite.png";
+//import MeWhite from "../../assets/images/Me/MeWhite.png";
 import Resume from "../../assets/Resume.pdf";
 
 //import LocationView from "../../assets/images/About/LocationView.png";
@@ -82,12 +82,12 @@ id="my-navbar">
     <span className="w3-margin-top w3-white w3-large w3-text-grey w3-hover-text-black" 
     style={{width:"auto;right:0"}}>
       <nav>
-<div className="w3-center">
-<a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
-<a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
-    <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
-    <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
-    <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
+      <div className="w3-center">
+    <a href="/" className="w3-bar-item  p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
+    <a href="/about" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
+    <a href="/resume" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
+    <a href="/portfolio" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
+    <a href="/contact" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
   </div>
 </nav>
     </span>
@@ -97,17 +97,7 @@ id="my-navbar">
 
      {/*start Header section*/}
      <header className="w3-container w3-center " style={{ padding: "80px 16px" }} id="home">
-          <div className="w3-container w3-center w3-large ">
-            <nav> <a href="https://carolwargo.github.io/react-portfolio/" className="w3-button ">
-            <i className="fab fa-github" ></i></a>
-          <span><a href="https://www.linkedin.com/in/carol-wargo-35021baa/" className="w3-button">
-            <i className="fab fa-linkedin" ></i></a></span> 
-          <span><a href="mailto:carolwargo.dev@gmail.com" className="w3-button">
-            <i className="fa fa-envelope fa-fw" ></i> </a></span> 
-          <span><a href="tel:443-771-1726"className="w3-button"> 
-          <i className="fa fa-phone fa-fw" ></i></a></span>
-          </nav>
-          </div>
+       
           <h1 className="w3-jumbo"><b>RESUME.</b></h1>
           <p style={{ fontFamily: "Raleway" }}>
           Digital Resume contains{" "}
@@ -133,7 +123,7 @@ id="my-navbar">
           -{" "}
         </p>
           <img src={ResumeWorkspace} className="w3-image w3-hide-large w3-hide-small w3-round" style={{ display: "block", width: "60%", margin: "auto" }} alt="Profile" />
-          <img src={MeWhite} className="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333" alt="Profile" />
+          <img src={ResumeWorkspace} className="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333" alt="Profile" />
           <div>
           <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
           <a
@@ -412,11 +402,11 @@ respective buttons for more details.</p>
 
 
 <footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
-<a href="/" className="w3-hover-opacity mx-1">Home </a>
-  <a href="/about" className="w3-hover-opacity mx-1">About </a>
-  <a href="/resume" className="w3-hover-opacity mx-1">Resume</a>
-  <a href="/portfolio" className="w3-hover-opacity mx-1">Portfolio</a>
-  <a href="/contact" className="w3-hover-opacity mx-1">Contact </a>
+<a href="/" className="w3-hover-opacity p-2 text-black">Home </a>
+  <a href="/about" className="w3-hover-opacity p-2 text-black">About </a>
+  <a href="/resume" className="w3-hover-opacity p-2 text-black">Resume</a>
+  <a href="/portfolio" className="w3-hover-opacity p-2 text-black">Portfolio</a>
+  <a href="/contact" className="w3-hover-opacity p-2 text-black">Contact </a>
   <p className="w3-medium">
     Copyright: 
     <a href="/" target="_blank" className="w3-hover-text-green">

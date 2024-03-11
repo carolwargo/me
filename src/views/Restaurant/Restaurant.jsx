@@ -28,13 +28,13 @@ const Restaurant = () => {
   return (
     <div>
       <nav  className="w3-center shadow">
-        <div className="w3-center w3-padding-16">
-          <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
-          <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
-            <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
-            <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
-            <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
-          </div>
+      <div className="w3-center">
+    <a href="/" className="w3-bar-item  p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
+    <a href="/about" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
+    <a href="/resume" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
+    <a href="/portfolio" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
+    <a href="/contact" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
+  </div>
         </nav>
            
       
@@ -322,11 +322,11 @@ const Restaurant = () => {
 </footer>
 
 <footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
-  <a href="/">Home <i className="w3-hover-opacity mx-1">Icon</i></a>
-  <a href="/about">About <i className="w3-hover-opacity mx-1">Icon</i></a>
-  <a href="/resume">Resume <i className="w3-hover-opacity mx-1">Icon</i></a>
-  <a href="/portfolio">Portfolio <i className="w3-hover-opacity mx-1">Icon</i></a>
-  <a href="/contact">Contact <i className="w3-hover-opacity mx-1">Icon</i></a>
+  <a href="/">Home <i className="w3-hover-opacity p-2 text-black">Icon</i></a>
+  <a href="/about">About <i className="w3-hover-opacity p-2 text-black">Icon</i></a>
+  <a href="/resume">Resume <i className="w3-hover-opacity p-2 text-black">Icon</i></a>
+  <a href="/portfolio">Portfolio <i className="w3-hover-opacity p-2 text-black">Icon</i></a>
+  <a href="/contact">Contact <i className="w3-hover-opacity p-2 text-black">Icon</i></a>
   <p className="w3-medium">
     Copyright: 
     <a href="/" target="_blank" className="w3-hover-text-green">

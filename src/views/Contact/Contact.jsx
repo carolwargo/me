@@ -23,14 +23,14 @@ export default function Contact() {
 
   return (
     <div className="contact" id="contact">
-    <nav  className="w3-center shadow">
-        <div className="w3-center w3-padding-16">
-          <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
-          <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
-            <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
-            <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
-            <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
-          </div>
+    <nav  className="w3-center">
+    <div className="w3-center shadow">
+    <a href="/" className="w3-bar-item  p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
+    <a href="/about" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
+    <a href="/resume" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
+    <a href="/portfolio" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
+    <a href="/contact" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
+  </div>
         </nav>
            
     <div    className="w3-container w3-content w3-padding-32 w3-text-grey" id="contact">
@@ -162,11 +162,11 @@ export default function Contact() {
 
 <footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
 
-  <a href="/" className="w3-hover-opacity mx-1">Home </a>
-  <a href="/about" className="w3-hover-opacity mx-1">About </a>
-  <a href="/resume" className="w3-hover-opacity mx-1">Resume</a>
-  <a href="/portfolio" className="w3-hover-opacity mx-1">Portfolio</a>
-  <a href="/contact" className="w3-hover-opacity mx-1">Contact </a>
+  <a href="/" className="w3-hover-opacity mx-1 text-black">Home </a>
+  <a href="/about" className="w3-hover-opacity mx-1 text-black">About </a>
+  <a href="/resume" className="w3-hover-opacity mx-1 text-black">Resume</a>
+  <a href="/portfolio" className="w3-hover-opacity mx-1 text-black">Portfolio</a>
+  <a href="/contact" className="w3-hover-opacity mx-1 text-black">Contact </a>
   <p className="w3-medium">
     Copyright: 
     <a href="/" target="_blank" className="w3-hover-text-green">

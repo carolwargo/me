@@ -290,11 +290,11 @@ style={{ margin: "-24px" }}>
     </button>
   </NavLink>
   </div>
-  <a href="/">Home<i className="w3-hover-opacity mx-1"></i></a>
-  <a href="/about">About<i className="w3-hover-opacity mx-1"></i></a>
-  <a href="/resume">Resume<i className="w3-hover-opacity mx-1"></i></a>
-  <a href="/portfolio">Porfolio<i className="w3-hover-opacity mx-1"></i></a>
-  <a href="/contact">Contact<i className="w3-hover-opacity mx-1"></i></a>
+  <a href="/">Home<i className="w3-hover-opacity mx-1 text-black"></i></a>
+  <a href="/about">About<i className="w3-hover-opacity mx-1 text-black"></i></a>
+  <a href="/resume">Resume<i className="w3-hover-opacity mx-1 text-black"></i></a>
+  <a href="/portfolio">Porfolio<i className="w3-hover-opacity mx-1 text-black"></i></a>
+  <a href="/contact">Contact<i className="w3-hover-opacity mx-1 text-black"></i></a>
   <p className="w3-medium">Copyright: 
   <a href="/" target="_blank" className="w3-hover-text-green">
     &copy; 2024 Carol Wargo

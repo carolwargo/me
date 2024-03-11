@@ -17,7 +17,7 @@ const AboutFinal = () => {
         <div className="w3-content w3-container w3-padding-32">
         <div className="row">
   <h1 className="w3-center fw-light">ABOUT ME</h1>
-  <hr />
+  <br />
   <h5 className="w3-center fw-light">"I'm Carol Wargo, and welcome to my corner of 
   the internet! Join me as I share insights into who I am professionally 
   and the years of experience that shape what I do."</h5>
@@ -70,9 +70,11 @@ const AboutFinal = () => {
 
 
 {/**start technical proficiencies */}
-<div className="container-fluid py-4 bg-white text-black ">
+<div className="container-fluid py-4 bg-white text-black w3-margin-top ">
 <div className="w3-content w3-container w3-margin-top w3-margin-bottom">
+<br />
 <div className="row w3-margin-bottom">
+  <br />
 <h2><strong>SKILLS & PROFICIENCIES</strong></h2>
 <hr />
     <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
@@ -122,7 +124,7 @@ const AboutFinal = () => {
 </div>
 {/**End technical proficiencies */}
 
-
+<div className="container-fluid py-4 w3-black">
 {/**start experience count */}
 <div className="w3-row w3-center w3-black w3-padding-16 w3-margin-bottom">
   <div className="w3-quarter w3-section">
@@ -144,21 +146,22 @@ const AboutFinal = () => {
 </div>
 {/**end experience count */}
 <br />
+<hr />
+<br />
       {/*start testimonials*/}
-      <h2 className="w3-padding-24 text-center">
+  
+      <h2 className="w3-padding-24 text-center ">
           My Reputation.<br />
           <span className="text-center" style={{ fontSize: "16px" }}>
             {" "}
             What clients and collegues have to say.
           </span>
         </h2>
-       
-        <div className="container-fluid py-4">
   <div className="row justify-content-center">
     <div className="col-lg-4 col-sm-12 p-4">
       <div class="card text-center shadow">
-        <div class="card-header shadow">TESTIMONIAL</div>
-        <div class="card-body">
+        <div class="card-header"><b>TESTIMONIAL</b></div>
+        <div class="card-body ">
           <h5 class="card-title">Kind words from a colleague.</h5>
           <p className="card-text fw-lighter py-2" style={{fontSize:'12px'}}>
             <i>"Carol has a remarkable eye for all things creative. Her
@@ -174,7 +177,7 @@ const AboutFinal = () => {
 
     <div className="col-lg-4 col-sm-12 p-4">
       <div class="card text-center shadow">
-        <div class="card-header shadow">TESTIMONIAL</div>
+        <div class="card-header "><b>TESTIMONIAL</b></div>
         <div class="card-body">
           <h5 class="card-title">Kind words from a colleague.</h5>
           <p className="card-text fw-lighter py-2" style={{fontSize:'12px'}}>
@@ -190,7 +193,7 @@ const AboutFinal = () => {
 
     <div className="col-lg-4 col-sm-12 p-4">
       <div class="card text-center shadow">
-        <div class="card-header shadow">TESTIMONIAL</div>
+        <div class="card-header "><b>TESTIMONIAL</b></div>
         <div class="card-body">
           <h5 class="card-title">Kind words from a colleague.</h5>
           <p className="card-text fw-lighter py-2" style={{fontSize:'12px'}}>
@@ -204,12 +207,11 @@ const AboutFinal = () => {
       </div>
     </div>
   </div>
-</div>
-
-       
-     
-        <p className="text-center"><em>"Letters of reference in their entirety available apon request."</em></p>
+        
   <br />
+  <p className="text-center"><em>"Letters of reference in their entirety available apon request."</em></p>
+ 
+</div>
  {/*end testimonials*/}
 </div>     
     );

@@ -35,7 +35,7 @@ const Home = () => {
 
       {/* Sidebar with image */}
       <nav className="w3-sidebar w3-hide-medium w3-hide-small " style={{width:"40%"}}>
-  <div className="bgimg"></div>
+  <div className="bgimg w3-padding-32"></div>
 </nav>
 {/**side bar start */}
 <nav className="w3-black w3-animate-right w3-xxlarge" 
@@ -61,11 +61,11 @@ id="my-navbar">
     style={{width:"auto;right:0"}}>
       <nav>
 <div className="w3-center">
-    <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
-    <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
-    <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
-    <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
-    <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
+    <a href="/" className="w3-bar-item  p-3 w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
+    <a href="/about" className="w3-bar-item p-3 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
+    <a href="/resume" className="w3-bar-item p-3 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
+    <a href="/portfolio" className="w3-bar-item p-3 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
+    <a href="/contact" className="w3-bar-item p-3 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
   </div>
 </nav>
     </span>
@@ -74,24 +74,16 @@ id="my-navbar">
 
 
      {/*start Header section*/}
-     <header className="w3-container w3-center " style={{ padding: "80px 16px" }} >
-          <div className="w3-container w3-center w3-large ">
-            <nav> <a href="https://carolwargo.github.io/react-portfolio/" className="w3-button ">
-            <i className="fab fa-github" ></i></a>
-          <span><a href="https://www.linkedin.com/in/carol-wargo-35021baa/" className="w3-button">
-            <i className="fab fa-linkedin" ></i></a></span> 
-          <span><a href="mailto:carolwargo.dev@gmail.com" className="w3-button">
-            <i className="fa fa-envelope fa-fw" ></i> </a></span> 
-          <span><a href="tel:443-771-1726"className="w3-button"> 
-          <i className="fa fa-phone fa-fw" ></i></a></span>
-          </nav>
-          </div>
+     <header className="w3-container w3-center justify-content-center align-items-center" style={{ padding: "70px 16px" }} >
+     
           <h1 className="w3-jumbo"><b>Carol Wargo</b></h1>
           <p>Full Stack Developer | UX Designer.</p>
-          <img src={MeWhite} className="w3-image w3-hide-large w3-hide-small w3-round" style={{ display: "block", width: "60%", margin: "auto" }} alt="Profile" />
+          <img src={MeWhite} className="w3-image w3-hide-large w3-hide-small w3-round" style={{ display: "block", width: "50%", margin: "auto" }} alt="Profile" />
           <img src={MeWhite} className="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333" alt="Profile" />
-          <div>
-          <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
+        
+          <div className="w3-padding-16 w3-center">
+          <button className="w3-button w3-light-grey">
+          
           <a
               className="button text-black"
               id="resume-download"
@@ -101,37 +93,12 @@ id="my-navbar">
             <i className="fa fa-download"></i> Download Resume
             </a>
           </button>
+       
           </div>
-       <br />
         </header>
- {/**end Header section */}
 
-
-      {/**start Portfolio section */}
- {/*<div className="w3-padding-32 w3-content">
- <h2 className="w3-text-grey">My Portfolio</h2>
-    <hr />*/}
-{/**start Portfolio photo grid */}
-{/*<div className="w3-row-padding" style={{margin:"0 -16px"}}>
-<div className="w3-half">
-        <img src={MeWhite} alt="me" style={{width:"100%"}}/>
-        <img src={MeWhite} alt="me" style={{width:"100%"}}/>
-        <img src={MeWhite} alt="me" style={{width:"100%"}}/>
-      </div>
-
-
-      <div className="w3-half">
-      <img src={MeWhite} alt="me" style={{width:"100%"}}/>
-        <img src={MeWhite} alt="me" style={{width:"100%"}}/>
-        <img src={MeWhite} alt="me" style={{width:"100%"}}/>
-        <img src={MeWhite} alt="me" style={{width:"100%"}}/>
-      </div>*/}
-{/*</div>*/}
-{/**end Portfolio photo grid */}
- {/*</div>*/}
-  {/**end Portfolio section */}
   
-
+ 
  {/*start Aboutsection */}
  <div className="w3-content w3-justify w3-text-black w3-padding-32">
 <h2>About. </h2>
@@ -185,13 +152,13 @@ id="my-navbar">
   <h2>Contact Me. </h2>
   <hr />
     <div className="w3-section">
-
+    <h4>Contact Information. </h4>
       <p><i className="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i> Phone:<a href="tel:+4437711726">+443-771-1726</a></p>
       <p><i className="fa fa-envelope fa-fw w3-xlarge w3-margin-right"> </i> Email: <a href="mailto:carolwargo.dev@gmail.com" alt='me'> email</a></p>
     </div>
     <br />
       {/**Image of Location Map */}
-      <h2>Where I am Located. </h2>
+      <h4>Where I am Located. </h4>
       <p><i className="fa fa-map-marker fa-fw w3-xlarge w3-margin-right "></i>Huntingtown, MD.</p>
       <img src={LocationView} alt="map" style={{width:"100%", margin:"16px 0"}} className="w3-image w3-greyscale" />
     </div>
@@ -205,12 +172,12 @@ id="my-navbar">
 
 
 {/*start Footer */}
-<footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
-  <a href="/" className="w3-hover-opacity mx-1">Home </a>
-  <a href="/about" className="w3-hover-opacity mx-1">About </a>
-  <a href="/resume" className="w3-hover-opacity mx-1">Resume</a>
-  <a href="/portfolio" className="w3-hover-opacity mx-1">Portfolio</a>
-  <a href="/contact" className="w3-hover-opacity mx-1">Contact </a>
+<footer className="w3-container w3-padding-64 w3-light-grey  w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
+  <a href="/" className="w3-hover-opacity mx-1 text-black">Home </a>
+  <a href="/about" className="w3-hover-opacity mx-1 text-black">About </a>
+  <a href="/resume" className="w3-hover-opacity mx-1 text-black">Resume</a>
+  <a href="/portfolio" className="w3-hover-opacity mx-1 text-black">Portfolio</a>
+  <a href="/contact" className="w3-hover-opacity mx-1 text-black">Contact </a>
   <p className="w3-medium">
     Copyright: 
     <a href="/" target="_blank" className="w3-hover-text-green">

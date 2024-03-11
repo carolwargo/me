@@ -42,32 +42,33 @@ function Portfolio() {
  
   return (
 <div className="portfolio" id="portfolio">
-      <nav>
-        
-<div className="w3-center w3-bar w3-padding-16">
-  <div className="w3-margin-left">
-  <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
-  <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
-    <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
-    <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
-    <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
-   </div>
+<nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <div className="container-fluid">
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+          <a className="nav-link" href="/">Home</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/about">About</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/resume">Resume</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/portfolio">Portfolio</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
+
    
 <header className="w3-container w3-center " style={{ padding: "80px 16px" }} id="home">
-          <div className="w3-container w3-center w3-opacity w3-large">
-            <nav> <a href="https://carolwargo.github.io/react-portfolio/" className="w3-button ">
-            <i className="fab fa-github w3-hover-opacity"></i>
-</a>
-          <span><a href="https://www.linkedin.com/in/carol-wargo-35021baa/" className="w3-button">
-            <i className="fab fa-linkedin w3-hover-opacity"></i></a></span> 
-          <span><a href="mailto:carolwargo.dev@gmail.com" className="w3-button">
-            <i className="fa fa-envelope fa-fw w3-hover-opacity"></i> </a></span> 
-          <span><a href="tel:443-771-1726"className="w3-button"> 
-          <i className="fa fa-phone fa-fw w3-hover-opacity"></i></a></span>
-          </nav>
-          </div>
+        
           <h1 className="w3-jumbo"><b>Portfolio</b></h1>
           <p>
             My Portfolio contains the following sections:{" "}
@@ -690,11 +691,11 @@ function Portfolio() {
 
 
 <footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
-<a href="/" className="w3-hover-opacity mx-1">Home </a>
-  <a href="/about" className="w3-hover-opacity mx-1">About </a>
-  <a href="/resume" className="w3-hover-opacity mx-1">Resume</a>
-  <a href="/portfolio" className="w3-hover-opacity mx-1">Portfolio</a>
-  <a href="/contact" className="w3-hover-opacity mx-1">Contact </a>
+<a href="/" className="w3-hover-opacity p-2 text-black">Home </a>
+  <a href="/about" className="w3-hover-opacity p-2 text-black">About </a>
+  <a href="/resume" className="w3-hover-opacity p-2 text-black">Resume</a>
+  <a href="/portfolio" className="w3-hover-opacity p-2 text-black">Portfolio</a>
+  <a href="/contact" className="w3-hover-opacity p-2 text-black">Contact </a>
   <p className="w3-medium">
     Copyright: 
     <a href="/" target="_blank" className="w3-hover-text-green">
