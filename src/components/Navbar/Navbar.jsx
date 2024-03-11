@@ -7,7 +7,7 @@ function NavScrollExample() {
 
 <nav className="navbar navbar-expand-lg navbar-light bg-body-tertiary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="/">Navbar</a>
+    <a className="navbar-brand" href="/"><b>CW</b>HOME</a>
     <button
       data-mdb-collapse-init
       className="navbar-toggler"
@@ -25,10 +25,16 @@ function NavScrollExample() {
           <a className="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">Features</a>
+          <a className="nav-link" href="/about"><b>CW</b>ABOUT</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">Pricing</a>
+          <a className="nav-link" href="/resume"><b>CW</b>RESUME</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/portfolio"><b>CW</b>PORTFOLIO</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/contact"><b>CW</b>CONTACT</a>
         </li>
         <li className="nav-item">
           <a className="nav-link disabled" href='/' tabIndex="-1" aria-disabled="true"
