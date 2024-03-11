@@ -47,7 +47,7 @@ function LoginRegister() {
                             role="tabpanel"
                             aria-labelledby="tab-login"
                         >
-                            <form >
+                            <div >
                                 <div className="text-center mb-3">
                                     <p>Sign in with:</p>
                                     <button data-mdb-ripple-init type="button" className="btn btn-secondary btn-floating mx-1">
@@ -112,7 +112,7 @@ function LoginRegister() {
                                     <p>Not a member? <a href="#!">Register</a></p>
                                 </div>
                                 <br />
-                            </form>
+                            </div>
                         </div>
 
                         <div
@@ -121,7 +121,7 @@ function LoginRegister() {
                             role="tabpanel"
                             aria-labelledby="tab-register"
                         >
-                            <form >
+                            <div >
                                 <div className="text-center mb-3">
                                     <p>Sign up with:</p>
                                     <button data-mdb-ripple-init type="button" className="btn btn-secondary btn-floating mx-1 shadow">
@@ -207,7 +207,7 @@ function LoginRegister() {
                                 </div>
 
                                 <button type="submit" className="btn btn-primary btn-block mb-3">Register</button>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
