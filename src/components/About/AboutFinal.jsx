@@ -160,10 +160,10 @@ const AboutFinal = () => {
   <div className="row justify-content-center">
     <div className="col-lg-4 col-sm-12 p-4">
       <div class="card text-center shadow">
-        <div class="card-header"><b>TESTIMONIAL</b></div>
+        <div class="card-header w3-margin-top"><h3><b>TESTIMONIAL.</b></h3></div>
         <div class="card-body ">
-          <h5 class="card-title">Kind words from a colleague.</h5>
-          <p className="card-text fw-lighter py-2" style={{fontSize:'12px'}}>
+          <h5 class="card-title fw-lighter">Kind words from a colleague.</h5>
+          <p className="card-text fw-lighter py-2" style={{fontSize:'14px'}}>
             <i>"Carol has a remarkable eye for all things creative. Her
             design sensibility is both distinctive and deeply personal. She pays
             attention to details that often go unnoticed by others, and she
@@ -171,39 +171,41 @@ const AboutFinal = () => {
             opportunities for growth..."</i> 
           </p>
         </div>
-        <div class="fw-lighter py-3">2/4/2023</div>
+        <hr />
+        <div class="fw-lighter py-3">February, 2023</div>
       </div>
     </div>
 
     <div className="col-lg-4 col-sm-12 p-4">
       <div class="card text-center shadow">
-        <div class="card-header "><b>TESTIMONIAL</b></div>
+      <div class="card-header w3-margin-top"><h3><b>TESTIMONIAL.</b></h3></div>
         <div class="card-body">
-          <h5 class="card-title">Kind words from a colleague.</h5>
-          <p className="card-text fw-lighter py-2" style={{fontSize:'12px'}}>
+          <h5 class="card-title fw-lighter">Recurring client testimonial.</h5>
+          <p className="card-text fw-lighter py-2" style={{fontSize:'14px'}}>
             <br />
             <i>"Carol inspires you to consider the possibilities and embrace change
             with ease. She consistently goes above and beyond, delivering work
             that exceeds expectations and promises..."</i> 
           </p>
         </div>
-        <div class="fw-lighter py-3">2/4/2023</div>
+        <hr />
+        <div class="fw-lighter py-3">July, 2023</div>
       </div>
     </div>
 
     <div className="col-lg-4 col-sm-12 p-4">
       <div class="card text-center shadow">
-        <div class="card-header "><b>TESTIMONIAL</b></div>
+      <div class="card-header w3-margin-top"><h3><b>TESTIMONIAL.</b></h3></div>
         <div class="card-body">
-          <h5 class="card-title">Kind words from a colleague.</h5>
-          <p className="card-text fw-lighter py-2" style={{fontSize:'12px'}}>
+          <h5 class="card-title fw-lighter">New client testimonial.</h5>
+          <p className="card-text fw-lighter py-2" style={{fontSize:'14px'}}>
             <i>"Carol has been an invaluable asset to transforming my brand's
-            online presence. In just 13 months, she took my brand-new social
-            media account and propelled it to new heights, amassing an
+            online presence. Taking my brand and propelling it to new heights, amassing an
             impressive reach and an unimaginable conversion rate..."</i> 
           </p>
         </div>
-        <div class="fw-lighter py-3">2/4/2023</div>
+        <hr />
+        <div class="fw-lighter py-3">December, 2023</div>
       </div>
     </div>
   </div>
