@@ -24,6 +24,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Home = () => {
   const openNav = () => {
@@ -436,7 +437,14 @@ respective buttons for more details.</p>
 </div>
    {/*end Interpersonal Proficiencies*/}
 {/*end resume */}
-
+<div className="w3-content w3-justify w3-text-black w3-padding-16 w3-center w3-margin-bottom">
+          <a href="/portfolio">
+            <p className="w3-margin-bottom">
+              Click to view my digital portfolio.
+              <FaLongArrowAltRight className="w3-margin-left " />
+            </p>
+          </a>
+        </div>
 {/*start Footer import */}
 <Footer/>
 {/*end Footer import */}

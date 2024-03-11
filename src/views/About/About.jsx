@@ -383,7 +383,7 @@ export default function About() {
           </div>
         </div>
         <div className="w3-content w3-justify w3-text-black w3-padding-16 w3-center w3-margin-bottom">
-          <a href="/about">
+          <a href="/resume">
             <p className="w3-margin-bottom">
               Click to view my digital resume.
               <FaLongArrowAltRight className="w3-margin-left " />
