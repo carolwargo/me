@@ -2,6 +2,7 @@ import React from "react";
 import Login from "../../components/Portfolio/Forms/Login";
 //import LoginRegister from "../../components/Forms/LoginRegister";
 import Signup from "../../components/Portfolio/Forms/Signup";
+import TableBasic from "../../components/Portfolio/Tables/TableBasic";
 //import Graphics from "../../components/Portfolio/Graphics/Graphics.jsx";
 import MeWhite from "../../assets/images/Me/MeWhite.png";
 import JATE from "../../assets/images/Portfolio/JATE.png";
@@ -14,6 +15,7 @@ import Footer from "../../components/Footer/Footer";
 import Resume from "../../assets/Resume.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 
 function Portfolio() {
@@ -190,16 +192,13 @@ function Portfolio() {
 
 
 {/**start Tables grid */}
+<div className="w3-content w3-justify w3-text-black w3-padding-32">
 <h4 className="w3-text-black" id='tables'>Tables </h4>
     <hr className="w3-opacity"/>
     <p>Tables are structured grids used to present data in rows and columns. They're commonly used for displaying tabular data, such as product listings, pricing tables, or data summaries.</p>
-<div className="container w3-padding-16">
-  <div className="w3-container w3-content bg-white shadow ">  
-    <div className="w3-container w3-content w3-padding-16 p-4 border-dark">
-    <h4 className="fw-light w3-margin-top w3-margin-bottom"><b>Sign-Up Form</b></h4>
+
     <br />
-</div>
-</div>
+<TableBasic/>
 </div>
 {/**end Tables grid */}
 
@@ -207,8 +206,15 @@ function Portfolio() {
 
 
 {/**start Backend grid */}
-<h2 className="w3-text-black" id="#server">Server-side</h2>
+<div className="w3-content w3-justify w3-text-black w3-padding-32">
+<h4 className="w3-text-black" id="#server">Server-side</h4>
     <hr className="w3-opacity"/>
+    <p>Server-side functions play a crucial role in the backend architecture of web applications, enabling efficient request handling, data processing, security enforcement, and business logic implementation. They are essential components of modern web development, especially in building scalable, secure, and performant web applications.</p>
+    <br />
+
+</div>
+
+
 <div className="container ">
 <div className="row w3-padding-16">
 <div className="col-sm-12 col-lg-4">
@@ -338,11 +344,12 @@ function Portfolio() {
 
 
 
-
-
-    <div className="w3-main w3-padding-large">
-       <div className="w3-content w3-padding-64" >
-<h2 className="w3-padding-16">Samples. </h2>
+ {/*start grid sample page*/}
+<div className="w3-content w3-justify w3-text-black w3-padding-32">
+<h4 className="w3-text-black" id="#server">Sample web pages.</h4>
+    <hr className="w3-opacity"/>
+    <p>Each type of website serves a unique purpose and requires specific features and functionalities to effectively achieve its objectives and meet the needs of its target audience.</p>
+    <br />
 
 <div className="w3-row-padding" style={{margin:"0 -16px"}}>
     <div className="w3-half w3-margin-bottom">
@@ -359,8 +366,8 @@ function Portfolio() {
       </div>
       <div className="w3-half">
       <ul className="w3-ul w3-center w3-card w3-hover-shadow">
-          <li className="w3-black w3-xlarge w3-padding-32">Restaurant {'NOTE: in progress'} <br/> 
-          <span style={{fontSize:'14px', fontWeight:'lighter'}}>Restaurant features: </span></li>
+          <li className="w3-black w3-xlarge w3-padding-32">Restaurant<br/> 
+          <span style={{fontSize:'14px', fontWeight:'lighter'}}>Restaurant features: <i>'NOTE: in progress' </i> </span></li>
           <li className="w3-padding-16">Pagination</li>
           <li className="w3-padding-16">Menu</li>
           <li className="w3-padding-16">Cards</li>
@@ -371,18 +378,26 @@ function Portfolio() {
           </li>
         </ul>
       </div>
-    {/*endgrid for pricing tables*/}
 </div>
- 
     </div>
-    {/*endgrid for pricing tables*/}
-    </div>
+ {/*endgrid sample page*/}
+
+{/*start graphics*/}
+    <div className="w3-content w3-justify w3-text-black w3-padding-32">
+<h4 className="w3-text-black" id="#server">Graphic Elemenets.</h4>
+    <hr className="w3-opacity"/>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum obcaecati numquam dolorem. Animi quam ipsam, voluptates quia iusto eligendi ex voluptas placeat iste nisi sed. Provident quaerat autem corrupti ea?</p>
+    <br />
+    </  div>
+{/*end graphics*/}
+
+    </div> 
 </div>
    {/*start Footer */}
    <Footer/>
 {/*end Footer */}
     </div>
-    </div>
+  
 
   );
 };
