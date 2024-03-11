@@ -217,12 +217,12 @@ function Portfolio() {
 
 <div className="container ">
 <div className="row w3-padding-16">
-<div className="col-sm-12 col-lg-4">
+<div className="col-sm-12 col-lg-6">
   <div className="w3-container w3-content shadow w3-padding-16 text-center">  
     <img src={JATE} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
  <hr />
   <div className="w3-light-gray p-2 w3-margin-bottom text-center">
-    <h4 className="fw-light text-center">Text_Editor</h4>
+    <h5 className="fw-light text-center">Text_Editor</h5>
     </div>
     <p style={{fontSize:'14px'}}><i>Text_Editor is a browser-based text editor that allows Users to create and edit text documents seamlessly.</i></p>
     <hr />
@@ -236,12 +236,12 @@ function Portfolio() {
 
 
 
-  <div className="col-sm-12 col-lg-4">
+  <div className="col-sm-12 col-lg-6">
   <div className="w3-container w3-content shadow w3-padding-16 text-center">  
     <img src={Notes} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
  <hr />
   <div className="w3-light-gray p-2 w3-margin-bottom text-center">
-    <h4 className="fw-light">NOTE-TAKER</h4>
+    <h5 className="fw-light">NOTE-TAKER</h5>
     </div>
     <p style={{fontSize:'14px'}}><i>A note taking application used to WRITE, SAVE and DELETE tasks we can't afford to forget.</i></p>
     <hr />
@@ -252,15 +252,17 @@ function Portfolio() {
     </div>
     </div>
   </div>
+</div>
 
 
 
-  <div className="col-sm-12 col-lg-4">
+<div className="row w3-padding-16">
+<div className="col-sm-12 col-lg-6">
   <div className="w3-container w3-content shadow w3-padding-16 text-center">  
     <img src={README} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
  <hr />
   <div className="w3-light-gray p-2 w3-margin-bottom text-center">
-    <h4 className="fw-light">README-GENERATOR</h4>
+    <h5 className="fw-light">README-GENERATOR</h5>
     </div>
     <p style={{fontSize:'14px'}}><i>README Generator takes in User input to generate a well-structured README.md file saving time for developers.
     </i></p>
@@ -272,15 +274,14 @@ function Portfolio() {
     </div>
     </div>
   </div>
-</div>
 
-  <div className="row w3-padding-16">
-  <div className="col-sm-12 col-lg-4">
+
+  <div className="col-sm-12 col-lg-6">
     <div className="w3-container w3-content shadow w3-padding-16 ">  
       <img src={SVG} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
    <hr />
     <div className="w3-light-gray p-2 w3-margin-bottom text-center">
-      <h4 className="fw-light">SV.GENIE</h4>
+      <h5 className="fw-light">SV.GENIE</h5>
       </div>
       <p className="text-center" style={{fontSize:'14px'}}><i>A Node.js CLI that takes in user input, such as color, shape & text to generate a logo & save it as an SVG file.
    </i></p>
@@ -295,14 +296,20 @@ function Portfolio() {
 
 
 
-    <div className="col-sm-12 col-lg-4">
+</div>
+
+
+
+
+  <div className="row w3-padding-16">
+    <div className="col-sm-12 col-lg-6">
     <div className="w3-container w3-content shadow w3-padding-16 ">  
       <img src={Horizen} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
    <hr />
     <div className="w3-light-gray p-2 w3-margin-bottom text-center">
-      <h4 className="fw-light text-center">CODE-REFACTOR</h4>
+      <h5 className="fw-light text-center">CODE-REFACTOR</h5>
       </div>
-      <p className="text-center" style={{fontSize:'14px'}}><i>Refactor was implemented to follow WCAG accessibility standards, optimize search engines & limit liability.
+      <p className="text-center" style={{fontSize:'14px'}}><i>Implemented to follow WCAG standards, optimize search engines & limit liability.
    .</i></p>
       <hr />
       <div className="container">
@@ -315,12 +322,12 @@ function Portfolio() {
 
 
 
-    <div className="col-sm-12 col-lg-4">
+    <div className="col-sm-12 col-lg-6">
     <div className="w3-container w3-content shadow w3-padding-16 text-center">  
       <img src={Desk} alt="me" style={{width:"100%"}} className="w3-rounded w3-margin-top  w3-image w3-opacity w3-hover-opacity-off"/>
    <hr />
     <div className="w3-light-gray p-2 w3-margin-bottom text-center">
-      <h4 className="fw-light">DAY-PLANNER</h4>
+      <h5 className="fw-light">DAY-PLANNER</h5>
       </div>
       <p style={{fontSize:'14px'}}><i>A calendar application that allows a User to save events, for each hour of the work day.
    </i></p>
