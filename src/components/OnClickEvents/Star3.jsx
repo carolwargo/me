@@ -30,8 +30,7 @@ export default function Star2() {
 
 
       <div className="container w3-padding-large shadow w3-white p-4">
-      <div className="w3-margin-top"> <h4>Leadership & Profit Surge Against the Odds.</h4>
-</div>
+  
 <ul className="">
              <li className="mx-2"><strong>Situation:</strong> Transform neglected properties with substantial rent arrears.</li>
              <li className="mx-2"><strong>Task:</strong> Develop a cost-effective rehab plan to boost property appeal and recover lost rental income, surpassing original profit projections.</li>

@@ -9,11 +9,7 @@ export default function Star1() {
 
   return (
     <div className="w3-container w3-padding-large" style={{fontFamily:'Raleway'}}>
-       <div className="w3-padding">
-        <h4>Technological Transformation in Business.</h4>
-       <p className="text-secondary fw-light">click <b>SHOW ACHIEVEMENT</b> to reveal achievement statement.
-      </p>
-       </div>
+      
       <button 
     className="w3-button w3-margin-bottom shadow bg-black w3-hover-opacity "
     style={{
