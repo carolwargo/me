@@ -1,4 +1,7 @@
 import React from "react";
+import Login from "../../components/Portfolio/Forms/Login";
+//import LoginRegister from "../../components/Forms/LoginRegister";
+import Signup from "../../components/Portfolio/Forms/Signup";
 //import Graphics from "../../components/Portfolio/Graphics/Graphics.jsx";
 import MeWhite from "../../assets/images/Me/MeWhite.png";
 import JATE from "../../assets/images/Portfolio/JATE.png";
@@ -7,7 +10,7 @@ import Desk from "../../assets/images/Portfolio/Desk.png";
 import SVG from "../../assets/images/Portfolio/SVG.png";
 import Notes from "../../assets/images/Portfolio/Notes.png";
 import README from "../../assets/images/Portfolio/README.png";
-
+import Footer from "../../components/Footer/Footer";
 import Resume from "../../assets/Resume.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -15,499 +18,186 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Portfolio() {
 
-  const handleEmailChange = (event) => {
-  };
-  
-  const handlePasswordChange = (event) => {
-  };
-  const handleCheckboxChange = (event) => {
-  };
-  const  handleRegisterUsername = (event) => {
-  };
-  const  handleRegisterName = (event) => {
-  };
-  const  handleRegisterEmail = (event) => {
-  };
-  const   handleRegisterPassword = (event) => {
-  };
-  const   handleRegisterRepeatPassword = (event) => {
-  };
 
-  const   handleRegisterFirstName= (event) => {
-  };
-  const  handleRegisterLastName = (event) => {
-  };
+  const openNav = () => {
+    document.getElementById("mySidebar").style.display = "block";
+  }
 
+  const closeNav = () => {
+    document.getElementById("mySidebar").style.display = "none";
+  }
 
- 
   return (
-<div className="portfolio" id="portfolio">
-<nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <div className="container-fluid">
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link" href="/">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/about">About</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/resume">Resume</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/portfolio">Portfolio</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <div className="portfolio" id="portfolio">
+      <style>
+        {`
+          body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Montserrat", sans-serif;
+          }
+          .w3-row-padding img {
+            margin-bottom: 10px;
+          }
+          .bgimg {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('${MeWhite}');
+            min-height: 100%;
+          }
+        `}
+      </style>
 
-   
-<header className="w3-container w3-center " style={{ padding: "80px 16px" }} id="home">
-        
-          <h1 className="w3-jumbo"><b>Portfolio</b></h1>
-          <p>
-            My Portfolio contains the following sections:{" "}
-            <strong>
-              {" "}
-              <a href="#forms">FORMS</a>
-            </strong>
-            ,<br></br>
-            <strong>
-              {" "}
-              <a href="#tables">TABLES</a>{" "}
-            </strong>{" "}
-            , 
-            <strong>
-              {" "}
-              <a href="#cards">CARDS</a>
-            </strong>
-            ,
-            <strong>
-              {" "}
-              <a href="#samples">SAMPLES</a>
-            </strong>
-            , and{" "}
-            <strong>
-              {" "}
-              <a href="#graphic-designs">GRAPHIC DESIGN WORK</a>
-            </strong>{" "}
-            -{" "}
-          </p>
-          <img src={MeWhite} className="w3-image w3-hide-large w3-hide-small w3-round" style={{ display: "block", width: "60%", margin: "auto" }} alt="Profile" />
-          <img src={MeWhite} className="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333" alt="Profile" />
-          <div>
-          <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
+      {/* Sidebar with image */}
+      <nav
+        className="w3-sidebar w3-hide-medium w3-hide-small "
+        style={{ width: "40%" }}
+      >
+        <div className="bgimg w3-padding-32"></div>
+      </nav>
+      <nav
+        className="w3-sidebar w3-black w3-animate-right w3-xxlarge"
+        style={{
+          display: "none",
+          paddingTop: "150px",
+          right: "0",
+          zIndex: "2",
+        }}
+        id="mySidebar"
+      >
+        <a
+          href="/"
+          onClick={closeNav}
+          className="w3-button w3-black w3-xxxlarge w3-display-topright"
+          style={{ padding: "0 12px" }}
+        >
+          <i className="fa fa-remove"></i>
+        </a>
+        <div className="w3-bar-block w3-center">
           <a
+            href="/"
+            className="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            onClick={closeNav}
+          >
+            Home
+          </a>
+          <a
+            href="/about"
+            className="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            onClick={closeNav}
+          >
+            About
+          </a>
+          <a
+            href="/resume"
+            className="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            onClick={closeNav}
+          >
+            Resume
+          </a>
+          <a
+            href="/portfolio"
+            className="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            onClick={closeNav}
+          >
+            Portfolio
+          </a>
+          <a
+            href="/contact"
+            className="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            onClick={closeNav}
+          >
+            Contact
+          </a>
+        </div>
+      </nav>
+
+      {/* Page Content */}
+      <div className="w3-main w3-padding-large" style={{ marginLeft: "40%" }}>
+        {/* Menu icon to open sidebar */}
+        <span
+          className="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black"
+          style={{ width: "auto;right:0" }}
+          onClick={openNav}
+        >
+          <i className="fa fa-bars"></i>
+        </span>
+
+        {/* Start Header section */}
+        <header
+          className="w3-container w3-center justify-content-center align-items-center"
+          style={{ padding: "128px 16px" }}
+        >
+          <h1 className="w3-jumbo">
+            <b>Carol Wargo</b>
+          </h1>
+          <p>Full Stack Developer | UX Designer.</p>
+          <img
+            src={MeWhite}
+            className="w3-image w3-hide-large w3-hide-small w3-round"
+            style={{ display: "block", width: "60%", margin: "auto" }}
+            alt="Profile"
+          />
+          <img
+            src={MeWhite}
+            className="w3-image w3-hide-large w3-hide-medium w3-round"
+            width="1000"
+            height="1333"
+            alt="Profile"
+          />
+
+          <button className="w3-button w3-padding-large w3-margin-top">
+            <a
               className="button text-black"
               id="resume-download"
               download
               href={Resume}
             >
-            <i className="fa fa-download"></i> Download Resume
+              <i className="fa fa-download"></i> Download Resume
             </a>
           </button>
-          </div>
-       <br />
-       
         </header>
+
  {/**end Header section */}
 
-<div className="w3-light-gray">
+<div >
       {/**start Portfolio section */}
-      <div className="w3-padding-16 w3-content">
-
-{/**start Forms grid */}
-<h2 className="w3-text-black" id="#forms">Forms</h2>
+      <div className="w3-content w3-justify w3-text-black w3-padding-32">
+       
+      <h1 className="w3-text-black" id='tables'>Portfolio. </h1>
     <hr className="w3-opacity"/>
+    <p>Welcome to my portfolio! I thrive on innovation but not at the expense of simplicity and efficiency. I invite you to explore my projects, components, and designs.</p>
+{/* start Forms grid */}
+<h3 className="w3-text-black" id="#forms">Components. </h3>
+<p>Digital components play crucial roles in web development, enhancing user interaction, organizing content, and improving the overall user experience of a website.</p>
 
-
+<h4 className="w3-text-black" id="#forms">Form Components. </h4>
+    <hr className="w3-opacity"/>
+    <p>Forms are for collecting and submitting user data on a website. They consist of input fields such as text boxes, dropdown menus, checkboxes, and buttons, allowing users to interact with the website and provide information.</p>
 {/*start login form */}
-<div className="container w3-padding-16" >
-  <div className="w3-container w3-content bg-white shadow ">  
-    <div className="w3-container w3-content w3-padding-16 px-4 border-dark">
-    <h4 className="fw-light w3-margin-top"><b>Login Form</b></h4>
-    <form className="w3-padding-24">
-
-  <div data-mdb-input-init className="form-outline mb-4">
-    <input 
-    type="email"
-    id="form1Example1"
-    className="form-control shadow-sm"
-    onChange={handleEmailChange} // Add onChange event handler
-    />
-    <label 
-    className="form-label" 
-    htmlFor="form1Example1">Email address</label>
-  </div>
-
-
-  <div data-mdb-input-init className="form-outline mb-4">
-    <input 
-    type="password" 
-    id="form1Example2" 
-    className="form-control shadow-sm" 
-    onChange={handlePasswordChange} // Add onChange event handler
-    
-    />
-    <label className="form-label" htmlFor="form1Example2">Password</label>
-  </div>
-
- 
-  <div className="row mb-4">
-    <div className="col d-flex">
-
-      <div className="form-check">
-        <input 
-        type="checkbox" 
-        id="form1Example3" checked 
-        className="form-check-input" 
-        onChange={handleCheckboxChange} // Add onChange event handler
-        />
-        <label className="form-check-label" htmlFor="form1Example3"> Remember me </label>
-      </div>
-    </div>
-
-    <div className="col">
-      <a href="#!">Forgot password?</a>
-    </div>
-  </div>
-  <button data-mdb-ripple-init type="submit" className="btn btn-primary btn-block px-5 shadow-lg">Sign in</button>
-</form>
-</div>
-</div>
-</div>
-{/*end login form */}
+<Login/>
+{/*start sign up form 
+<LoginRegister/>
+*/}
+{/*end login and register
+*/}
 
 
 {/*start sign up form */}
-<div className="container w3-padding-16 ">
-  <div className="w3-container w3-content bg-white shadow">  
- <div className="w3-container w3-content w3-padding-16 px-4 py-4 border-dark">
- <h4 className="fw-light w3-margin-top w3-margin-bottom"><b>Signup and Login</b></h4>
-    <div >
-      <br />
-<ul className="nav nav-pills nav-justified mb-3 " id="ex1" role="tablist">
-  <li className="nav-item" role="presentation">
-    <a
-      className="nav-link active"
-      id="tab-login"
-      data-mdb-pill-init
-      href="#pills-login"
-      role="tab"
-      aria-controls="pills-login"
-      aria-selected="true"
-      >Login</a
-    >
-  </li>
-  <li className="nav-item" role="presentation">
-    <a
-      className="nav-link"
-      id="tab-register"
-      data-mdb-pill-init
-      href="#pills-register"
-      role="tab"
-      aria-controls="pills-register"
-      aria-selected="false"
-      >Register</a
-    >
-  </li>
-</ul>
-
-</div>
-
-<div className="tab-content">
-  <div
-    className="tab-pane fade show active"
-    id="pills-login"
-    role="tabpanel"
-    aria-labelledby="tab-login"
-  >
-    <form>
-      <div className="text-center mb-3">
-        <p>Sign in with:</p>
-        <button data-mdb-ripple-init type="button" className="btn btn-secondary btn-floating mx-1">
-          <i className="fab fa-facebook-f"></i>
-        </button>
-
-        <button data-mdb-ripple-init type="button" className="btn btn-secondary btn-floating mx-1">
-          <i className="fab fa-google"></i>
-        </button>
-
-        <button data-mdb-ripple-init type="button" className="btn btn-secondary btn-floating mx-1">
-          <i className="fab fa-twitter"></i>
-        </button>
-
-        <button data-mdb-ripple-init type="button" className="btn btn-secondary btn-floating mx-1">
-          <i className="fab fa-github"></i>
-        </button>
-      </div>
-
-      <p className="text-center">or:</p>
-
-
-      <div data-mdb-input-init className="form-outline mb-4">
-        <input 
-        type="email" 
-        id="loginName" 
-        className="form-control" 
-        onChange={handleEmailChange} // Add onChange event handler
-        />
-        <label className="form-label" htmlFor="loginName">Email or username</label>
-      </div>
-
-
-      <div data-mdb-input-init className="form-outline mb-4">
-        <input 
-        type="password" 
-        id="loginPassword" 
-        className="form-control" 
-        onChange={handlePasswordChange} // Add onChange event handler
-        />
-        <label className="form-label" htmlFor="loginPassword">Password</label>
-      </div>
-
-
-      <div className="row mb-4">
-        <div className="col-md-6 d-flex justify-content-center">
-
-          <div className="form-check mb-3 mb-md-0">
-          <input
-            className="form-check-input"
-            type="checkbox"
-            value=""
-            id="loginCheck"
-            defaultChecked 
-          />
-            <label className="form-check-label" htmlFor="loginCheck"> Remember me </label>
-          </div>
-        </div>
-
-        <div className="col-md-6 d-flex justify-content-center">
-          <a href="#!">Forgot password?</a>
-        </div>
-      </div>
-
-      <button type="submit" className="btn btn-primary btn-block mb-4">Sign in</button>
-
-      <div className="text-center">
-        <p>Not a member? <a href="#!">Register</a></p>
-      </div>
-      <br />
-    </form>
-  </div>
-  <div
-    className="tab-pane fade"
-    id="pills-register"
-    role="tabpanel"
-    aria-labelledby="tab-register"
-  >
-    <form>
-      <div className="text-center mb-3">
-        <p>Sign up with:</p>
-        <button data-mdb-ripple-init type="button" className="btn btn-secondary btn-floating mx-1">
-          <i className="fab fa-facebook-f"></i>
-        </button>
-
-        <button data-mdb-ripple-init type="button" className="btn btn-secondary btn-floating mx-1">
-          <i className="fab fa-google"></i>
-        </button>
-
-        <button data-mdb-ripple-init type="button" className="btn btn-secondary btn-floating mx-1">
-          <i className="fab fa-twitter"></i>
-        </button>
-
-        <button data-mdb-ripple-init type="button" className="btn btn-secondary btn-floating mx-1">
-          <i className="fab fa-github"></i>
-        </button>
-      </div>
-
-      <p className="text-center">or:</p>
-
-      <div data-mdb-input-init className="form-outline mb-4">
-        <input 
-        type="text" 
-        id="registerName" 
-        className="form-control"
-        onChange={handleRegisterName} // Add onChange event handler
-        />
-        <label className="form-label" htmlFor="registerName">Name</label>
-      </div>
-
-      <div data-mdb-input-init className="form-outline mb-4">
-        <input 
-        type="text" 
-        id="registerUsername" 
-        className="form-control" 
-        onChange={handleRegisterUsername} 
-        />
-        <label className="form-label" htmlFor="registerUsername">Username</label>
-      </div>
-
-      <div data-mdb-input-init className="form-outline mb-4">
-        <input 
-        type="email" 
-        id="registerEmail" 
-        className="form-control" 
-        onChange={handleRegisterEmail}
-        />
-        <label className="form-label" htmlFor="registerEmail">Email</label>
-      </div>
-
-      <div data-mdb-input-init className="form-outline mb-4">
-        <input 
-        type="password" 
-        id="registerPassword" 
-        className="form-control" 
-        onChange={handleRegisterPassword}
-        />
-        <label className="form-label" htmlFor="registerPassword">Password</label>
-      </div>
-
-      <div data-mdb-input-init className="form-outline mb-4">
-        <input type="password" 
-        id="registerRepeatPassword" 
-        className="form-control" 
-        onChange={handleRegisterRepeatPassword}
-        />
-        <label className="form-label" htmlFor="registerRepeatPassword">Repeat password</label>
-      </div>
-
-      <div className="form-check d-flex justify-content-center mb-4">
-        <input
-          className="form-check-input me-2"
-          type="checkbox"
-          value=""
-          id="registerCheck"
-          defaultChecked 
-          aria-describedby="registerCheckHelpText"
-        />
-        <label className="form-check-label" htmlFor="registerCheck">
-          I have read and agree to the terms
-        </label>
-      </div>
-
-      <button data-mdb-ripple-init type="submit" className="btn btn-primary btn-block mb-3">Sign in</button>
-    
-    </form>
-  </div>
-</div>
-</div>
-</div>
-</div>
-{/*end login and register*/}
-
-
-{/*start sign up form */}
-<div className="container w3-padding-16">
-  <div className="w3-container w3-content bg-white shadow ">  
-    <div className="w3-container w3-content w3-padding-16 p-4 border-dark">
-    <h4 className="fw-light w3-margin-top w3-margin-bottom"><b>Sign-Up Form</b></h4>
-    <br />
-    <form>
-
-  <div className="row mb-4">
-    <div className="col">
-      <div data-mdb-input-init className="form-outline ">
-        <input 
-        type="text" 
-        id="firstName" 
-        className="form-control shadow-sm shadow-sm" 
-        onChange={handleRegisterFirstName}
-        />
-        <label className="form-label" htmlFor="firstName">First name</label>
-      </div>
-    </div>
-    <div className="col">
-      <div data-mdb-input-init className="form-outline">
-        <input 
-        type="text" 
-        id="lastName" 
-        className="form-control shadow-sm" 
-        onChange={handleRegisterLastName}
-        />
-        <label 
-        className="form-label" 
-        htmlFor="lastName"
-        >Last name</label>
-      </div>
-    </div>
-  </div>
-
-
-  <div data-mdb-input-init className="form-outline mb-4">
-    <input 
-    type="email" 
-    id="email" 
-    className="form-control shadow-sm" 
-    onChange={handleRegisterEmail}
-    />
-    <label className="form-label" htmlFor="email">Email address</label>
-  </div>
-
-
-  <div data-mdb-input-init className="form-outline mb-4">
-    <input type="password" 
-    id="password" 
-    className="form-control shadow-sm" 
-    onChange={handleRegisterPassword}
-    />
-    <label className="form-label" htmlFor="password">Password</label>
-  </div>
-
-
-  <div className="form-check d-flex justify-content-center mb-4">
-    <input className="form-check-input me-2" 
-    type="checkbox" 
-    id="newsletterCheck"  defaultChecked />
-    <label className="form-check-label" htmlFor="newsletterCheck">
-      Subscribe to our newsletter
-    </label>
-  </div>
-
-  <button data-mdb-ripple-init type="button" className="btn btn-primary btn-block mb-4 px-5 shadow">Sign up</button>
-
-  <div className="text-center w3-margin-bottom">
-    <p>or sign up with:</p>
-    <button data-mdb-ripple-init type="button" className="btn btn-secondary btn-floating mx-1 shadow">
-      <i className="fab fa-facebook-f"></i>
-    </button>
-
-    <button data-mdb-ripple-init type="button" className="btn btn-secondary btn-floating mx-1 shadow">
-      <i className="fab fa-google"></i>
-    </button>
-
-    <button data-mdb-ripple-init type="button" className="btn btn-secondary btn-floating mx-1 shadow">
-      <i className="fab fa-twitter"></i>
-    </button>
-
-    <button data-mdb-ripple-init type="button" className="btn btn-secondary btn-floating mx-1 shadow">
-      <i className="fab fa-github"></i>
-    </button>
-  </div>
-</form>
-
-</div>
-</div>
+<Signup/>
 </div>
 {/*end sign up form */}
 
 
 
 {/**start Tables grid */}
-<h2 className="w3-text-black" id='tables'>Tables </h2>
+<h4 className="w3-text-black" id='tables'>Tables </h4>
     <hr className="w3-opacity"/>
+    <p>Tables are structured grids used to present data in rows and columns. They're commonly used for displaying tabular data, such as product listings, pricing tables, or data summaries.</p>
 <div className="container w3-padding-16">
   <div className="w3-container w3-content bg-white shadow ">  
     <div className="w3-container w3-content w3-padding-16 p-4 border-dark">
     <h4 className="fw-light w3-margin-top w3-margin-bottom"><b>Sign-Up Form</b></h4>
     <br />
-
-
 </div>
 </div>
 </div>
@@ -642,7 +332,7 @@ function Portfolio() {
 
 
 
- </div>
+
  
   
 
@@ -687,25 +377,12 @@ function Portfolio() {
     </div>
     {/*endgrid for pricing tables*/}
     </div>
-    </div>
-
-
-<footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
-<a href="/" className="w3-hover-opacity p-2 text-black">Home </a>
-  <a href="/about" className="w3-hover-opacity p-2 text-black">About </a>
-  <a href="/resume" className="w3-hover-opacity p-2 text-black">Resume</a>
-  <a href="/portfolio" className="w3-hover-opacity p-2 text-black">Portfolio</a>
-  <a href="/contact" className="w3-hover-opacity p-2 text-black">Contact </a>
-  <p className="w3-medium">
-    Copyright: 
-    <a href="/" target="_blank" className="w3-hover-text-green">
-      &copy; 2024 Carol Wargo
-    </a>
-  </p>
-</footer>
-
+</div>
+   {/*start Footer */}
+   <Footer/>
 {/*end Footer */}
-   </div>
+    </div>
+    </div>
 
   );
 };

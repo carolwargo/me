@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Donut from "../../assets/images/Breakfast/Donut.png";
@@ -37,22 +38,14 @@ const Restaurant = () => {
   </div>
         </nav>
            
-      
-
       {/**start CONTENT */}
       <div className="w3-center w3-padding-32">
-     
           <img src={Popup} alt="popup"  className='w3-center mt-5' style={{maxWidth:'100%vw'}}/>
-       
-
       <div
-
         className="w3-main w3-content w3-padding-64 w3-margin-bottom "
         style={{  maxWidth: "1200px;margin-top:100px" 
         }}
       >
-     
-
 <h6> New menu & location everytime. </h6>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est cupiditate adipisci similique nesciunt molestias ducimus architecto voluptas eveniet voluptates iure! Deserunt molestias quo libero earum tempora atque quia beatae vero?</p>
 <h6>  NEXT APPEARANCE</h6>
@@ -304,12 +297,7 @@ const Restaurant = () => {
           </div>
         </div>
         {/**end pagination*/}
-
-
         <hr/>
-
-
-
       </div>
       {/*start Footer */}
       <footer className="w3-container w3-padding-48 text-center">
@@ -321,20 +309,8 @@ const Restaurant = () => {
   <br />
 </footer>
 
-<footer className="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style={{ margin: "-24px" }}>
-  <a href="/">Home <i className="w3-hover-opacity p-2 text-black">Icon</i></a>
-  <a href="/about">About <i className="w3-hover-opacity p-2 text-black">Icon</i></a>
-  <a href="/resume">Resume <i className="w3-hover-opacity p-2 text-black">Icon</i></a>
-  <a href="/portfolio">Portfolio <i className="w3-hover-opacity p-2 text-black">Icon</i></a>
-  <a href="/contact">Contact <i className="w3-hover-opacity p-2 text-black">Icon</i></a>
-  <p className="w3-medium">
-    Copyright: 
-    <a href="/" target="_blank" className="w3-hover-text-green">
-      &copy; 2024 Carol Wargo
-    </a>
-  </p>
-</footer>
-
+{/*start Footer */}
+<Footer/>
 {/*end Footer */}
     </div>
   );
