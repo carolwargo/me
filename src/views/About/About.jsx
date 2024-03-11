@@ -362,9 +362,12 @@ export default function About() {
           </div>
         </div>
 
-        <div className="row p-5 d-flex align-items-center w3-margin-top">
-          <div className="col-md-4 flex-column justify-content-end align-items-center">
+
+        <div className="container-fluid py-4 bg-white text-black ">
+        <div className="row p-5 d-flex align-items-center  w3-margin-top">
+          <div className="col-md-4 flex-column justify-content-end align-items-center w3-margin-top">
             <div className="d-flex align-items-center justify-content-center">
+              
               <h2 className=" justify-content-center align-items-center">
                 WHERE I'M LOCATED
               </h2>
@@ -393,7 +396,7 @@ export default function About() {
           </a>
         </div>
         <br />
-
+        </div>
         <Footer />
       </div>
     </div>
