@@ -1,11 +1,9 @@
 import React from "react";
-//import { GiLoveMystery } from "react-icons/gi";
 import { FaLaptopCode } from "react-icons/fa";
 import { HiOutlinePuzzlePiece } from "react-icons/hi2";
 import { AiFillDatabase } from "react-icons/ai";
 import { BsDatabaseLock } from "react-icons/bs";
 import { GiGears } from "react-icons/gi";
-import MeWhite from "../../assets/images/Me/MeWhite.png";
 import '@fortawesome/fontawesome-free/css/all.css'; // Import Font Awesome CSS
 
 
@@ -13,19 +11,20 @@ const AboutFinal = () => {
 
     return (
       <div>
-        <div className="container-fluid py-4 bg-black text-white">
+        <div className="container-fluid py-4">
         <div className="w3-content w3-container w3-padding-32">
         <div className="row">
-  <h1 className="w3-center fw-light">ABOUT ME</h1>
+  <h1 className="fw-light">ABOUT ME</h1>
   <br />
-  <h5 className="w3-center fw-light">"I'm Carol Wargo, and welcome to my corner of 
+  <h6 className="fw-light">"I'm Carol Wargo, and welcome to my corner of 
   the internet! Join me as I share insights into who I am professionally 
-  and the years of experience that shape what I do."</h5>
+  and the years of experience that shape what I do."</h6>
+  <hr />
   <br />
   <br />
   <br />
   <br />
-  <p className="w3-center fw-light"><em>"My passion lies in utilizing creative design to drive 
+  <p className="fw-light"><em>"My passion lies in utilizing creative design to drive 
     innovative solutions through technology. With a distinctive blend of 
     skills and experience, I am a seasoned full-stack 
     software developer and UX designer deeply committed to collaboration, 
@@ -37,15 +36,7 @@ const AboutFinal = () => {
     
   
 <div className="w3-content w3-container">
-<div className="row">
-  <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-small py-3">
-    <img src={MeWhite} className="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Me" width="500" height="333" />
- 
- </div>
 
-    {/*}Hide this text on small devices*/}
-   
-    <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-small py-3">
     <h3><b><i className=''></i>THINGS TO HIGHLIGHT:</b></h3>
 <p className="py-2"><b>LEADERSHIP: </b>I excel in leadership roles and 
     collaborative environments, leveraging my strong interpersonal skills 
@@ -65,8 +56,8 @@ const AboutFinal = () => {
     & accountability.</p>
     </div>
   </div>
-  </div> 
-  </  div>
+ 
+ 
 
 
 {/**start technical proficiencies */}
@@ -106,6 +97,8 @@ const AboutFinal = () => {
   </div>
  
     </div>    
+
+    
     <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
         <h5>Agile Practices</h5>
         <p>PROMOTE FLEXIBILITY, COLLABORATION, AND ABILITY TO RESPOND TO CHANGING REQUIREMENTS. </p>
