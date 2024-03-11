@@ -10,6 +10,24 @@ import "@fortawesome/fontawesome-free/css/all.css"; // Import Font Awesome CSS
 
 const HomeAbout = () => {
   return (
+<div>
+<style>
+      {`
+        body, h1, h2, h3, h4, h5, h6 {
+          font-family: "Montserrat, sans-serif";
+        }
+        .w3-row-padding img {
+          margin-bottom: 12px;
+        }
+        .bgimg {
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-image: url('/w3images/profile_girl.jpg');
+          min-height: 100%;
+        }
+      `}
+    </style>
     <div>
       <div className="w3-content w3-justify w3-text-grey w3-padding-32">
     <h2>About</h2>
@@ -160,7 +178,7 @@ const HomeAbout = () => {
           </div>
         </div>
       </div>
-
+</div> 
 
     </div>
   );
