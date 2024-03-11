@@ -35,7 +35,7 @@ const Home = () => {
   }
 
   return (
-    <div className="home" id="home">
+    <div className="resume" id="resume">
       <style>
         {`
           body, h1, h2, h3, h4, h5, h6 {
