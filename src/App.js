@@ -11,7 +11,7 @@ import About from "./views/About/About";
 import Contact from './views/Contact/Contact';
 import Portfolio from './views/Portfolio/Portfolio';
 import Test from "./views/Test/Test";
-//import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 //<BrowserRouter basename="/react-portfolio" >
 import "./App.css";
 
@@ -19,6 +19,7 @@ function App() {
   return (
     <div className="App">
      <BrowserRouter> 
+      <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />

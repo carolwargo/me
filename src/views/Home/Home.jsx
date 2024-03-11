@@ -37,42 +37,9 @@ const Home = () => {
       <nav className="w3-sidebar w3-hide-medium w3-hide-small " style={{width:"40%"}}>
   <div className="bgimg w3-padding-32"></div>
 </nav>
-{/**side bar start */}
-<nav className="w3-black w3-animate-right w3-xxlarge" 
-style={{ display: "none", paddingTop: "150px", right: "0", zIndex: "2" }} 
-id="my-navbar">
- {/*onClick={closeNav}*/}
-
-  <div className="w3-center">
-    <a href="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black " >Home</a>
-    <a href="/resume" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Resume</a>
-    <a href="/portfolio" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Portfolio</a>
-    <a href="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
-    <a href="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
-  </div>
-</nav>
 
 
-
-
-    <div className="w3-main w3-padding-large" style={{marginLeft:"40%"}}>
-
-    <span className="w3-margin-top w3-white w3-large w3-text-grey w3-hover-text-black" 
-    style={{width:"auto;right:0"}}>
-      <nav>
-<div className="w3-center">
-    <a href="/" className="w3-bar-item  p-3 w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
-    <a href="/about" className="w3-bar-item p-3 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
-    <a href="/resume" className="w3-bar-item p-3 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
-    <a href="/portfolio" className="w3-bar-item p-3 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
-    <a href="/contact" className="w3-bar-item p-3 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
-  </div>
-</nav>
-    </span>
-
-
-
-
+    <div className="w3-main w3-padding-large  w3-justify" style={{marginLeft:"40%"}}>
      {/*start Header section*/}
      <header className="w3-container w3-center justify-content-center align-items-center" style={{ padding: "70px 16px" }} >
      
