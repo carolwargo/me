@@ -219,9 +219,8 @@ export default function About() {
           </div>
         </div>
 
-        <div className="container-fluid  bg-white text-black ">
-          <div className="row w3-margin-bottom">
-            <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large w3-margin-bottom">
+        <div className="container-fluid py-4 bg-white text-black ">
+          <div className="w3-content w3-justify w3-text-black w3-padding-32">
               <h4 className="w3-text-black" id="tables">
                 Technical Proficiencies.{" "}
               </h4>
@@ -289,10 +288,13 @@ export default function About() {
                   75%
                 </div>
               </div>
-            </div>
-
-            <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large w3-margin-bottom">
-              <h4 className="w3-text-black" id="tables">
+              <br />
+              </div>
+<br />
+         
+              <div className="container-fluid py-4 bg-white text-black w3-margin-top w3-margin-bottom w3-padding-32">
+          <div className="w3-content w3-justify w3-text-black w3-padding-32">
+             <h4 className="w3-text-black" id="tables">
                 Agile practices.{" "}
               </h4>
               <hr className="w3-opacity" />
@@ -330,8 +332,8 @@ export default function About() {
               </ul>
             </div>
           </div>
-        </div>
-
+          </div>
+<br />
         <div className="container-fluid py-4 w3-black">
           {/**start experience count */}
           <div className="w3-row w3-center w3-black w3-padding-16 w3-margin-bottom">
@@ -360,7 +362,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="row p-5 d-flex align-items-center">
+        <div className="row p-5 d-flex align-items-center w3-margin-top">
           <div className="col-md-4 flex-column justify-content-end align-items-center">
             <div className="d-flex align-items-center justify-content-center">
               <h2 className=" justify-content-center align-items-center">
