@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Footer from "../../components/Footer/Footer";
+import Footer from "../Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Donut from "../../assets/images/Breakfast/Donut.png";
@@ -28,15 +28,6 @@ const Restaurant = () => {
 
   return (
     <div>
-      <nav  className="w3-center shadow">
-      <div className="w3-center">
-    <a href="/" className="w3-bar-item  p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}} >Home</a>
-    <a href="/about" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>About</a>
-    <a href="/resume" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Resume</a>
-    <a href="/portfolio" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Portfolio</a>
-    <a href="/contact" className="w3-bar-item p-2 w3-text-grey w3-hover-black" style={{fontSize:'14px'}}>Contact</a>
-  </div>
-        </nav>
            
       {/**start CONTENT */}
       <div className="w3-center w3-padding-32">

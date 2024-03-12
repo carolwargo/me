@@ -1,5 +1,5 @@
 import React from "react";
-import Resume from "../../assets/Resume.pdf";
+import ResumeDownload from "../../assets/ResumeDownload.pdf";
 import Design from "../../assets/images/Resume/Design.png";
 import VCIDE from "../../assets/images/Resume/VCIDE.png";
 import Front from "../../assets/images/Resume/Front.png";
@@ -100,7 +100,7 @@ respective buttons for more details.</p>
                 src={Design}
                 alt="Design"
                 className="img-fluid"
-                style={{ width: "80%", marginLeft: "2rem" }}
+                style={{ width: "130%"}}
               />
             </TimelineContent>
           </TimelineItem>
@@ -116,7 +116,7 @@ respective buttons for more details.</p>
                 src={VCIDE}
                 alt="VCIDE"
                 className="img-fluid"
-                style={{ width: "80%", marginLeft: "2rem" }}
+                style={{ width: "130%"}}
               />
             </TimelineContent>
           </TimelineItem>
@@ -132,7 +132,7 @@ respective buttons for more details.</p>
                 src={Core}
                 alt="Core"
                 className="img-fluid"
-                style={{ width: "80%", marginBottom: "2rem" }}
+                style={{ width: "130%"}}
               />
             </TimelineContent>
           </TimelineItem>
@@ -148,7 +148,7 @@ respective buttons for more details.</p>
                 src={Front}
                 alt="Front"
                 className="img-fluid"
-                style={{ width: "80%", marginLeft: "2rem" }}
+                style={{ width: "130%"}}
               />
             </TimelineContent>
           </TimelineItem>
@@ -165,7 +165,7 @@ respective buttons for more details.</p>
                   src={Back}
                   alt="Back"
                   className="img-fluid"
-                  style={{ width: "80%", marginLeft: "2rem" }}
+                  style={{ width: "130%"}}
                 />
               </TimelineContent>
             </TimelineItem>
@@ -182,7 +182,7 @@ respective buttons for more details.</p>
                   src={DB}
                   alt="DB"
                   className="img-fluid"
-                  style={{ width: "80%", marginLeft: "2rem" }}
+                  style={{ width: "150%"}}
                 />
               </TimelineContent>
             </TimelineItem>
@@ -198,7 +198,7 @@ respective buttons for more details.</p>
                   src={Package}
                   alt="Package"
                   className="img-fluid"
-                  style={{ width: "80%", marginLeft: "2rem" }}
+                  style={{ width: "130%"}}
                 />
               </TimelineContent>
             </TimelineItem>
@@ -214,7 +214,7 @@ respective buttons for more details.</p>
                   src={BuildTest}
                   alt="BuildTest"
                   className="img-fluid"
-                  style={{ width: "80%", marginLeft: "2rem" }}
+                  style={{ width: "130%"}}
                 />
               </TimelineContent>
             </TimelineItem>
@@ -231,7 +231,7 @@ respective buttons for more details.</p>
                   src={APIQ}
                   alt="APIQ"
                   className="img-fluid"
-                  style={{ width: "80%", marginLeft: "2rem" }}
+                  style={{ width: "130%"}}
                 />
               </TimelineContent>
             </TimelineItem>
@@ -255,9 +255,7 @@ respective buttons for more details.</p>
                 <h3>EDUCATION</h3>
               </TimelineContent>
             </TimelineItem>
-          </Timeline>
-        </Timeline>
-        <div className="d-flex flex-row justify-content-center">
+            <div className="d-flex flex-row justify-content-center">
           <div className="d-flex flex-column">
             <p className="text-white">DOWNLOAD A COPY OF MY RESUME</p>
            
@@ -266,13 +264,15 @@ respective buttons for more details.</p>
               className="button text-black"
               id="resume-download"
               download
-              href={Resume}
+              href={ResumeDownload}
             >
             <i className="fa fa-download"></i> Download Resume
             </a>
           </button>
           </div>
           </div>
+          </Timeline>
+        </Timeline>
         </div>
         <br></br>
       </div>

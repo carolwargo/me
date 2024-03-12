@@ -1,6 +1,6 @@
 import React from "react";
 import MeWhite from "../assets/images/Me/MeWhite.png";
-import Resume from "../assets/Resume.pdf";
+import ResumeDownload from "../assets/ResumeDownload.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Footer from "./Footer/Footer";
@@ -140,7 +140,7 @@ const Layout = () => {
               className="button text-black"
               id="resume-download"
               download
-              href={Resume}
+              href={ResumeDownload}
             >
               <i className="fa fa-download"></i> Download Resume
             </a>

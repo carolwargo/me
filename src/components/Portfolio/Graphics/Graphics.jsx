@@ -1,6 +1,6 @@
 import React from "react";
 import MeWhite from "../../../assets/images/Me/MeWhite.png";
-import Resume from "../../../assets/Resume.pdf";
+import ResumeDownload from "../../../assets/ResumeDownload.pdf";
 //import LocationView from "../../../assets/images/About/LocationView.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -41,7 +41,7 @@ const Graphics = () => {
               className="button text-black"
               id="resume-download"
               download
-              href={Resume}
+              href={ResumeDownload}
             >
             <i className="fa fa-download"></i> Download Resume
             </a>
