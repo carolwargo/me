@@ -14,16 +14,16 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter basename="me">
+    <BrowserRouter>
         <Routes>
         <Route path="/" element={<Layout />}>
     <Route index element={<Home />} />
-    <Route path="about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/restaurant" element={<Restaurant />} />
+          <Route path="/me/about" element={<About />} />
+          <Route path="/me/resume" element={<Resume />} />
+          <Route path="/me/portfolio" element={<Portfolio />} />
+          <Route path="/me/contact" element={<Contact />} />
+          <Route path="/me/blog" element={<Blog />} />
+          <Route path="/me/restaurant" element={<Restaurant />} />
           </Route>
         </Routes>
       </BrowserRouter>
