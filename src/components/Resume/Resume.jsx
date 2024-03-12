@@ -100,7 +100,7 @@ respective buttons for more details.</p>
                 src={Design}
                 alt="Design"
                 className="img-fluid"
-                style={{ width: "130%"}}
+                style={{ width: "80%", marginLeft: "2rem" }}
               />
             </TimelineContent>
           </TimelineItem>
@@ -116,7 +116,7 @@ respective buttons for more details.</p>
                 src={VCIDE}
                 alt="VCIDE"
                 className="img-fluid"
-                style={{ width: "130%"}}
+                style={{ width: "80%", marginLeft: "2rem" }}
               />
             </TimelineContent>
           </TimelineItem>
@@ -132,7 +132,7 @@ respective buttons for more details.</p>
                 src={Core}
                 alt="Core"
                 className="img-fluid"
-                style={{ width: "130%"}}
+                style={{ width: "80%", marginBottom: "2rem" }}
               />
             </TimelineContent>
           </TimelineItem>
@@ -148,7 +148,7 @@ respective buttons for more details.</p>
                 src={Front}
                 alt="Front"
                 className="img-fluid"
-                style={{ width: "130%"}}
+                style={{ width: "80%", marginLeft: "2rem" }}
               />
             </TimelineContent>
           </TimelineItem>
@@ -165,7 +165,7 @@ respective buttons for more details.</p>
                   src={Back}
                   alt="Back"
                   className="img-fluid"
-                  style={{ width: "130%"}}
+                  style={{ width: "80%", marginLeft: "2rem" }}
                 />
               </TimelineContent>
             </TimelineItem>
@@ -182,7 +182,7 @@ respective buttons for more details.</p>
                   src={DB}
                   alt="DB"
                   className="img-fluid"
-                  style={{ width: "150%"}}
+                  style={{ width: "80%", marginLeft: "2rem" }}
                 />
               </TimelineContent>
             </TimelineItem>
@@ -198,7 +198,7 @@ respective buttons for more details.</p>
                   src={Package}
                   alt="Package"
                   className="img-fluid"
-                  style={{ width: "130%"}}
+                  style={{ width: "80%", marginLeft: "2rem" }}
                 />
               </TimelineContent>
             </TimelineItem>
@@ -214,7 +214,7 @@ respective buttons for more details.</p>
                   src={BuildTest}
                   alt="BuildTest"
                   className="img-fluid"
-                  style={{ width: "130%"}}
+                  style={{ width: "80%", marginLeft: "2rem" }}
                 />
               </TimelineContent>
             </TimelineItem>
@@ -231,7 +231,7 @@ respective buttons for more details.</p>
                   src={APIQ}
                   alt="APIQ"
                   className="img-fluid"
-                  style={{ width: "130%"}}
+                  style={{ width: "80%", marginLeft: "2rem" }}
                 />
               </TimelineContent>
             </TimelineItem>
@@ -255,7 +255,9 @@ respective buttons for more details.</p>
                 <h3>EDUCATION</h3>
               </TimelineContent>
             </TimelineItem>
-            <div className="d-flex flex-row justify-content-center">
+          </Timeline>
+        </Timeline>
+        <div className="d-flex flex-row justify-content-center">
           <div className="d-flex flex-column">
             <p className="text-white">DOWNLOAD A COPY OF MY RESUME</p>
            
@@ -271,8 +273,6 @@ respective buttons for more details.</p>
           </button>
           </div>
           </div>
-          </Timeline>
-        </Timeline>
         </div>
         <br></br>
       </div>

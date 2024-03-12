@@ -1,6 +1,4 @@
 import React from "react";  
-
-
 function Footer() {
 
     return (
@@ -8,9 +6,9 @@ function Footer() {
           
         {/*start Footer */}
         <footer
-            className="w3-container w3-padding-64 w3-light-grey  w3-center w3-opacity w3-large"
-            style={{ margin: "-24px" }}
-          >
+  className="w3-container w3-padding-64 w3-light-grey  w3-center w3-opacity w3-large"
+  style={{ margin: "-24px" }}
+>
             <a href="/" className="w3-hover-opacity mx-1 text-black">
               Home{" "}
             </a>
