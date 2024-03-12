@@ -5,8 +5,10 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Contact = () => {
   return (
-    <div className="home" id="home">
+
+    <div >
       {/*start Aboutsection */}
+      <div className="contact" id="contact">
       <div className="w3-content w3-justify w3-text-black w3-padding-32">
         <h2>Contact Me. </h2>
         <hr />
@@ -66,7 +68,7 @@ const Contact = () => {
           className="w3-image w3-greyscale"
         />
       </div>
-
+</div>
       {/*end Contact section */}
     </div>
   );

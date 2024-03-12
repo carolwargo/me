@@ -152,7 +152,7 @@ const Home = () => {
 
           {/*start Aboutsection */}
           <div className="w3-content w3-justify w3-text-black w3-padding-32">
-            <h2>About. </h2>
+            <h2>Welcome. </h2>
             <hr />
             <p>
               {" "}
@@ -241,7 +241,7 @@ const Home = () => {
           </div>
           {/*end experience*/}
           <div className="w3-content w3-justify w3-text-black w3-padding-16 w3-center w3-margin-bottom">
-            <a href="/about">
+            <a href="#about">
               <p className="w3-margin-bottom">
                 To Learn more about me.{" "}
                 <FaLongArrowAltRight className="w3-margin-left " />
@@ -252,7 +252,9 @@ const Home = () => {
           {/*end Contact section */}
 
        {/*start About */}
+       <div className='about' id='about'>
        <About/>
+       </div>
           {/*end About */}
        {/*start Resume */}
        <Resume/>

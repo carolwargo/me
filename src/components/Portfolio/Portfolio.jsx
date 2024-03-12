@@ -13,9 +13,9 @@ function Portfolio() {
 
 
   return (
-    <div className="portfolio" id="portfolio">
+    <div >
       
-        <div>
+        <div className="portfolio" id="portfolio">
           {/**start Portfolio section */}
           <div className="w3-content w3-justify w3-text-black w3-padding-32">
             <h1 className="w3-text-black" id="tables">

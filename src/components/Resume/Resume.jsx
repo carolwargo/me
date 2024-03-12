@@ -28,11 +28,11 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 const Home = () => {
 
   return (
-    <div className="resume" id="resume">
+    <div >
       
  {/**end Header section */}
  
-
+<div className="resume" id="resume">
  {/*start profile*/}
  <div className="w3-content w3-justify w3-text-black w3-padding-32">
 <h2>Professional Profile. </h2>
@@ -310,7 +310,7 @@ respective buttons for more details.</p>
             </p>
           </a>
         </div>
-
+        </div>
 </div>
 
   );

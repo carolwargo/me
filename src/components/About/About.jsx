@@ -15,12 +15,14 @@ import "../../App.css";
 export default function About() {
   
   return (
-    <div className="about pb-2" id="about">
-
+    <div>
+<div>
         <div className="w3-content w3-justify w3-text-black w3-padding-32">
-          <h1 className="w3-text-black" id="tables">
+          <div>
+          <h1 className="w3-text-black">
             About me.{" "}
           </h1>
+          </div>
           <hr className="w3-opacity" />
           <p className="fw-light">
             "I'm Carol Wargo, and welcome to my corner of the internet! Join me
@@ -259,7 +261,7 @@ export default function About() {
         </div>
         <br />
         </div>
-
+</div>
       </div>
 
   );
