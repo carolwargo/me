@@ -14,7 +14,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter basename="/me" >
+    <BrowserRouter basename="me">
         <Routes>
         <Route path="/" element={<Layout />}>
     <Route index element={<Home />} />
