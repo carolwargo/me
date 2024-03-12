@@ -206,7 +206,7 @@ const Home = () => {
             <br />
             {/*start Contact section */}
             <br />
-            <h2>Contact Me. </h2>
+          
             <hr />
             <div className="w3-content w3-justify w3-text-black w3-padding-32">
         <h2>Contact Me. </h2>
@@ -254,18 +254,7 @@ const Home = () => {
         </div>
 
         <br />
-        {/**Image of Location Map */}
-        <h4>Where I am Located. </h4>
-        <p>
-          <i className="fa fa-map-marker fa-fw w3-xlarge w3-margin-right "></i>
-          Huntingtown, MD.
-        </p>
-        <img
-          src={LocationView}
-          alt="map"
-          style={{ width: "100%", margin: "16px 0" }}
-          className="w3-image w3-greyscale"
-        />
+        
       </div>
 
       {/*end Contact section */}
