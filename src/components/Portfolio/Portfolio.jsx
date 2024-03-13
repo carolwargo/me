@@ -6,6 +6,7 @@ import Desk from "../../assets/images/Portfolio/Desk.png";
 import SVG from "../../assets/images/Portfolio/SVG.png";
 import Notes from "../../assets/images/Portfolio/Notes.png";
 import README from "../../assets/images/Portfolio/README.png";
+import Blog from "../../assets/images/Blog.png";
 import Login from "./Forms/Login";
 import Signup from "./Forms/Signup";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -390,6 +391,27 @@ function Portfolio() {
                       See Site
                     </button>
                   </li>
+                </ul>
+              </div>
+            </div>
+            <div className="w3-row-padding" style={{ margin: "0 -16px" }}>
+              <div className="w3-half w3-margin-bottom">
+              <img src={Blog} alt="blog" />
+              </div>
+              <div className="w3-half">
+                <ul className="w3-ul w3-center w3-card w3-hover-shadow">
+                  <li className="w3-black w3-xlarge w3-padding-32">
+                    Restaurant
+                    <br />
+                    <span style={{ fontSize: "14px", fontWeight: "lighter" }}>
+                      Restaurant features: <i>'NOTE: in progress' </i>{" "}
+                    </span>
+                  </li>
+                  <li className="w3-padding-16">Pagination</li>
+                  <li className="w3-padding-16">Menu</li>
+                  <li className="w3-padding-16">Cards</li>
+                  <li className="w3-padding-16">Notifications</li>
+                  <li className="w3-padding-16">Calendar</li>
                 </ul>
               </div>
             </div>
