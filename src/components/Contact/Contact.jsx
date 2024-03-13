@@ -1,5 +1,5 @@
 import React from "react";
-import LocationView from "../../assets/images/About/LocationView.png";
+//import LocationView from "../../assets/images/About/LocationView.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -56,18 +56,7 @@ const Contact = () => {
         </div>
 
         <br />
-        {/**Image of Location Map */}
-        <h4>Where I am Located. </h4>
-        <p>
-          <i className="fa fa-map-marker fa-fw w3-xlarge w3-margin-right "></i>
-          Huntingtown, MD.
-        </p>
-        <img
-          src={LocationView}
-          alt="map"
-          style={{ width: "100%", margin: "16px 0" }}
-          className="w3-image w3-greyscale"
-        />
+
       </div>
 </div>
       {/*end Contact section */}

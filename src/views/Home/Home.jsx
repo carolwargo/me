@@ -1,7 +1,7 @@
 import React from "react";
 import MeWhite from "../../assets/images/Me/MeWhite.png";
 import ResumeDownload from "../../assets/ResumeDownload.pdf";
-//import LocationView from "../../assets/images/About/LocationView.png";
+import LocationView from "../../assets/images/About/LocationView.png";
 import Contact from "../../components/Contact/Contact";
 import About from "../../components/About/About";
 import Resume from "../../components/Resume/Resume";
@@ -109,7 +109,7 @@ const Home = () => {
         {/* Menu icon to open sidebar */}
         <span
           className="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black"
-          style={{ width: "auto;right:0" }}
+          style={{ width: "auto;right:16px" }}
           onClick={openNav}
         >
           <i className="fa fa-bars"></i>
@@ -160,19 +160,18 @@ const Home = () => {
               share insights into who I am professionally and the years of
               experience that shape what I do."
             </p>
-            <p>
-              "My passion lies in utilizing creative design to drive innovative
-              solutions through technology. With a distinctive blend of skills
-              and experience, I am a seasoned full-stack software developer and
-              UX designer deeply committed to collaboration, bringing together
-              diverse perspectives to tackle challenges effectively. With over
-              20 years of experience in business management & strategic
-              development, I bring a wealth of knowledge and expertise to every
-              project I undertake."
-            </p>
-            <br />
-
-        
+            {/**Image of Location Map */}
+            <h4>Where I am Located. </h4>
+        <p>
+          <i className="fa fa-map-marker fa-fw w3-xlarge w3-margin-right "></i>
+          Huntingtown, MD.
+        </p>
+        <img
+          src={LocationView}
+          alt="map"
+          style={{ width: "100%", margin: "16px 0" }}
+          className="w3-image w3-greyscale"
+        />
   {/*start About */}
   <div className='about' id='about'>
        <About/>
