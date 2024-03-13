@@ -6,15 +6,12 @@ import Desk from "../../assets/images/Portfolio/Desk.png";
 import SVG from "../../assets/images/Portfolio/SVG.png";
 import Notes from "../../assets/images/Portfolio/Notes.png";
 import README from "../../assets/images/Portfolio/README.png";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import Login from "./Forms/Login";
 import Signup from "./Forms/Signup";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Portfolio() {
-
-
   return (
     <div >
       
@@ -412,6 +409,7 @@ function Portfolio() {
               autem corrupti ea?
             </p>
             <br />
+         
           </div>
           {/*end graphics*/}
           </div>

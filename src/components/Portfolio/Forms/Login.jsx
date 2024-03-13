@@ -10,22 +10,24 @@ function Login() {
                 <div className="w3-container w3-content w3-padding-16 px-4 border-dark">
                     <h4 className="fw-light w3-margin-top"><b>Login Form</b></h4>
                     <div className="w3-padding-24">
-                        <div data-mdb-input-init className="form-outline mb-4">
+                        <div className="form-outline mb-4">
                             <input 
                                 type="text"
                                 id="form1Example1"
                                 className="form-control shadow-sm border border-1"
+                                readOnly // Add readOnly attribute
                             />
-                            <label className="form-label" htmlFor="form1Example1">Email address</label>
+                            <label className="form-label" htmlFor="form1Example1"></label>
                         </div>
 
-                        <div data-mdb-input-init className="form-outline mb-4">
+                        <div className="form-outline mb-4">
                             <input 
                                 type="text" 
                                 id="form1Example2" 
                                 className="form-control shadow-sm border border-1" 
+                                readOnly // Add readOnly attribute
                             />
-                            <label className="form-label" htmlFor="form1Example2">Password</label>
+                            <label className="form-label" htmlFor="form1Example2"></label>
                         </div>
 
                         <div className="row mb-4">
@@ -35,6 +37,7 @@ function Login() {
                                         type="checkbox" 
                                         id="form1Example3" 
                                         className="form-check-input" 
+                                        readOnly // Add readOnly attribute
                                     />
                                     <label className="form-check-label" htmlFor="form1Example3"> Remember me </label>
                                 </div>
@@ -46,13 +49,12 @@ function Login() {
                             
                         </div>
                         <div>
-                                <button 
-                            data-mdb-ripple-init 
-                            type="button" 
-                            className="btn btn-primary btn-block mb-4 px-5 shadow"
-                        >
-                            Sign up
-                        </button>
+                            <button 
+                                type="button" 
+                                className="btn btn-primary btn-block mb-4 px-5 shadow"
+                            >
+                                Sign up
+                            </button>
                         </div>
                     </div>
                     

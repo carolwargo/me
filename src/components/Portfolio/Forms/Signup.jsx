@@ -9,46 +9,49 @@ function Signup() {
             <div className="w3-container w3-content bg-white shadow">
                 <div className="w3-container w3-content w3-padding-16 px-4 border-dark">
                     <h4 className="fw-light w3-margin-top"><b>Signup & Register Form</b></h4>
-                    <div>
+                    <form>
                         <div className="row mb-4">
                             <div className="col">
-                                <div data-mdb-input-init className="form-outline ">
+                                <div className="form-outline ">
                                     <input 
                                         type="text" 
                                         id="firstName" 
                                         className="form-control shadow-sm border border-1" 
+                                        readOnly // Add readOnly attribute
                                     />
-                                    <label className="form-label" htmlFor="firstName">First name</label>
+                                    <label className="form-label" htmlFor="firstName"></label>
                                 </div>
                             </div>
                             <div className="col">
-                                <div data-mdb-input-init className="form-outline">
+                                <div  className="form-outline">
                                     <input 
                                         type="text" 
                                         id="lastName" 
                                         className="form-control shadow-sm border border-1" 
+                                        readOnly // Add readOnly attribute
                                     />
-                                    <label className="form-label" htmlFor="lastName">Last name</label>
+                                    <label className="form-label" htmlFor="lastName"></label>
                                 </div>
                             </div>
                         </div>
 
-                        <div data-mdb-input-init className="form-outline mb-4">
+                        <div  className="form-outline mb-4">
                             <input 
                                 type="email" 
                                 id="email" 
                                 className="form-control shadow-sm border border-1" 
+                                readOnly // Add readOnly attribute
                             />
-                            <label className="form-label" htmlFor="email">Email address</label>
+                            <label className="form-label" htmlFor="email"></label>
                         </div>
 
-                        <div data-mdb-input-init className="form-outline mb-4">
+                        <div  className="form-outline mb-4">
                             <input 
                                 type="password" 
-                                id="password" 
                                 className="form-control shadow-sm border border-1" 
+                                readOnly // Add readOnly attribute
                             />
-                            <label className="form-label" htmlFor="password">Password</label>
+                            <label className="form-label"></label>
                         </div>
 
                         <div className="form-check d-flex justify-content-center mb-4">
@@ -57,6 +60,7 @@ function Signup() {
                                 type="checkbox" 
                                 id="newsletterCheck"  
                                 defaultChecked 
+                                readOnly // Add readOnly attribute
                             />
                             <label className="form-check-label" htmlFor="newsletterCheck">
                                 Subscribe to our newsletter
@@ -64,7 +68,6 @@ function Signup() {
                         </div>
 
                         <button 
-                            data-mdb-ripple-init 
                             type="button" 
                             className="btn btn-primary btn-block mb-4 px-5 shadow"
                         >
@@ -74,7 +77,6 @@ function Signup() {
                         <div className="text-center w3-margin-bottom">
                             <p>or sign up with:</p>
                             <button 
-                                data-mdb-ripple-init 
                                 type="button" 
                                 className="btn btn-secondary btn-floating mx-1 shadow"
                             >
@@ -82,15 +84,13 @@ function Signup() {
                             </button>
 
                             <button 
-                                data-mdb-ripple-init 
                                 type="button" 
                                 className="btn btn-secondary btn-floating mx-1 shadow"
                             >
                                 <i className="fab fa-google"></i>
                             </button>
 
-                            <button 
-                                data-mdb-ripple-init 
+                            <button  
                                 type="button" 
                                 className="btn btn-secondary btn-floating mx-1 shadow"
                             >
@@ -98,14 +98,13 @@ function Signup() {
                             </button>
 
                             <button 
-                                data-mdb-ripple-init 
                                 type="button" 
                                 className="btn btn-secondary btn-floating mx-1 shadow"
                             >
                                 <i className="fab fa-github"></i>
                             </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>

@@ -1,184 +1,355 @@
-import React from "react";
-import MeWhite from "../../../assets/images/Me/MeWhite.png";
-import ResumeDownload from "../../../assets/ResumeDownload.pdf";
-//import LocationView from "../../../assets/images/About/LocationView.png";
+import React, { useState } from 'react';
+import ImageModal from '../../Modal/ImageModal';
+import { HiMagnifyingGlassPlus } from "react-icons/hi2";
+import Business from '../../../assets/images/About/Business.png';
+import YogaSet from '../../../assets/images/YogaStory/YogaSet.png';
+import ProductCampaign from '../../../assets/images/Graphics/ProductCampaign.png';
+import LineUp from '../../../assets/images/Graphics/LineUp.png';
+import MidSeason from '../../../assets/images/Graphics/MidSeason.png';
+import CheckOut from '../../../assets/images/Graphics/CheckOut.png';
+import Catching from '../../../assets/images/Graphics/Catching.png';
+import Canceled from '../../../assets/images/Graphics/Canceled.png';
+import CuttersFlyers from '../../../assets/images/Graphics/CuttersFlyers.png';
+import NorthernGolf from '../../../assets/images/Graphics/NorthernGolf.png';
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-const Graphics = () => {
 
+
+const BusinessEssentials = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleModalOpen = (image) => {
+    setSelectedImage(image);
+    setShowModal(true);
+  };
+
+  const handleModalClose = () => {
+    setSelectedImage(null);
+    setShowModal(false);
+  };
   return (
-  <div>
-    <div className="">
-
-      <div className="w3-display-container w3-content w3-wide"> 
-      
-     {/*start Header section*/}
-     <header className="w3-container w3-center " style={{ padding: "80px 16px" }} id="home">
-          <div className="w3-container w3-center w3-opacity w3-large">
-            <nav> <a href="https://carolwargo.github.io/react-portfolio/" className="w3-button ">
-            <i className="fab fa-github" w3-hover-opacity></i></a>
-          <span><a href="https://www.linkedin.com/in/carol-wargo-35021baa/" className="w3-button">
-            <i className="fab fa-linkedin" w3-hover-opacity></i></a></span> 
-          <span><a href="mailto:carolwargo.dev@gmail.com" className="w3-button">
-            <i className="fa fa-envelope fa-fw" w3-hover-opacity></i> </a></span> 
-          <span><a href="tel:443-771-1726"className="w3-button"> 
-          <i className="fa fa-phone fa-fw" w3-hover-opacity></i></a></span>
-          </nav>
-          </div>
-          <h1 className="w3-jumbo"><b>Carol Wargo</b></h1>
-          <p>Full Stack Developer | UX Designer.</p>
-          <img src={MeWhite} className="w3-image w3-hide-large w3-hide-small w3-round" style={{ display: "block", width: "60%", margin: "auto" }} alt="Profile" />
-          <img src={MeWhite} className="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333" alt="Profile" />
-       
-        </header>
- {/**end Header section */}
- <div className="justify-content-center align-items-center  w3-center">
-          <p>Download a copy of my resume!</p>
-          <button className="w3-button w3-light-grey">
-          
-          <a
-              className="button text-black"
-              id="resume-download"
-              download
-              href={ResumeDownload}
-            >
-            <i className="fa fa-download"></i> Download Resume
-            </a>
-          </button>
+    <div className='container mt-4'>
+      <div className="row graphics-container">
+        {/* Business Image */}
+        <div className="col-sm-12 col-md-4 col-lg-4 mb-2 d-flex justify-content-center align-items-center">
+      <div className="graphics-body p-2 d-flex flex-column justify-content-center align-items-center">
+        <div className="graphics-title">
+              <img
+                src={Business}
+                alt="Business"
+                className="mb-2 border border-black clickable-image"
+                style={{ width: "100%", height: "auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)" }}
+                onClick={() => handleModalOpen(Business)}
+              />
+              <p style={{ fontSize: '12px', color: 'blue' }}><HiMagnifyingGlassPlus /> click image to enlarge</p>
+              <h4>TITLE</h4>
+            </div>
+            <p className="business-essentials-text">
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quidem rerum recusandae nulla alias voluptate eius temporibus cum beatae maxime pariatur ullam, aliquid, molestiae, repellendus enim consectetur vitae placeat tenetur?
+            </p>
           </div>
 
-      {/**start Portfolio section */}
- <div className="w3-padding-32 w3-content">
- <h2 className="w3-text-grey">My Portfolio</h2>
-    <hr className="w3-opacity"/>
-{/**start Portfolio photo grid */}
-<div className="w3-row-padding" style={{margin:"0 -16px"}}>
-<div className="w3-half">
-        <img src={MeWhite} alt="me" style={{width:"100%"}}/>
-        <img src={MeWhite} alt="me" style={{width:"100%"}}/>
-        <img src={MeWhite} alt="me" style={{width:"100%"}}/>
+          {/* ImageModal for Business Image */}
+          <ImageModal
+            showModal={showModal}
+            handleModalClose={handleModalClose}
+            imageSrc={selectedImage}
+            altText="Enlarged Business Image"
+            title="close"
+          />
+        </div>
+
+        {/* Yoga Set Image */}
+        <div className="col-sm-12 col-md-4 col-lg-4 mb-2 d-flex justify-content-center align-items-center">
+      <div className="graphics-body p-2 d-flex flex-column justify-content-center align-items-center">
+        <div className="graphics-title">
+              <img
+                src={YogaSet}
+                alt="YogaSet"
+                className="mb-2 border border-black clickable-image"
+                style={{ width: "100%", height: "auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)" }}
+                onClick={() => handleModalOpen(YogaSet)}
+              />
+              <p style={{ fontSize: '12px', color: 'blue' }}><HiMagnifyingGlassPlus /> click image to enlarge</p>
+              <h4>TITLE</h4>
+            </div>
+            <p className="business-essentials-text">
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quidem rerum recusandae nulla alias voluptate eius temporibus cum beatae maxime pariatur ullam, aliquid, molestiae, repellendus enim consectetur vitae placeat tenetur?
+            </p>
+          </div>
+
+          {/* ImageModal for Red Baseball Image */}
+          <ImageModal
+            showModal={showModal}
+            handleModalClose={handleModalClose}
+            imageSrc={selectedImage}
+            altText="Enlarged Red Baseball Image"
+            title="close"
+          />
+        </div>
+
+        {/* Product Campaign Image */}
+        <div className="col-sm-12 col-md-4 col-lg-4 mb-2 d-flex justify-content-center align-bottom">
+          <div className="graphics-body p-2 justify-content-center align-bottom">
+            <div className="graphics-title">
+              <img
+                src={ProductCampaign}
+                alt="ProductCampaign"
+                className="mb-2 border border-black clickable-image"
+                style={{ width: "100%", height: "auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)" }}
+                onClick={() => handleModalOpen(ProductCampaign)}
+              />
+              <p style={{ fontSize: '12px', color: 'blue' }}><HiMagnifyingGlassPlus /> click image to enlarge</p>
+              <h4>TITLE</h4>
+            </div>
+            <p className="business-essentials-text">
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quidem rerum recusandae nulla alias voluptate eius temporibus cum beatae maxime pariatur ullam, aliquid, molestiae, repellendus enim consectetur vitae placeat tenetur?
+            </p>
+          </div>
+
+          {/* ImageModal for Product Campaign Image */}
+          <ImageModal
+            showModal={showModal}
+            handleModalClose={handleModalClose}
+            imageSrc={selectedImage}
+            altText="Enlarged Product Campaign Image"
+            title="close"
+          />
+        </div>
       </div>
 
 
-      <div className="w3-half">
-      <img src={MeWhite} alt="me" style={{width:"100%"}}/>
-        <img src={MeWhite} alt="me" style={{width:"100%"}}/>
-        <img src={MeWhite} alt="me" style={{width:"100%"}}/>
-        <img src={MeWhite} alt="me" style={{width:"100%"}}/>
-      </div>
-</div>
-{/**end Portfolio photo grid */}
- </div>
-  {/**end Portfolio section */}
-  
 
- {/*start Aboutsection */}
- <div className="w3-content w3-justify w3-text-grey w3-padding-32">
-<h2>About</h2>
-<hr className="w3-opacity"/>
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    {/*start proficiencies*/}
-    <h3 className="w3-padding-16">Technical Proficiencies</h3>
-    <p className="w3-wide">Photography</p>
-    <div className="w3-light-grey">
-      <div className="w3-container w3-center w3-padding-small w3-dark-grey" style={{width:"95%"}}>95%</div>
- </div>
- <p className="w3-wide">Photography</p>
-    <div className="w3-light-grey">
-      <div className="w3-container w3-center w3-padding-small w3-dark-grey" style={{width:"95%"}}>95%</div>
- </div>
- <p className="w3-wide">Photography</p>
-    <div className="w3-light-grey">
-      <div className="w3-container w3-center w3-padding-small w3-dark-grey" style={{width:"95%"}}>95%</div>
- </div>
- <p className="w3-wide">Photography</p>
-    <div className="w3-light-grey">
-      <div className="w3-container w3-center w3-padding-small w3-dark-grey" style={{width:"95%"}}>95%</div>
- </div>
- <p className="w3-wide">Photography</p>
-    <div className="w3-light-grey">
-      <div className="w3-container w3-center w3-padding-small w3-dark-grey" style={{width:"95%"}}>95%</div>
- </div>
-{/*end proficiencies*/}
-    {/*start experience*/}
-    <div className="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
-      <div className="w3-quarter w3-section">
-        <span className="w3-xlarge">14+</span><br/>
-        Partners
+
+{/* second row */  }
+   
+
+
+
+    {/* third row */  }
+    <div className="row graphics-container">
+  {/* LineUp Image */}
+  <div className="col-sm-12 col-md-4 col-lg-4 mb-2 d-flex justify-content-center align-bottom">
+    <div className="graphics-body p-2 justify-content-center align-bottom">
+      <div className="graphics-title">
+        <img
+          src={LineUp}
+          alt="LineUp"
+          className="mb-2 border border-black clickable-image"
+          style={{ width: "100%", height: "auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)" }}
+          onClick={() => handleModalOpen(LineUp)}
+        />
+        <p style={{ fontSize: '12px', color: 'blue' }}><HiMagnifyingGlassPlus /> click image to enlarge</p>
+        <h4>TITLE</h4>
       </div>
-      <div className="w3-quarter w3-section">
-        <span className="w3-xlarge">55+</span><br/>
-        Projects Done
-      </div>
-      <div className="w3-quarter w3-section">
-        <span className="w3-xlarge">89+</span><br/>
-        Happy Clients
-      </div>
-      <div className="w3-quarter w3-section">
-        <span className="w3-xlarge">150+</span><br/>
-        Meetings
-      </div>
+      <p className="business-essentials-text">
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quidem rerum recusandae nulla alias voluptate eius temporibus cum beatae maxime pariatur ullam, aliquid, molestiae, repellendus enim consectetur vitae placeat tenetur?
+      </p>
     </div>
-     {/*end experience*/}
-      {/*start testimonials*/}
-      <h3 className="w3-padding-24">My Reputation</h3>
-      <img src={MeWhite} alt="me" 
-      className='w3-left w3-circle w3-margin-right'
-      style={{width:'80px'
-      }}
-      />
-       <p><span className="w3-large w3-text-black w3-margin-right">Chandler Bing.</span> Web Designer.</p>
-    <p>Jane Doe is just awesome. I am so happy to have met her!</p><br></br>
-    <img src={MeWhite} alt="me" 
-      className='w3-left w3-circle w3-margin-right'
-      style={{width:'80px'
-      }}
-      />
-       <p><span className="w3-large w3-text-black w3-margin-right">Chandler Bing.</span> Web Designer.</p>
-    <p>Jane Doe is just awesome. I am so happy to have met her!</p><br></br>  
-       {/*end testimonials*/}
-{/*start grid for pricing tables*/}
-<h2 className="w3-padding-16">Samples. </h2>
 
-<div className="w3-row-padding" style={{margin:"0 -16px"}}>
-    <div className="w3-half w3-margin-bottom">
-        <ul className="w3-ul w3-center w3-card w3-hover-shadow">
-          <li className="w3-black w3-xlarge w3-padding-32">Blog Site <br/> <span style={{fontSize:'14px', fontWeight:'lighter'}}>Blog site features: </span></li>
-          <li className="w3-padding-16">Moment Js Integration</li>
-          <li className="w3-padding-16">Featured Entries</li>
-          <li className="w3-padding-16">Post Data Arrays</li>
-          <li className="w3-padding-16">Share Buttons</li>
-          <li className="w3-light-grey w3-padding-24">
-           <a href="/blog"alt='blog'> <button className="w3-button w3-white w3-padding-large w3-hover-black">See Site</button></a>
-          </li>
-        </ul>
+    {/* ImageModal for LineUp Image */}
+    <ImageModal
+      showModal={showModal}
+      handleModalClose={handleModalClose}
+      imageSrc={selectedImage}
+      altText="Enlarged LineUp Image"
+      title="close"
+    />
+  </div>
+
+  {/* CheckOut Image */}
+  <div className="col-sm-12 col-md-4 col-lg-4 mb-2 d-flex justify-content-center align-bottom">
+    <div className="graphics-body p-2 justify-content-center align-bottom">
+      <div className="graphics-title">
+        <img
+          src={CheckOut}
+          alt="CheckOut"
+          className="mb-2 border border-black clickable-image"
+          style={{ width: "100%", height: "auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)" }}
+          onClick={() => handleModalOpen(CheckOut)}
+        />
+        <p style={{ fontSize: '12px', color: 'blue' }}><HiMagnifyingGlassPlus /> click image to enlarge</p>
+        <h4>TITLE</h4>
       </div>
-      <div className="w3-half">
-      <ul className="w3-ul w3-center w3-card w3-hover-shadow">
-          <li className="w3-black w3-xlarge w3-padding-32">Blog Site <br/> 
-          <span style={{fontSize:'14px', fontWeight:'lighter'}}>Blog site features: </span></li>
-          <li className="w3-padding-16">Moment Js Integration</li>
-          <li className="w3-padding-16">Featured Entries</li>
-          <li className="w3-padding-16">Post Data Arrays</li>
-          <li className="w3-padding-16">Share Buttons</li>
-          <li className="w3-light-grey w3-padding-24">
-            <button className="w3-button w3-white w3-padding-large w3-hover-black">See Site</button>
-          </li>
-        </ul>
+      <p className="graphics-text">
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quidem rerum recusandae nulla alias voluptate eius temporibus cum beatae maxime pariatur ullam, aliquid, molestiae, repellendus enim consectetur vitae placeat tenetur?
+      </p>
+    </div>
+
+    {/* ImageModal for CheckOut Image */}
+    <ImageModal
+      showModal={showModal}
+      handleModalClose={handleModalClose}
+      imageSrc={selectedImage}
+      altText="Enlarged CheckOut Image"
+      title="close"
+    />
+  </div>
+
+  {/* MidSeason Image */}
+  <div className="col-sm-12 col-md-4 col-lg-4 mb-2 d-flex justify-content-center align-bottom">
+    <div className="graphics-body p-2 justify-content-center align-bottom">
+      <div className="graphics-title">
+        <img
+          src={MidSeason}
+          alt="MidSeason"
+          className="mb-2 border border-black clickable-image"
+          style={{ width: "100%", height: "auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)" }}
+          onClick={() => handleModalOpen(MidSeason)}
+        />
+        <p style={{ fontSize: '12px', color: 'blue' }}><HiMagnifyingGlassPlus /> click image to enlarge</p>
+        <h4>TITLE</h4>
       </div>
-    {/*endgrid for pricing tables*/}
-</div>
-{/*end Aboutsection */}
+      <p className="business-essentials-text">
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quidem rerum recusandae nulla alias voluptate eius temporibus cum beatae maxime pariatur ullam, aliquid, molestiae, repellendus enim consectetur vitae placeat tenetur?
+      </p>
+    </div>
+
+    {/* ImageModal for MidSeason Image */}
+    <ImageModal
+      showModal={showModal}
+      handleModalClose={handleModalClose}
+      imageSrc={selectedImage}
+      altText="Enlarged MidSeason Image"
+      title="close"
+    />
+  </div>
 </div>
 
+     {/* fourth row */  }
+   
+
+
+
+{/*row 6 */}
+
+<div className="row graphics-container">
+  {/* CuttersFlyers Image */}
+  <div className="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-bottom">
+    <div className="graphics-body p-2 justify-content-center align-bottom">
+      <div className="graphics-title">
+        <img
+          src={CuttersFlyers}
+          alt="CuttersFlyers"
+          className="mb-2 border border-black clickable-image"
+          style={{ width: "100%", height: "auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)" }}
+          onClick={() => handleModalOpen(CuttersFlyers)}
+        />
+        <p style={{ fontSize: '12px', color: 'blue' }}><HiMagnifyingGlassPlus /> click image to enlarge</p>
+        <h4>TITLE</h4>
+      </div>
+      <p className="business-essentials-text">
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quidem rerum recusandae nulla alias voluptate eius temporibus cum beatae maxime pariatur ullam, aliquid, molestiae, repellendus enim consectetur vitae placeat tenetur?
+      </p>
+    </div>
+
+    {/* ImageModal for CuttersFlyers Image */}
+    <ImageModal
+      showModal={showModal}
+      handleModalClose={handleModalClose}
+      imageSrc={selectedImage}
+      altText="Enlarged CuttersFlyers Image"
+      title="close"
+    />
+  </div>
+
+  {/* NorthernGolf Image */}
+  <div className="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-bottom">
+    <div className="graphics-body p-2 justify-content-center align-bottom">
+      <div className="graphics-title">
+        <img
+          src={NorthernGolf}
+          alt="NorthernGolf"
+          className="mb-2 border border-black clickable-image"
+          style={{ width: "100%", height: "auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)" }}
+          onClick={() => handleModalOpen(NorthernGolf)}
+        />
+        <p style={{ fontSize: '12px', color: 'blue' }}><HiMagnifyingGlassPlus /> click image to enlarge</p>
+        <h4>TITLE</h4>
+      </div>
+      <p className="graphics-text">
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quidem rerum recusandae nulla alias voluptate eius temporibus cum beatae maxime pariatur ullam, aliquid, molestiae, repellendus enim consectetur vitae placeat tenetur?
+      </p>
+    </div>
+
+    {/* ImageModal for NorthernGolf Image */}
+    <ImageModal
+      showModal={showModal}
+      handleModalClose={handleModalClose}
+      imageSrc={selectedImage}
+      altText="Enlarged NorthernGolf Image"
+      title="close"
+    />
+  </div>
 </div>
+
+
+
+<div className="row graphics-container">
+  {/* Canceled Image */}
+  <div className="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-bottom">
+    <div className="graphics-body p-2 justify-content-center align-bottom">
+      <div className="graphics-title">
+        <img
+          src={Canceled}
+          alt="Canceled"
+          className="mb-2 border border-black clickable-image"
+          style={{ width: "100%", height: "auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)" }}
+          onClick={() => handleModalOpen(Canceled)}
+        />
+        <p style={{ fontSize: '12px', color: 'blue' }}><HiMagnifyingGlassPlus /> click image to enlarge</p>
+        <h4>TITLE</h4>
+      </div>
+      <p className="business-essentials-text">
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quidem rerum recusandae nulla alias voluptate eius temporibus cum beatae maxime pariatur ullam, aliquid, molestiae, repellendus enim consectetur vitae placeat tenetur?
+      </p>
+    </div>
+
+    {/* ImageModal for Canceled Image */}
+    <ImageModal
+      showModal={showModal}
+      handleModalClose={handleModalClose}
+      imageSrc={selectedImage}
+      altText="Enlarged Canceled Image"
+      title="close"
+    />
+  </div>
+
+  {/* Catching Image */}
+  <div className="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-bottom">
+    <div className="graphics-body p-2 justify-content-center align-bottom">
+      <div className="graphics-title">
+        <img
+          src={Catching}
+          alt="Catching"
+          className="mb-2 border border-black clickable-image"
+          style={{ width: "100%", height: "auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)" }}
+          onClick={() => handleModalOpen(Catching)}
+        />
+        <p style={{ fontSize: '12px', color: 'blue' }}><HiMagnifyingGlassPlus /> click image to enlarge</p>
+        <h4>TITLE</h4>
+      </div>
+      <p className="graphics-text">
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quidem rerum recusandae nulla alias voluptate eius temporibus cum beatae maxime pariatur ullam, aliquid, molestiae, repellendus enim consectetur vitae placeat tenetur?
+      </p>
+    </div>
+
+    {/* ImageModal for Catching Image */}
+    <ImageModal
+      showModal={showModal}
+      handleModalClose={handleModalClose}
+      imageSrc={selectedImage}
+      altText="Enlarged Catching Image"
+      title="close"
+    />
+  </div>
 </div>
-</div>
+ 
+     </div>
   );
-}
+};
 
-export default Graphics;
+export default BusinessEssentials;
+
