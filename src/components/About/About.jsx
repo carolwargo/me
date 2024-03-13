@@ -39,7 +39,7 @@ export default function About() {
 
         {/* start Forms grid */}
         <div className="container-fluid bg-white text-black">
-          <div className="w3-content w3-justify w3-text-black w3-padding-32">
+         
                {/*start Interpersonal Proficiencies*/}
          <h2>Interpersonal Proficiencies. </h2>
          <hr />
@@ -138,12 +138,13 @@ export default function About() {
               </div>
               <br />
               </div>
-<br />
-         
-          </div>
-<br />
+<h2  id="tables">
+               Expertise.{" "}
+              </h2>
+              <hr className="w3-opacity" />
         <div className="container-fluid py-2 w3-black">
           {/**start experience count */}
+       
           <div className="w3-row w3-center w3-black w3-padding-16 w3-margin-bottom">
             <div className="w3-quarter w3-section">
               <span className="w3-xlarge">
@@ -169,8 +170,11 @@ export default function About() {
             </div>
           </div>
         </div>
+            
+        </div>
+        <hr className="w3-opacity" />
 </div>
-      </div>
+    
 
   );
 }

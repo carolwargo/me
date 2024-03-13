@@ -20,8 +20,8 @@ function Portfolio() {
       
         <div className="portfolio" id="portfolio">
           {/**start Portfolio section */}
-          <div className="w3-content w3-justify w3-text-black w3-padding-32">
-            <h1 className="w3-text-black" id="tables">
+          <div className="w3-content w3-container py-2 bg-white text-black w3-padding-32">
+        <h1 className="w3-text-black" id="tables">
              <b>PORTFOLIO.</b> 
             </h1>
             <hr className="w3-opacity" />
@@ -416,6 +416,7 @@ function Portfolio() {
           {/*end graphics*/}
           </div>
     </div>
+   
   );
 }
 
