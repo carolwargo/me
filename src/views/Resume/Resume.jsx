@@ -25,59 +25,51 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-const Home = () => {
+const ResumePage = () => {
 
   return (
     <div className="resume" id="resume">
-      
- {/**end Header section */}
- 
+      {/* Professional Profile */}
+      <div className="w3-container w3-content ">
+      <div className="w3-content w3-justify w3-text-black w3-padding-32">
+        <h2>Professional Profile.</h2>
+        <hr />
+        <p>I've had the privilege of contributing to several innovative projects and achieving significant milestones throughout my career. With a strong foundation in project management, user-centrics, coding languages, and a passion for problem-solving, I've played a pivotal role in developing robust software solutions that meet the diverse needs of clients and users.</p>
+      </div>
 
- {/*start profile*/}
- <div className="w3-content w3-justify w3-text-black w3-padding-32">
-<h2>Professional Profile. </h2>
-<hr />
-<p>I've had the privilege of contributing to several innovative projects and achieving significant milestones throughout my career. With a strong foundation in project management, user-centrics, coding languages and a passion for problem-solving, I've played a pivotal role in developing robust software solutions that meet the diverse needs of clients and users.</p>      
-</div>
- {/*end profile*/}
+      {/* Professional Achievements */}
+      <div className="w3-content w3-justify w3-text-black w3-padding-32">
+        <h2>Professional Achievements.</h2>
+        <hr />
+        <p>My professional journey has been marked by numerous achievements. Discover some of my key accomplishments. Click on the respective buttons for more details.</p>
+        {/* Stars */}
+        <div id="professional-achievements" style={{ color: "black" }}>
+          <div className="w3-container w3-light-gray">
+            <div style={{ paddingTop: "1rem" }}>
+              <div className="w3-padding">
+                <h4>Technological Transformation in Business.</h4>
+                <p className="text-secondary fw-light">click <b>SHOW ACHIEVEMENT</b> to reveal achievement statement.</p>
+              </div>
+              <Star1 />
+            </div>
 
- {/*start achievements*/}
- <div className="w3-content w3-justify w3-text-black w3-padding-32">
-<h2>Professional Achievements. </h2>
-<hr />
-<p>My professional journey has been marked by numerous achievements. Discover some of my key accomplishments. Click on the
-respective buttons for more details.</p>
- {/*start stars*/}
-          <div id="professional-achievements"
-            style={{ color: "black" }}
-          >
-            <div className="w3-container w3-light-gray">
-              <div style={{ paddingTop: "1rem" }}>
+            <div style={{ paddingTop: "1rem" }}>
               <div className="w3-padding">
-        <h4>Technological Transformation in Business.</h4>
-       <p className="text-secondary fw-light">click <b>SHOW ACHIEVEMENT</b> to reveal achievement statement.
-      </p>
-       </div>
-                <Star1 />
+                <h4>Develop & Launch Marketing Campaigns.</h4>
+                <p className="text-secondary fw-light">click <b>SHOW ACHIEVEMENT</b> to reveal achievement statement.</p>
               </div>
-            
-              <div style={{ paddingTop: "1rem" }}>
-              <div className="w3-padding">
-      <h4>Develop & Launch Marketing Campaigns.</h4>
-    <p className="text-secondary fw-light">click <b>SHOW ACHIEVEMENT</b> to reveal achievement statement.
-   </p>
-    </div>
-                <Star2 />
+              <Star2 />
+            </div>
+
+            <div style={{ paddingTop: "1rem" }}>
+              <div className="w3-margin-top">
+                <h4>Leadership & Profit Surge Against the Odds.</h4>
               </div>
-              
-              <div style={{ paddingTop: "1rem" }}>
-              <div className="w3-margin-top"> <h4>Leadership & Profit Surge Against the Odds.</h4>
-</div>
-                <Star3 />
-              </div>
+              <Star3 />
             </div>
-            </div>
-            </div>
+          </div>
+        </div>
+      </div>
             {/*end achievements */}
 
             {/*start proficiencies*/}
@@ -310,10 +302,10 @@ respective buttons for more details.</p>
             </p>
           </a>
         </div>
-
+</div>
 </div>
 
   );
 }
 
-export default Home;
+export default ResumePage;

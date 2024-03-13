@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import ImageModal from "../../Modal/ImageModal";
 import { HiMagnifyingGlassPlus } from "react-icons/hi2";
-import YogaSet from "../../../assets/images/YogaStory/YogaSet.png";
+
+
 import ProductCampaign from "../../../assets/images/Graphics/ProductCampaign.png";
 import MidSeason from "../../../assets/images/Graphics/MidSeason.png";
-import CheckOut from "../../../assets/images/Graphics/CheckOut.png";
+//import CheckOut from "../../../assets/images/Graphics/CheckOut.png";
 import Catching from "../../../assets/images/Graphics/Catching.png";
 import Canceled from "../../../assets/images/Graphics/Canceled.png";
 import CuttersFlyers from "../../../assets/images/Graphics/CuttersFlyers.png";
-import NorthernGolf from "../../../assets/images/Graphics/NorthernGolf.png";
+//import NorthernGolf from "../../../assets/images/Graphics/NorthernGolf.png";
+import YogaSet from "../../../assets/images/YogaStory/YogaSet.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -25,313 +27,65 @@ const BusinessEssentials = () => {
     setSelectedImage(null);
     setShowModal(false);
   };
+
   return (
     <div className="w3-container w3-content mt-4">
-      <div className="row graphics-container">
-
-        {/* Product Campaign Image */}
-        <div className="col-sm-12 col-md-12 col-lg-12 mb-2 d-flex justify-content-center align-bottom">
-          <div className="graphics-body p-2 justify-content-center align-bottom">
-            <div className="graphics-title">
-            <h4>Product Campaign</h4>
-              <img
-                src={ProductCampaign}
-                alt="ProductCampaign"
-                className="mb-2 border border-black clickable-image"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
-                }}
-                onClick={() => handleModalOpen(ProductCampaign)}
-              />
-              <p style={{ fontSize: "12px", color: "blue" }}>
-                <HiMagnifyingGlassPlus /> click image to enlarge
-              </p>
-            </div>
+        <div className="w3-content w3-justify w3-text-black w3-padding-32">
+        <h4 className="w3-text-black" id="#server">
+              Graphic Elements.
+            </h4>
+            <hr className="w3-opacity" />
+            <p>
+            Graphics play a crucial role in communication, whether it's in advertising, branding, web design, or multimedia content. They serve as visual elements that enhance the presentation of information and ideas, making them more engaging, memorable, and effective. 
+            </p>
+            <br />
           </div>
-
-          {/* ImageModal for Product Campaign Image */}
-          <ImageModal
-            showModal={showModal}
-            handleModalClose={handleModalClose}
-            imageSrc={selectedImage}
-            altText="Enlarged Product Campaign Image"
-            title="close"
-          />
-        </div>
-      </div>
-
       <div className="row graphics-container">
-        {/* LineUp Image
-  
-  <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-bottom">
-    <div className="graphics-body p-2 justify-content-center align-bottom">
-      <div className="graphics-title">
-        <img
-          src={LineUp}
-          alt="LineUp"
-          className="mb-2 border border-black clickable-image"
-          style={{ width: "100%", height: "auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)" }}
-          onClick={() => handleModalOpen(LineUp)}
-        />
-        <p style={{ fontSize: '12px', color: 'blue' }}><HiMagnifyingGlassPlus /> click image to enlarge</p>
-        <h4>TITLE</h4>
-      </div>
-      <p className="business-essentials-text">
-       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quidem rerum recusandae nulla alias voluptate eius temporibus cum beatae maxime pariatur ullam, aliquid, molestiae, repellendus enim consectetur vitae placeat tenetur?
-      </p>
-    </div>
+        {[
+          { image: ProductCampaign, title: "Product Campaign" },
+          { image: MidSeason, title: "Large Format" },
+          { image: CuttersFlyers, title: "Special Event" },
+          { image: Catching, title: "Services and Branding" },
+          { image: Canceled, title: "Team Notifications" },
+          { image: YogaSet, title: "Yoga Set" },
+        ].map((item, index) => (
+          <div
+            key={index}
+            className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-bottom"
+          >
 
-  
-    <ImageModal
-      showModal={showModal}
-      handleModalClose={handleModalClose}
-      imageSrc={selectedImage}
-      altText="Enlarged LineUp Image"
-      title="close"
-    />
-  </div>
- */}
-        <div className="row graphics-container">
-          {/* CheckOut Image */}
-          <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-bottom">
-            <div className="graphics-body p-2 justify-content-center align-bottom">
+            <div className="graphics-body justify-content-center py-2 align-bottom">
+              
               <div className="graphics-title">
-              <h4>Large Format Campaign</h4>
+                <h5 className="py-2 text-center">{item.title}</h5>
                 <img
-                  src={CheckOut}
-                  alt="CheckOut"
+                  src={item.image}
+                  alt={item.title}
                   className="mb-2 border border-black clickable-image"
                   style={{
                     width: "100%",
                     height: "auto",
                     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
                   }}
-                  onClick={() => handleModalOpen(CheckOut)}
+                  onClick={() => handleModalOpen(item.image)}
                 />
-                <p style={{ fontSize: "12px", color: "blue" }}>
+                <p className= 'text-center' style={{ fontSize: "12px", color: "blue" }}>
                   <HiMagnifyingGlassPlus /> click image to enlarge
                 </p>
               </div>
             </div>
-
-            {/* ImageModal for CheckOut Image */}
-            <ImageModal
-              showModal={showModal}
-              handleModalClose={handleModalClose}
-              imageSrc={selectedImage}
-              altText="Enlarged CheckOut Image"
-              title="close"
-            />
           </div>
-
-          {/* MidSeason Image */}
-          <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-bottom">
-            <div className="graphics-body p-2 justify-content-center align-bottom">
-              <div className="graphics-title">
-              <h4>Part 2</h4>
-                <img
-                  src={MidSeason}
-                  alt="MidSeason"
-                  className="mb-2 border border-black clickable-image"
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
-                  }}
-                  onClick={() => handleModalOpen(MidSeason)}
-                />
-                <p style={{ fontSize: "12px", color: "blue" }}>
-                  <HiMagnifyingGlassPlus /> click image to enlarge
-                </p>
-              </div>
-            </div>
-
-            {/* ImageModal for MidSeason Image */}
-            <ImageModal
-              showModal={showModal}
-              handleModalClose={handleModalClose}
-              imageSrc={selectedImage}
-              altText="Enlarged MidSeason Image"
-              title="close"
-            />
-          </div>
-        </div>
+        ))}
       </div>
 
-      {/* fourth row */}
-
-      {/* Yoga Set Image */}
-      <div className="row">
-        <div className="col-sm-12 col-md-12 col-lg-12 mb-2 d-flex justify-content-center align-items-center">
-          <div className="graphics-body p-2 d-flex flex-column justify-content-center align-items-center">
-            <div className="graphics-title">
-            <h4>Services Campaign</h4>
-              <img
-                src={YogaSet}
-                alt="YogaSet"
-                className="mb-2 border border-black clickable-image"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
-                }}
-                onClick={() => handleModalOpen(YogaSet)}
-              />
-              <p style={{ fontSize: "12px", color: "blue" }}>
-                <HiMagnifyingGlassPlus /> click image to enlarge
-              </p>
-            </div>
-          </div>
-
-          {/* ImageModal for Red Baseball Image */}
-          <ImageModal
-            showModal={showModal}
-            handleModalClose={handleModalClose}
-            imageSrc={selectedImage}
-            altText="Enlarged Red Baseball Image"
-            title="close"
-          />
-        </div>
-      </div>
-
-      <div className="row">
-        <div className="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center align-bottom">
-          <div className="graphics-body p-2 justify-content-center align-bottom">
-            <div className="graphics-title">
-            <h4>Special Event</h4>
-              <img
-                src={CuttersFlyers}
-                alt="CuttersFlyers"
-                className="mb-2 border border-black clickable-image"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
-                }}
-                onClick={() => handleModalOpen(CuttersFlyers)}
-              />
-              <p style={{ fontSize: "12px", color: "blue" }}>
-                <HiMagnifyingGlassPlus /> click image to enlarge
-              </p>
-            </div>
-          </div>
-
-          {/* ImageModal for CuttersFlyers Image */}
-          <ImageModal
-            showModal={showModal}
-            handleModalClose={handleModalClose}
-            imageSrc={selectedImage}
-            altText="Enlarged CuttersFlyers Image"
-            title="close"
-          />
-        </div>
-      </div>
-
-      <div className="row">
-        <div className="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center align-bottom">
-          <div className="graphics-body p-2 justify-content-center align-bottom">
-            <div className="graphics-title">
-            <h4>Team Notifications</h4>
-              <img
-                src={Canceled}
-                alt="Canceled"
-                className="mb-2 border border-black clickable-image"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
-                }}
-                onClick={() => handleModalOpen(Canceled)}
-              />
-              <p style={{ fontSize: "12px", color: "blue" }}>
-                <HiMagnifyingGlassPlus /> click image to enlarge
-              </p>
-            </div>
-          </div>
-
-          {/* ImageModal for Canceled Image */}
-          <ImageModal
-            showModal={showModal}
-            handleModalClose={handleModalClose}
-            imageSrc={selectedImage}
-            altText="Enlarged Canceled Image"
-            title="close"
-          />
-        </div>
-      </div>
-
-      <div className="row">
-        {/* CuttersFlyers Image */}
-
-        {/* NorthernGolf Image */}
-        <div className="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center align-bottom">
-          <div className="graphics-body p-2 justify-content-center align-bottom">
-            <div className="graphics-title">
-            <h4>Special Event</h4>
-              <img
-                src={NorthernGolf}
-                alt="NorthernGolf"
-                className="mb-2 border border-black clickable-image"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
-                }}
-                onClick={() => handleModalOpen(NorthernGolf)}
-              />
-              <p style={{ fontSize: "12px", color: "blue" }}>
-                <HiMagnifyingGlassPlus /> click image to enlarge
-              </p>
-            </div>
-          </div>
-
-          {/* ImageModal for NorthernGolf Image */}
-          <ImageModal
-            showModal={showModal}
-            handleModalClose={handleModalClose}
-            imageSrc={selectedImage}
-            altText="Enlarged NorthernGolf Image"
-            title="close"
-          />
-        </div>
-      </div>
-
-      <div className="row">
-        {/* Canceled Image */}
-        {/* Catching Image */}
-        <div className="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center align-bottom">
-          <div className="graphics-body p-2 justify-content-center align-bottom">
-            <div className="graphics-title">
-            <h4>Services and Branding</h4>
-              <img
-                src={Catching}
-                alt="Catching"
-                className="mb-2 border border-black clickable-image"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
-                }}
-                onClick={() => handleModalOpen(Catching)}
-              />
-              <p style={{ fontSize: "12px", color: "blue" }}>
-                <HiMagnifyingGlassPlus /> click image to enlarge
-              </p>
-            </div>
-          </div>
-
-          {/* ImageModal for Catching Image */}
-          <ImageModal
-            showModal={showModal}
-            handleModalClose={handleModalClose}
-            imageSrc={selectedImage}
-            altText="Enlarged Catching Image"
-            title="close"
-          />
-        </div>
-      </div>
+      {/* ImageModal */}
+      <ImageModal
+        showModal={showModal}
+        handleModalClose={handleModalClose}
+        imageSrc={selectedImage}
+        altText="Enlarged Image"
+        title="close"
+      />
     </div>
   );
 };

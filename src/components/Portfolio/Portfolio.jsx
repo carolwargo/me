@@ -404,14 +404,6 @@ function Portfolio() {
 
           {/*start graphics*/}
           <div className="w3-content w3-justify w3-text-black w3-padding-32">
-            <h4 className="w3-text-black" id="#server">
-              Graphic Elements.
-            </h4>
-            <hr className="w3-opacity" />
-            <p>
-            Graphics play a crucial role in communication, whether it's in advertising, branding, web design, or multimedia content. They serve as visual elements that enhance the presentation of information and ideas, making them more engaging, memorable, and effective. 
-            </p>
-            <br />
          <Graphics/>
           </div>
           {/*end graphics*/}

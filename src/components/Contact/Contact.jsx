@@ -11,7 +11,7 @@ const Contact = () => {
       <div className="contact" id="contact">
       <div className="container-fluid py-2 bg-white text-black ">
       <div className="w3-content w3-justify w3-text-black w3-padding-32">
-        <h1>CONTACT ME. </h1>
+        <h1><b>CONTACT ME. </b></h1>
         <hr />
         <p>Thank you for visiting! </p>
         <p className="">

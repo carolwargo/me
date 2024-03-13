@@ -396,20 +396,7 @@ function Portfolio() {
           </div>
           {/*endgrid sample page*/}
 
-          {/*start graphics*/}
-          <div className="w3-content w3-justify w3-text-black w3-padding-32">
-            <h4 className="w3-text-black" id="#server">
-              Graphic Elemenets.
-            </h4>
-            <hr className="w3-opacity" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              obcaecati numquam dolorem. Animi quam ipsam, voluptates quia iusto
-              eligendi ex voluptas placeat iste nisi sed. Provident quaerat
-              autem corrupti ea?
-            </p>
-            <br />
-          </div>
+     
           {/*end graphics*/}
           </div>
     </div>

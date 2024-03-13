@@ -1,9 +1,4 @@
 import React from "react";
-import { FaLaptopCode } from "react-icons/fa";
-import { HiOutlinePuzzlePiece } from "react-icons/hi2";
-import { AiFillDatabase } from "react-icons/ai";
-import { BsDatabaseLock } from "react-icons/bs";
-import { GiGears } from "react-icons/gi";
 import "@fortawesome/fontawesome-free/css/all.css"; // Import Font Awesome CSS
 
 
@@ -38,7 +33,7 @@ export default function About() {
         </div>
 
         {/* start Forms grid */}
-        <div className="container-fluid bg-white text-black">
+        <div className="w3-container w3-content bg-white text-black">
          
                {/*start Interpersonal Proficiencies*/}
          <h2>Interpersonal Proficiencies. </h2>
@@ -66,113 +61,7 @@ export default function About() {
       
           </div>
         </div>
-
-        <div className="container-fluid py-2 bg-white text-black ">
-          <div className="w3-content w3-justify w3-text-black w3-padding-32">
-              <h2 className="w3-text-black" id="tables">
-                Technical Proficiencies.{" "}
-              </h2>
-              <hr className="w3-opacity" />
-              <p className="w3-wide text-black" style={{ fontSize: "1rem" }}>
-                <GiGears className="justify-content-center" /> Core Technologies
-              </p>
-              <div className="w3-light-grey shadow ">
-                <div
-                  className="w3-container w3-padding-small w3-black w3-center shadow"
-                  style={{ width: "85%" }}
-                >
-                  85%
-                </div>
-              </div>
-              <br />
-              <p className="w3-wide text-black" style={{ fontSize: "1rem" }}>
-                <FaLaptopCode className="justify-content-center" /> Front-End
-                Design
-              </p>
-              <div className="w3-light-grey shadow">
-                <div
-                  className="w3-container w3-padding-small w3-black w3-center"
-                  style={{ width: "95%" }}
-                >
-                  95%
-                </div>
-              </div>
-              <br />
-              <p className="w3-wide text-black" style={{ fontSize: "1rem" }}>
-                <BsDatabaseLock className="justify-content-center" />{" "}
-                Server-Side Development
-              </p>
-              <div className="w3-light-grey shadow">
-                <div
-                  className="w3-container w3-padding-small w3-black w3-center"
-                  style={{ width: "80%" }}
-                >
-                  80%
-                </div>
-              </div>
-              <br />
-              <p className="w3-wide text-black" style={{ fontSize: "1rem" }}>
-                <HiOutlinePuzzlePiece className="justify-content-center" />{" "}
-                Full-Stack Integration
-              </p>
-              <div className="w3-light-grey shadow">
-                <div
-                  className="w3-container w3-padding-small w3-black w3-center"
-                  style={{ width: "75%" }}
-                >
-                  75%
-                </div>
-              </div>
-              <br />
-              <p className="w3-wide text-black" style={{ fontSize: "1rem" }}>
-                <AiFillDatabase className="justify-content-center" /> Database
-                Implementation
-              </p>
-              <div className="w3-light-grey shadow">
-                <div
-                  className="w3-container w3-padding-small w3-black w3-center"
-                  style={{ width: "75%" }}
-                >
-                  75%
-                </div>
-              </div>
-              <br />
-              </div>
-<h2  id="tables">
-               Expertise.{" "}
-              </h2>
-              <hr className="w3-opacity" />
-        <div className="container-fluid py-2 w3-black">
-          {/**start experience count */}
-       
-          <div className="w3-row w3-center w3-black w3-padding-16 w3-margin-bottom">
-            <div className="w3-quarter w3-section">
-              <span className="w3-xlarge">
-                20<span style={{ fontSize: "10px" }}>yrs</span> +
-              </span>
-              <br />
-              BUSINESS EXPERIENCE
-            </div>
-            <div className="w3-quarter w3-section">
-              <span className="w3-xlarge">100+</span>
-              <br />
-              DESIGN PROJECTS
-            </div>
-            <div className="w3-quarter w3-section">
-              <span className="w3-xlarge">10+</span>
-              <br />
-              LEADERSHIP ROLES
-            </div>
-            <div className="w3-quarter w3-section">
-              <span className="w3-xlarge">100+</span>
-              <br />
-              MEETINGS
-            </div>
-          </div>
-        </div>
-            
-        </div>
-        <hr className="w3-opacity" />
+   
 </div>
     
 
