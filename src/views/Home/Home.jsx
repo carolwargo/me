@@ -1,7 +1,6 @@
 import React from "react";
 import MeWhite from "../../assets/images/Me/MeWhite.png";
 import ResumeDownload from "../../assets/ResumeDownload.pdf";
-import Graphics from "../../components/Portfolio/Graphics/Graphics";
 import LocationView from "../../assets/images/About/LocationView.png";
 import Contact from "../../components/Contact/Contact";
 import About from "../../components/About/About";
@@ -197,7 +196,7 @@ const Home = () => {
        {/*start Portfolio */}
        <Portfolio/>
           {/*end Portfolio */}
-<Graphics/>
+
                  {/*start Contact */}
         <Contact/>
           {/*end Contact */}

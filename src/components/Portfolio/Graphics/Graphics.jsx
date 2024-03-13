@@ -4,7 +4,7 @@ import { HiMagnifyingGlassPlus } from "react-icons/hi2";
 import Business from '../../../assets/images/About/Business.png';
 import YogaSet from '../../../assets/images/YogaStory/YogaSet.png';
 import ProductCampaign from '../../../assets/images/Graphics/ProductCampaign.png';
-import LineUp from '../../../assets/images/Graphics/LineUp.png';
+//import LineUp from '../../../assets/images/Graphics/LineUp.png';
 import MidSeason from '../../../assets/images/Graphics/MidSeason.png';
 import CheckOut from '../../../assets/images/Graphics/CheckOut.png';
 import Catching from '../../../assets/images/Graphics/Catching.png';
@@ -33,7 +33,7 @@ const BusinessEssentials = () => {
     <div className='container mt-4'>
       <div className="row graphics-container">
         {/* Business Image */}
-        <div className="col-sm-12 col-md-4 col-lg-4 mb-2 d-flex justify-content-center align-items-center">
+        <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-items-center">
       <div className="graphics-body p-2 d-flex flex-column justify-content-center align-items-center">
         <div className="graphics-title">
               <img
@@ -46,9 +46,7 @@ const BusinessEssentials = () => {
               <p style={{ fontSize: '12px', color: 'blue' }}><HiMagnifyingGlassPlus /> click image to enlarge</p>
               <h4>TITLE</h4>
             </div>
-            <p className="business-essentials-text">
-             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quidem rerum recusandae nulla alias voluptate eius temporibus cum beatae maxime pariatur ullam, aliquid, molestiae, repellendus enim consectetur vitae placeat tenetur?
-            </p>
+         
           </div>
 
           {/* ImageModal for Business Image */}
@@ -60,38 +58,8 @@ const BusinessEssentials = () => {
             title="close"
           />
         </div>
-
-        {/* Yoga Set Image */}
-        <div className="col-sm-12 col-md-4 col-lg-4 mb-2 d-flex justify-content-center align-items-center">
-      <div className="graphics-body p-2 d-flex flex-column justify-content-center align-items-center">
-        <div className="graphics-title">
-              <img
-                src={YogaSet}
-                alt="YogaSet"
-                className="mb-2 border border-black clickable-image"
-                style={{ width: "100%", height: "auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)" }}
-                onClick={() => handleModalOpen(YogaSet)}
-              />
-              <p style={{ fontSize: '12px', color: 'blue' }}><HiMagnifyingGlassPlus /> click image to enlarge</p>
-              <h4>TITLE</h4>
-            </div>
-            <p className="business-essentials-text">
-             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quidem rerum recusandae nulla alias voluptate eius temporibus cum beatae maxime pariatur ullam, aliquid, molestiae, repellendus enim consectetur vitae placeat tenetur?
-            </p>
-          </div>
-
-          {/* ImageModal for Red Baseball Image */}
-          <ImageModal
-            showModal={showModal}
-            handleModalClose={handleModalClose}
-            imageSrc={selectedImage}
-            altText="Enlarged Red Baseball Image"
-            title="close"
-          />
-        </div>
-
-        {/* Product Campaign Image */}
-        <div className="col-sm-12 col-md-4 col-lg-4 mb-2 d-flex justify-content-center align-bottom">
+               {/* Product Campaign Image */}
+               <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-bottom">
           <div className="graphics-body p-2 justify-content-center align-bottom">
             <div className="graphics-title">
               <img
@@ -104,9 +72,7 @@ const BusinessEssentials = () => {
               <p style={{ fontSize: '12px', color: 'blue' }}><HiMagnifyingGlassPlus /> click image to enlarge</p>
               <h4>TITLE</h4>
             </div>
-            <p className="business-essentials-text">
-             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quidem rerum recusandae nulla alias voluptate eius temporibus cum beatae maxime pariatur ullam, aliquid, molestiae, repellendus enim consectetur vitae placeat tenetur?
-            </p>
+         
           </div>
 
           {/* ImageModal for Product Campaign Image */}
@@ -123,15 +89,10 @@ const BusinessEssentials = () => {
 
 
 
-{/* second row */  }
-   
-
-
-
-    {/* third row */  }
     <div className="row graphics-container">
-  {/* LineUp Image */}
-  <div className="col-sm-12 col-md-4 col-lg-4 mb-2 d-flex justify-content-center align-bottom">
+  {/* LineUp Image
+  
+  <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-bottom">
     <div className="graphics-body p-2 justify-content-center align-bottom">
       <div className="graphics-title">
         <img
@@ -149,7 +110,7 @@ const BusinessEssentials = () => {
       </p>
     </div>
 
-    {/* ImageModal for LineUp Image */}
+  
     <ImageModal
       showModal={showModal}
       handleModalClose={handleModalClose}
@@ -158,9 +119,10 @@ const BusinessEssentials = () => {
       title="close"
     />
   </div>
-
+ */}
+  <div className="row graphics-container">
   {/* CheckOut Image */}
-  <div className="col-sm-12 col-md-4 col-lg-4 mb-2 d-flex justify-content-center align-bottom">
+  <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-bottom">
     <div className="graphics-body p-2 justify-content-center align-bottom">
       <div className="graphics-title">
         <img
@@ -189,7 +151,7 @@ const BusinessEssentials = () => {
   </div>
 
   {/* MidSeason Image */}
-  <div className="col-sm-12 col-md-4 col-lg-4 mb-2 d-flex justify-content-center align-bottom">
+  <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-bottom">
     <div className="graphics-body p-2 justify-content-center align-bottom">
       <div className="graphics-title">
         <img
@@ -217,15 +179,40 @@ const BusinessEssentials = () => {
     />
   </div>
 </div>
+</div>
 
      {/* fourth row */  }
    
+  {/* Yoga Set Image */}
+  <div className='row'>
+  <div className="col-sm-12 col-md-12 col-lg-12 mb-2 d-flex justify-content-center align-items-center">
+      <div className="graphics-body p-2 d-flex flex-column justify-content-center align-items-center">
+        <div className="graphics-title">
+              <img
+                src={YogaSet}
+                alt="YogaSet"
+                className="mb-2 border border-black clickable-image"
+                style={{ width: "100%", height: "auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)" }}
+                onClick={() => handleModalOpen(YogaSet)}
+              />
+              <p style={{ fontSize: '12px', color: 'blue' }}><HiMagnifyingGlassPlus /> click image to enlarge</p>
+              <h4>TITLE</h4>
+            </div>
+         
+          </div>
 
+          {/* ImageModal for Red Baseball Image */}
+          <ImageModal
+            showModal={showModal}
+            handleModalClose={handleModalClose}
+            imageSrc={selectedImage}
+            altText="Enlarged Red Baseball Image"
+            title="close"
+          />
+        </div>
+        </div>
 
-
-{/*row 6 */}
-
-<div className="row graphics-container">
+<div className="row">
   {/* CuttersFlyers Image */}
   <div className="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-bottom">
     <div className="graphics-body p-2 justify-content-center align-bottom">
@@ -285,9 +272,7 @@ const BusinessEssentials = () => {
   </div>
 </div>
 
-
-
-<div className="row graphics-container">
+<div className="row">
   {/* Canceled Image */}
   <div className="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-bottom">
     <div className="graphics-body p-2 justify-content-center align-bottom">
