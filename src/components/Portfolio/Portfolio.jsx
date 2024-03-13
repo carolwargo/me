@@ -342,13 +342,17 @@ function Portfolio() {
               Sample web pages.
             </h4>
             <hr className="w3-opacity" />
+
             <p>
+              <span style={{color:'red'}}><b>COMING SOON!</b> </span>
               Each type of website serves a unique purpose and requires specific
               features and functionalities to effectively achieve its objectives
               and meet the needs of its target audience.
             </p>
-            <br />
+    
 
+           {/** 
+             <br />
             <div className="w3-row-padding" style={{ margin: "0 -16px" }}>
               <div className="w3-half w3-margin-bottom">
                 <ul className="w3-ul w3-center w3-card w3-hover-shadow">
@@ -394,7 +398,8 @@ function Portfolio() {
                 </ul>
               </div>
             </div>
-          </div>
+             */} 
+         
           {/*endgrid sample page*/}
 
           {/*start graphics*/}
@@ -404,16 +409,14 @@ function Portfolio() {
             </h4>
             <hr className="w3-opacity" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              obcaecati numquam dolorem. Animi quam ipsam, voluptates quia iusto
-              eligendi ex voluptas placeat iste nisi sed. Provident quaerat
-              autem corrupti ea?
+            Graphics play a crucial role in communication, whether it's in advertising, branding, web design, or multimedia content. They serve as visual elements that enhance the presentation of information and ideas, making them more engaging, memorable, and effective. 
             </p>
             <br />
          <Graphics/>
           </div>
           {/*end graphics*/}
           </div>
+    </div>
     </div>
    
   );

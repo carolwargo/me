@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import ImageModal from "../../Modal/ImageModal";
 import { HiMagnifyingGlassPlus } from "react-icons/hi2";
-import Business from "../../../assets/images/About/Business.png";
 import YogaSet from "../../../assets/images/YogaStory/YogaSet.png";
 import ProductCampaign from "../../../assets/images/Graphics/ProductCampaign.png";
-//import LineUp from '../../../assets/images/Graphics/LineUp.png';
 import MidSeason from "../../../assets/images/Graphics/MidSeason.png";
 import CheckOut from "../../../assets/images/Graphics/CheckOut.png";
 import Catching from "../../../assets/images/Graphics/Catching.png";
@@ -30,39 +28,9 @@ const BusinessEssentials = () => {
   return (
     <div className="w3-container w3-content mt-4">
       <div className="row graphics-container">
-        {/* Business Image */}
-        <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-items-center">
-          <div className="graphics-body p-2 d-flex flex-column justify-content-center align-items-center">
-            <div className="graphics-title">
-            <h4>Business Essentials</h4>
-              <img
-                src={Business}
-                alt="Business"
-                className="mb-2 border border-black clickable-image"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
-                }}
-                onClick={() => handleModalOpen(Business)}
-              />
-              <p style={{ fontSize: "12px", color: "blue" }}>
-                <HiMagnifyingGlassPlus /> click image to enlarge
-              </p>
-            </div>
-          </div>
 
-          {/* ImageModal for Business Image */}
-          <ImageModal
-            showModal={showModal}
-            handleModalClose={handleModalClose}
-            imageSrc={selectedImage}
-            altText="Enlarged Business Image"
-            title="close"
-          />
-        </div>
         {/* Product Campaign Image */}
-        <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-bottom">
+        <div className="col-sm-12 col-md-12 col-lg-12 mb-2 d-flex justify-content-center align-bottom">
           <div className="graphics-body p-2 justify-content-center align-bottom">
             <div className="graphics-title">
             <h4>Product Campaign</h4>
