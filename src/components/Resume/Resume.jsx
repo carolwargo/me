@@ -240,7 +240,7 @@ const Home = () => {
               technical acumen empowers me to tackle complex challenges and
               deliver innovative solutions effectively."
             </p>
-            <div className="technical-skills-div d-flex flex-column bg-black text-white py-2">
+            <div className="w3-content bg-black text-white w3-padding-32">
               <h3 className="text-center w3-margin pt-4">
                 Technical Proficiencies.{" "}
               </h3>
