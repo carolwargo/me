@@ -23,7 +23,6 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Home = () => {
 
@@ -35,8 +34,48 @@ const Home = () => {
 <div className="resume" id="resume">
  {/*start profile*/}
  <div className="w3-content w3-justify w3-text-black w3-padding-32">
-<h2>Professional Profile. </h2>
+<h1><b>RESUME.</b> </h1>
 <hr />
+<div className="container-fluid py-2 bg-white text-black  w3-margin-bottom w3-padding-32">
+          <div className="w3-content w3-justify w3-text-black ">
+             <h2 className="w3-text-black" id="agile-practices">
+                Agile practices.{" "}
+              </h2>
+              <hr className="w3-opacity" />
+              <p>
+                PROMOTE FLEXIBILITY, COLLABORATION, AND ABILITY TO RESPOND TO
+                CHANGING REQUIREMENTS.{" "}
+              </p>
+              <h5>
+                <strong>Interpersonal Skills</strong>
+              </h5>
+              <ul>
+                <li>
+                  Effectively communicates, fostering customer and stakeholder
+                  engagement throughout the development process.
+                </li>
+                <li>
+                  Articulates ideas, recommendations, and findings clearly,
+                  concisely, and inclusively.
+                </li>
+                <li>
+                  Promotes and welcomes feedback from all stakeholders equally.
+                </li>
+                <li>
+                  Embraces a culture of continuous improvement through
+                  post-implementation evaluations and knowledge sharing.
+                </li>
+                <li>
+                  Adapts positively to change and embraces new challenges.
+                </li>
+                <li>
+                  Delivers functional software (Minimum Viable Product) with a
+                  focus on meeting user needs and hope of exceeding
+                  expectations.
+                </li>
+              </ul>
+            </div>
+          </div>
 <p>I've had the privilege of contributing to several innovative projects and achieving significant milestones throughout my career. With a strong foundation in project management, user-centrics, coding languages and a passion for problem-solving, I've played a pivotal role in developing robust software solutions that meet the diverse needs of clients and users.</p>      
 </div>
  {/*end profile*/}
@@ -278,38 +317,9 @@ respective buttons for more details.</p>
       </div>
        {/*end technical skills*/}
 
-         {/*start Interpersonal Proficiencies*/}
-         <h2>Interpersonal Proficiencies. </h2>
-         <hr />
-<p>       Key pillars that define both my personal and professional identity. From leadership prowess and adept problem-solving to unwavering efficiency and the cultivation of a thriving organizational culture, each facet speaks volumes about my commitment and approach to life and work."</p>
-         <div className="w3-row w3-light-gray w3-padding-16 w3-section">
-  <div className="w3-section px-4">
-    <h4><b>LEADERSHIP:</b></h4>
-    <p >I lead with excellence in collaborative environments, leveraging my strong interpersonal skills to drive teams towards success. I prioritize active listening and value input from all team members, regardless of pay grade or status.</p>
-  </div>
-  <div className="w3-section px-4">
-    <h4><b>APPROACH:</b></h4>
-    <p >My problem-solving approach is grounded in thorough research and analysis, coupled with a keen eye for detail. I tackle challenges head-on and pride myself on finding innovative solutions that push the boundaries of possibilities.</p>
-  </div>
-  <div className="w3-section px-4">
-    <h4><b>EFFICIENCY:</b></h4>
-    <p >I ensure deadlines are met and objectives are achieved efficiently and effectively through my strong background in project management. I thrive in dynamic environments and am adept at adapting to changing priorities.</p>
-  </div>
-  <div className="w3-section px-4">
-    <h4><b>CULTURE:</b></h4>
-    <p >I foster a culture of inclusion, transparency, and accountability by prioritizing clear communication and mutual respect. I believe in building strong relationships and empowering others to reach their full potential.</p>
-  </div>
-</div>
-   {/*end Interpersonal Proficiencies*/}
+      
 {/*end resume */}
-<div className="w3-content w3-justify w3-text-black w3-padding-16 w3-center w3-margin-bottom">
-          <a href="/portfolio">
-            <p className="w3-margin-bottom">
-              Click to view my digital portfolio.
-              <FaLongArrowAltRight className="w3-margin-left " />
-            </p>
-          </a>
-        </div>
+
         </div>
 </div>
 

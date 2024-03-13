@@ -1,6 +1,7 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
 function Login() {
     return (
@@ -37,12 +38,24 @@ function Login() {
                                     />
                                     <label className="form-check-label" htmlFor="form1Example3"> Remember me </label>
                                 </div>
+                              
                             </div>
                             <div className="col">
                                 <a href="#!">Forgot password?</a>
                             </div>
+                            
+                        </div>
+                        <div>
+                                <button 
+                            data-mdb-ripple-init 
+                            type="button" 
+                            className="btn btn-primary btn-block mb-4 px-5 shadow"
+                        >
+                            Sign up
+                        </button>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>

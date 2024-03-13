@@ -8,6 +8,9 @@ import Notes from "../../assets/images/Portfolio/Notes.png";
 import README from "../../assets/images/Portfolio/README.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Login from "./Forms/Login";
+import Signup from "./Forms/Signup";
+
 
 function Portfolio() {
 
@@ -19,7 +22,7 @@ function Portfolio() {
           {/**start Portfolio section */}
           <div className="w3-content w3-justify w3-text-black w3-padding-32">
             <h1 className="w3-text-black" id="tables">
-              Portfolio.{" "}
+             <b>PORTFOLIO.</b> 
             </h1>
             <hr className="w3-opacity" />
             <p>
@@ -47,14 +50,14 @@ function Portfolio() {
               checkboxes, and buttons, allowing users to interact with the
               website and provide information.
             </p>
-            {/*start login form 
-            <Login />*/}
+            {/*start login form */}
+            <Login />
   
             {/*end login and register
              */}
 
-            {/*start sign up form 
-            <Signup />*/}
+            {/*start sign up form */}
+            <Signup />
           </div>
           {/*end sign up form */}
 
